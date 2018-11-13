@@ -1,10 +1,10 @@
-# Pao_Allison_IID-SVG
+# pao_allison_portfolio
 
 Pollution of plastic has become an impeding problem.  With over 500,000,000 straws used on a daily basis in the United States alone, this issue is more concerning than ever before.  With that being said, it is time we take action and inform the general public about this problem and solve it together.  This is our one and only planet and home.  This infographic is in place to inspire the public and bring awareness to the subject through easy to understand graphics and terms. 
 
 ## Getting Started
 
-This readme will give you a rundown on the infographic, who created it, and the resources that inspired it. The index.html will take you the single-page infographic.
+This readme will give you a rundown on my portfolio site, who created it, and the resources that inspired it. The index.html will take you the homepage of my website.
 
 ## Built With
 
@@ -14,7 +14,7 @@ This readme will give you a rundown on the infographic, who created it, and the 
 
 ## Authors
 
-* **Allison Paon** - *Designer and Developer* - [GitHub](https://github.com/apao4)
+* **Allison Pao** - *Designer and Developer* - [GitHub](https://github.com/apao4)
 
 
 ## License
