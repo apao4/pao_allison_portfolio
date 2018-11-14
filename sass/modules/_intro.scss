@@ -1,0 +1,40 @@
+#intro p
+{
+    color: #bbb;
+    font-weight: 5em;
+    float: right;
+    margin: 0 auto;
+
+}
+
+#headshot
+{
+    width: 50%;
+    height: auto;
+    -webkit-clip-path: polygon(
+        0 80%, 45% 90%, 100% 80%, 100% 0, 0 0
+    );
+    -moz-clip-path: polygon(
+        0 80%, 45% 90%, 100% 80%, 100% 0, 0 0
+    );
+    -ms-clip-path: polygon(
+        0 80%, 45% 90%, 100% 80%, 100% 0, 0 0
+    );
+    clip-path: polygon(
+        0 80%, 45% 90%, 100% 80%, 100% 0, 0 0
+    );
+}
+
+.quote
+{
+    font-family: "Avenir", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#photography h3
+{
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+}

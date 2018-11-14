@@ -1,6 +1,6 @@
 # pao_allison_portfolio
 
-Pollution of plastic has become an impeding problem.  With over 500,000,000 straws used on a daily basis in the United States alone, this issue is more concerning than ever before.  With that being said, it is time we take action and inform the general public about this problem and solve it together.  This is our one and only planet and home.  This infographic is in place to inspire the public and bring awareness to the subject through easy to understand graphics and terms. 
+Allison Pao is a web and graphic designer who is always ready to take on a new challenge.  Through this portfolio, potential clients can scour through her past works and get to know her.  
 
 ## Getting Started
 

@@ -3,3 +3,52 @@
 @import 'modules/tablet';
 @import 'modules/mobile';
 @import 'modules/header';
+@import 'modules/body';
+@import 'modules/intro';
+@import 'modules/glitch';
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+    background-color: #f4d0c8;
+}
+
+p
+{
+    font-family: 'Avenir', sans-serif;
+}
+
+.rotate 
+{
+    //Safari
+    -webkit-transform: rotate(-90deg);
+    //Firefox
+    -moz-transform: rotate(-90deg);
+    //IE
+    -ms-transform: rotate(-90deg);
+}
+
+#photoParallax 
+{
+    background-image: url("../images/taiwan-sunset.jpg");
+    min-height: 500px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#designParallax 
+{
+    background-image: url("../images/taiwan-sunset.jpg");
+    min-height: 500px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
