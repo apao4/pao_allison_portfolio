@@ -2,10 +2,10 @@ header h1
 {
     font-family: 'Avenir', sans-serif;
     color: #fff;
-    font-size: 10em;
+    font-size: 5em;
     text-transform: uppercase;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 200px;
     line-height: 200px;
     text-align: center;
     //mix-blend-mode: color-dodge;
@@ -18,12 +18,12 @@ header h1
 }
 
 h1:nth-child(2) {
-    color: #666;
+    color: #fff;
     animation: glitch2 2.5s infinite;
   }
   
   h1:nth-child(3) {
-    color: #c65339;
+    color: #f4d0c8;
     animation: glitch3 2.5s infinite;
   }
   /*Keyframes*/

@@ -22,12 +22,12 @@ nav a
 
 nav a:hover
 {
-    color: #fff;
+    color: #c65339;
 }
 
 nav a:active
 {
-    background-color: #fff;
+    background-color: #c65339;
 }
 
 nav a:visited
@@ -40,6 +40,7 @@ header
     clear: both;
     width: 100%;
     height: 700px;
+    background-color: #000;
     background-image: url("/images/static.jpg");
     
     // -webkit-clip-path: polygon(
@@ -62,7 +63,6 @@ header
 {
     width: 50%;
     height: 700px;
-    
     
 }
 

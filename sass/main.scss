@@ -12,7 +12,7 @@ html, body
     margin: 0;
     padding: 0;
     margin-top: -10px;
-    background-color: #f4d0c8;
+    //background-color: #f4d0c8;
 }
 
 p
@@ -32,7 +32,7 @@ p
 
 #photoParallax 
 {
-    background-image: url("../images/taiwan-sunset.jpg");
+    background-image: url("../images/fog.jpg");
     min-height: 500px; 
 
     background-attachment: fixed;
@@ -41,9 +41,20 @@ p
     background-size: cover;
 }
 
-#designParallax 
+#animParallax 
 {
-    background-image: url("../images/taiwan-sunset.jpg");
+    background-image: url("../images/apartments.jpg");
+    min-height: 500px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vidParallax 
+{
+    background-image: url("../images/aerial.jpg");
     min-height: 500px; 
 
     background-attachment: fixed;
