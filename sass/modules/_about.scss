@@ -5,3 +5,63 @@
     height: 800px;
     background-image: url("../images/aboutHeader.JPG");
 }
+
+#about
+{
+    text-align: center;
+}
+
+#about h2
+{
+    font-family: "Avenir", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+
+#about p
+{
+    padding:70px;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 250px;
+
+}
+
+#services
+{
+    text-align: center;
+    padding: 90px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.servicesIcon
+{
+    width: 75px;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#icons
+{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 250px;
+
+}
+
+#services h2
+{
+    font-family: "Avenir", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#services p
+{
+    padding-top: 50px;
+}
