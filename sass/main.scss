@@ -4,6 +4,15 @@
 @import 'modules/index';
 @import 'modules/glitch';
 @import 'modules/about';
+@import 'modules/portfolio';
+
+@font-face {
+    font-family: 'cf_glitch_cityregular';
+    src: url('/includes/cfglitchcity-regular-webfont.woff2') format('woff2'),
+         url('/includes/cfglitchcity-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .hidden
 {
@@ -35,38 +44,19 @@ p
     -ms-transform: rotate(-90deg);
 }
 
-
-
-#photoParallax 
+.sectionLine
 {
-    background-image: url("../images/taiwan-sunsetBW.jpg");
-    min-height: 500px; 
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 10%;
 }
 
-#animParallax 
-{
-    background-image: url("../images/apartments.jpg");
-    min-height: 500px; 
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#vidParallax 
-{
-    background-image: url("../images/aerialBW.jpg");
-    min-height: 500px; 
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 10px;
+  }

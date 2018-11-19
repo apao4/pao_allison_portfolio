@@ -1,6 +1,21 @@
 @media (max-width: 479px) {
 /* MENU TOGGLE*/
+
     #navTab
+    {
+        display: none;
+    }
+
+    #navDes
+    {
+        display: none;
+    }
+
+    #headerCap
+    {
+        display: none;
+    }  
+    #headerDes
     {
         display: none;
     }
@@ -14,7 +29,6 @@
         z-index: 1;
     }
         
-
     #menuToggle input
     {
         display: block;
@@ -72,12 +86,14 @@
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
         transition: transform 0.7s;
+        font-style: oblique;
     }
 
     #menu li
     {
-        padding: 10px;
+        padding: 0px;
         font-size: 1.1em;
+        
     }
 
     #menu li:hover
@@ -105,8 +121,8 @@
     
     nav a 
     {
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
         text-decoration: none;
         color: #fff;
     }
@@ -120,8 +136,9 @@
     {
         clear: both;
         width: 100%;
-        height: 800px;
+        height: 675px;
         background-image: url("../images/headerMobile.JPG");
+        background-repeat: no-repeat;
     }
     #headerCaption
     {
@@ -181,6 +198,15 @@
 
  //TABLET   
 @media screen and (min-width: 480px) and (max-width: 769px) {
+    #headerDes 
+    {
+        display: none;
+    }
+
+    #navDes
+    {
+        display: none;
+    }
 
     #homeHeader
     {
@@ -188,6 +214,7 @@
         width: 100%;
         height: 700px;
         background-image: url("../images/headerTab.JPG");
+        background-repeat: no-repeat;
     }
     #menuToggle
     {
@@ -203,6 +230,8 @@
         padding-top: 20px;
         padding-bottom: 20px;
         clear: both;
+        background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1));
+        height: 50px;
     }
     #navTab a 
     {
@@ -224,13 +253,13 @@
         font-family: 'Avenir', sans-serif;
         font-weight: lighter;
         letter-spacing: 0.5rem;
-        margin-top: 345px;
         font-size: 1.3em;
     }
     #landingText
     {
         display: none;
     }
+
     }
 
 
@@ -240,7 +269,32 @@
     {
         display: none;
     }
+    
     #navTab
+    {
+        display: none;
+    }
+
+    #headerCap
+    {
+        display: none;
+    }
+
+    #headerDes
+    {
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Avenir', sans-serif;
+        font-weight: lighter;
+        letter-spacing: 0.5rem;
+        font-size: 1.3em;
+        margin-top: -270px;
+        clear: both;
+        margin-bottom: 300px;
+    }
+
+    #navDes
     {
         text-align: center;
         margin: 0 auto;
@@ -250,15 +304,18 @@
         padding-top: 20px;
         padding-bottom: 20px;
         clear: both;
+        background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+        height: 50px;
     }
-    #navTab a 
+    #navDes a 
     {
         padding-left: 70px;
         padding-right: 70px;
         text-decoration: none;
         color: #fff;
     }
-    #navTab a:hover
+
+    #navDes a:hover
     {
         text-shadow: 2px 2px red;
     }
@@ -278,15 +335,7 @@
     {
         display: none;
     }
-    #homeHeader
-        {
-            clear: both;
-            width: 100%;
-            height: 800px;
-            background-image: url("../images/header.JPG");
-        }
 
-    //NAVIGATION BAR
     nav
     {
         text-align: center;
@@ -294,7 +343,6 @@
         font-family: 'Avenir', sans-serif;
         text-transform: uppercase;
         width: 100%;
-        padding-top: 20px;
         padding-bottom: 20px;
         clear: both;
         
