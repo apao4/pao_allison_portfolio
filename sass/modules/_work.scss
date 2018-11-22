@@ -1,0 +1,266 @@
+.backBtn a
+{
+    font-family: 'Avenir', sans-serif;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.backBtn
+{
+    margin-top: 15px;
+    
+}
+
+@media (max-width: 479px) {
+    .proInfo h3
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.proInfo h5
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.1em;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.proInfo h6
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.proInfo h4
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.proInfo p
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 0.75em;
+    font-weight: lighter;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.proInfo
+{
+    width: 100%;
+}
+
+.portfolio
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portImg
+{
+    width: 40%;
+    float: right;
+    clear: both;
+}
+
+#organVid
+{
+    width: 100%;
+    position: relative;
+    clear: both;
+}
+
+#melloVidDes
+{
+    display: none;
+}
+
+.velveetaLabels
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+
+    .proInfo h3
+    {
+        font-family: 'Avenir', sans-serif;
+        font-size: 2em;
+        font-weight: lighter;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    
+    .proInfo h5
+    {
+        font-family: 'Avenir', sans-serif;
+        font-size: 1.1em;
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+    }
+    
+    .proInfo h6
+    {
+        font-family: 'Avenir', sans-serif;
+        font-size: 1.2em;
+        font-weight: lighter;
+        margin: 0;
+    }
+    
+    .proInfo h4
+    {
+        font-family: 'Avenir', sans-serif;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        font-weight: lighter;
+        margin: 0;
+    }
+    
+    .proInfo p
+    {
+        font-family: 'Avenir', sans-serif;
+        font-size: 0.9em;
+        font-weight: lighter;
+        padding: 0;
+        margin-left: 20px;
+    }
+    
+    .proInfo
+    {
+        width: 60%;
+    }
+    
+    .portfolio
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .portImg
+    {
+        width: 40%;
+        float: right;
+        clear: both;
+        padding-left: 20px;
+    }
+    
+    #melloVidDes
+    {
+        width: 40%;
+        float: right;
+        position: relative;
+        clear: both;
+    }
+    
+    #melloVidMob
+    {
+        display: none;
+    }
+
+    .velveetaLabels
+    {
+        display: none;
+    }
+    
+    }
+
+@media screen and (min-width: 770px) {
+
+.proInfo h3
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.proInfo h5
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.proInfo h6
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.proInfo h4
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.proInfo p
+{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.proInfo
+{
+    width: 50%;
+}
+
+.portfolio
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portImg
+{
+    width: 40%;
+    float: right;
+    clear: both;
+}
+
+#melloVidDes
+{
+    width: 40%;
+    float: right;
+    position: relative;
+    clear: both;
+}
+
+#melloVidMob
+{
+    display: none;
+}
+
+.velveetaLabelsMob
+{
+    display: none;
+}
+
+}

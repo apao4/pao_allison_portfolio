@@ -794,92 +794,392 @@
 #services p {
   padding-top: 50px; }
 
-.portImg {
-  width: auto;
-  float: left;
-  height: 500px; }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 479px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    width: 100%; }
 
-.examples {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */ }
+  .portCon {
+    position: relative;
+    width: 100%; }
 
-/* Modal Content */
-.portPieces {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; }
+  .portExamples {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden; }
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold; }
+  .midText {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
 
-.close:hover,
-.close:focus {
-  color: #000;
+  .portCon:hover .portExamples {
+    opacity: 0.9; }
+
+  .portCon:hover .midText {
+    opacity: 1; }
+
+  .text {
+    background-color: #000;
+    color: white;
+    width: 300px; }
+
+  .text h3 {
+    font-size: 1em;
+    font-family: 'Avenir', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase; }
+
+  .text h5 {
+    font-size: 0.8em;
+    font-family: 'Avenir', sans-serif;
+    font-weight: lighter;
+    font-style: oblique; }
+
+  .midText a {
+    text-decoration: none;
+    color: #fff; }
+
+  .midText a:hover {
+    color: red; } }
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    width: 50%; }
+
+  .portCon {
+    position: relative;
+    width: 100%; }
+
+  .portExamples {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden; }
+
+  .midText {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+
+  .portCon:hover .portExamples {
+    opacity: 0.9; }
+
+  .portCon:hover .midText {
+    opacity: 1; }
+
+  .text {
+    background-color: #000;
+    color: white;
+    width: 300px; }
+
+  .text h3 {
+    font-size: 1em;
+    font-family: 'Avenir', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; }
+
+  .text h5 {
+    font-size: 0.8em;
+    font-family: 'Avenir', sans-serif;
+    font-weight: lighter;
+    font-style: oblique; }
+
+  .midText a {
+    text-decoration: none;
+    color: #fff; }
+
+  .midText a:hover {
+    color: red; } }
+@media screen and (min-width: 770px) {
+  .column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%; }
+
+  .portCon {
+    position: relative;
+    width: 100%; }
+
+  .portExamples {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden; }
+
+  .midText {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+
+  .portCon:hover .portExamples {
+    opacity: 0.9; }
+
+  .portCon:hover .midText {
+    opacity: 1; }
+
+  .text {
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    width: 200px; }
+
+  .text h3 {
+    font-size: 1em;
+    font-family: 'Avenir', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase; }
+
+  .text h5 {
+    font-size: 0.8em;
+    font-family: 'Avenir', sans-serif;
+    font-weight: lighter;
+    font-style: oblique; }
+
+  .midText a {
+    text-decoration: none;
+    color: #fff; }
+
+  .midText a:hover {
+    color: red; } }
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap; }
+
+/* Create four equal columns that sits next to each other */
+.column #portImg {
+  vertical-align: middle; }
+
+#portImg {
+  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+  filter: gray;
+  /* IE5+ */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .1s ease-in-out; }
+
+#portImg:hover {
+  filter: none;
+  -webkit-filter: grayscale(0); }
+
+.backBtn a {
+  font-family: 'Avenir', sans-serif;
+  padding: 15px;
   text-decoration: none;
-  cursor: pointer; }
+  text-transform: lowercase; }
 
-.proInfo h3 {
-  font-family: 'Avenir', sans-serif;
-  font-size: 2em;
-  font-weight: lighter;
-  text-transform: uppercase;
-  line-height: 2em;
-  clear: both; }
+.backBtn {
+  margin-top: 15px; }
 
-.proInfo h5 {
-  font-family: 'Avenir', sans-serif;
-  font-size: 1.4em;
-  text-transform: lowercase;
-  font-weight: lighter;
-  clear: both; }
+@media (max-width: 479px) {
+  .proInfo h3 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 0; }
 
-.proInfo h6 {
-  font-family: 'Avenir', sans-serif;
-  font-size: 1.2em;
-  font-weight: lighter;
-  clear: both; }
+  .proInfo h5 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.1em;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px; }
 
-.proInfo h4 {
-  font-family: 'Avenir', sans-serif;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: lighter;
-  clear: both; }
+  .proInfo h6 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin: 0; }
 
-.proInfo p {
-  font-family: 'Avenir', sans-serif;
-  font-size: 0.9em;
-  clear: both;
-  width: 50%; }
+  .proInfo h4 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0; }
 
-.proImg {
-  float: right;
-  width: 70%; }
+  .proInfo p {
+    font-family: 'Avenir', sans-serif;
+    font-size: 0.75em;
+    font-weight: lighter;
+    padding: 0;
+    margin-left: 20px; }
 
+  .proInfo {
+    width: 100%; }
+
+  .portfolio {
+    width: 90%;
+    margin: 0 auto; }
+
+  .portImg {
+    width: 40%;
+    float: right;
+    clear: both; }
+
+  #organVid {
+    width: 100%;
+    position: relative;
+    clear: both; }
+
+  #melloVidDes {
+    display: none; }
+
+  .velveetaLabels {
+    display: none; } }
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .proInfo h3 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 2em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 0; }
+
+  .proInfo h5 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.1em;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px; }
+
+  .proInfo h6 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin: 0; }
+
+  .proInfo h4 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0; }
+
+  .proInfo p {
+    font-family: 'Avenir', sans-serif;
+    font-size: 0.9em;
+    font-weight: lighter;
+    padding: 0;
+    margin-left: 20px; }
+
+  .proInfo {
+    width: 60%; }
+
+  .portfolio {
+    width: 90%;
+    margin: 0 auto; }
+
+  .portImg {
+    width: 40%;
+    float: right;
+    clear: both;
+    padding-left: 20px; }
+
+  #melloVidDes {
+    width: 40%;
+    float: right;
+    position: relative;
+    clear: both; }
+
+  #melloVidMob {
+    display: none; }
+
+  .velveetaLabels {
+    display: none; } }
+@media screen and (min-width: 770px) {
+  .proInfo h3 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 0; }
+
+  .proInfo h5 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px; }
+
+  .proInfo h6 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin: 0; }
+
+  .proInfo h4 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0; }
+
+  .proInfo p {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 0;
+    margin-left: 20px; }
+
+  .proInfo {
+    width: 50%; }
+
+  .portfolio {
+    width: 90%;
+    margin: 0 auto; }
+
+  .portImg {
+    width: 40%;
+    float: right;
+    clear: both; }
+
+  #melloVidDes {
+    width: 40%;
+    float: right;
+    position: relative;
+    clear: both; }
+
+  #melloVidMob {
+    display: none; }
+
+  .velveetaLabelsMob {
+    display: none; } }
 @font-face {
   font-family: 'cf_glitch_cityregular';
   src: url("/includes/cfglitchcity-regular-webfont.woff2") format("woff2"), url("/includes/cfglitchcity-regular-webfont.woff") format("woff");
