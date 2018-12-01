@@ -87,6 +87,26 @@
               <a href="portfolio-sites/mello.html"><img src="images/portfolio/port-mello.jpg" style="width:100%"></a>
             </div>
           </div>
+          <div class="form-popup" id="myForm">
+                <form action="scripts/sendEmail.php" method="POST" class="form-container"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
+                    <button type="btn" class="close" onclick="closeForm()">X</button>
+                    <h3 class="formHeader">Contact Me</h3>
+                    <label for="name"><h5 class="formSub">Name</h5></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+                    <label for="email"><h5 class="formSub">Email</h5></label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+    
+                    <label for="subject"><h5 class="formSub">Subject</h5></label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            
+                    <label for="message"><h5 class="formSub">Message</h5></label><br>
+                    <input type="message" name="message" placeholder="Message"></textarea>
+            
+                    <button class="btn submit" type="submit">Send</button>
+                    
+                </form>
+            </div>
 <body>
     
 

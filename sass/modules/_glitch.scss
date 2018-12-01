@@ -410,12 +410,13 @@
     width: 100%;
     height: 720px;
     clear: both;
-    margin-top: -100px;
-    background-image: url("../images/header.jpg");
+    margin-top: -80px;
+    background-image: url("/images/header.JPG");
     background: {
       repeat: no-repeat;
       position: center;
       size: cover;
+      color: #000;
     }
   }
   
@@ -431,7 +432,7 @@
     position: relative;
     color: white;
     mix-blend-mode: lighten;
-  
+
     &:before,
     &:after {
         content: attr(data-text);

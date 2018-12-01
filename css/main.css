@@ -134,7 +134,85 @@
       top: 25%;
       opacity: 1; }
     100% {
-      opacity: 0; } } }
+      opacity: 0; } }
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .open-button {
+    background-color: #fff;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 10%;
+    text-align: center; }
+
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 80%; }
+
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 100%;
+    padding: 10px;
+    background-color: white; }
+
+  /* Full-width input fields */
+  .form-container input[type=text] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1; }
+
+  .form-container input[type=message] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1; }
+
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none; }
+
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #666;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8; }
+
+  /* Add a red background color to the cancel button */
+  .form-container .close {
+    float: right;
+    border: none; }
+
+  .form-container .submit {
+    background-color: green; }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1; }
+
+  .formHeader {
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; }
+
+  .formSub {
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0; } }
 @media screen and (min-width: 480px) and (max-width: 769px) {
   #headerDes {
     display: none; }
@@ -183,7 +261,86 @@
     font-size: 1.3em; }
 
   #landingText {
-    display: none; } }
+    display: none; }
+
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .open-button {
+    background-color: #fff;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 5%;
+    text-align: center; }
+
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 50%; }
+
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 100%;
+    padding: 10px;
+    background-color: white; }
+
+  /* Full-width input fields */
+  .form-container input[type=text] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1; }
+
+  .form-container input[type=message] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1; }
+
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none; }
+
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #666;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8; }
+
+  /* Add a red background color to the cancel button */
+  .form-container .close {
+    float: right;
+    border: none; }
+
+  .form-container .submit {
+    background-color: green; }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1; }
+
+  .formHeader {
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; }
+
+  .formSub {
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0; } }
 @media (min-width: 769px) {
   #menuToggle {
     display: none; }
@@ -260,7 +417,89 @@
     color: blue; }
 
   nav a:visited {
-    color: #fff; } }
+    color: #fff; }
+
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .open-button {
+    background-color: #fff;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 5%;
+    text-align: center; }
+
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 30%; }
+
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: white; }
+
+  /* Full-width input fields */
+  .form-container input[type=text] {
+    width: 90%;
+    padding: 15px;
+    margin: 0 auto;
+    border: none;
+    background: #f1f1f1; }
+
+  .form-container input[type=message] {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    background: #f1f1f1; }
+
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none; }
+
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #666;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8; }
+
+  /* Add a red background color to the cancel button */
+  .form-container .close {
+    float: right;
+    border: none; }
+
+  .form-container .submit {
+    background-color: green; }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1; }
+
+  .formHeader {
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 0; }
+
+  .formSub {
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 5px; } }
 @media (max-width: 479px) {
   #whyHire {
     margin: 5px; }
@@ -374,75 +613,7 @@
     height: 250px;
     float: left;
     text-align: center;
-    margin-top: 30px; }
-
-  /* Button used to open the contact form - fixed at the bottom of the page */
-  .open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 100px;
-    text-align: center; }
-
-  /* The popup form - hidden by default */
-  .form-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9; }
-
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white; }
-
-  /* Full-width input fields */
-  .form-container input[type=text] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1; }
-
-  .form-container input[type=message] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1; }
-
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus {
-    background-color: #ddd;
-    outline: none; }
-
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-    background-color: #666;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8; }
-
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red; }
-
-  .form-container .submit {
-    background-color: green; }
-
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1; } }
+    margin-top: 30px; } }
 @media (max-width: 479px) {
   header h1 {
     font-family: 'Avenir', sans-serif;
@@ -745,11 +916,12 @@
     width: 100%;
     height: 720px;
     clear: both;
-    margin-top: -100px;
-    background-image: url("../images/header.jpg");
+    margin-top: -80px;
+    background-image: url("/images/header.JPG");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    background-color: #000; }
 
   .center__text {
     margin: auto;
@@ -1478,7 +1650,6 @@ html, body {
   margin: 0;
   padding: 0;
   margin-top: -10px;
-  background-image: url("images/cartographer.png");
   background-repeat: repeat; }
 
 p {
