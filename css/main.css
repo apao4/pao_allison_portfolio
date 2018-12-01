@@ -374,7 +374,75 @@
     height: 250px;
     float: left;
     text-align: center;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    text-align: center; }
+
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9; }
+
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white; }
+
+  /* Full-width input fields */
+  .form-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1; }
+
+  .form-container input[type=message] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1; }
+
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none; }
+
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #666;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8; }
+
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red; }
+
+  .form-container .submit {
+    background-color: green; }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1; } }
 @media (max-width: 479px) {
   header h1 {
     font-family: 'Avenir', sans-serif;
@@ -918,6 +986,15 @@
     flex: 25%;
     max-width: 25%; }
 
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
   .portCon {
     position: relative;
     width: 100%; }
@@ -950,6 +1027,9 @@
     background-color: #000;
     color: white;
     font-size: 16px;
+    height: 100%;
+    top: 50%;
+    bottom: 50%;
     width: 200px; }
 
   .text h3 {
@@ -1059,7 +1139,52 @@
   #melloVidDes {
     display: none; }
 
+  #melloVidMob {
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 60px; }
+
+  #melloVidBottle {
+    width: 100%; }
+
   .velveetaLabels {
+    display: none; }
+
+  #casualBTSDes {
+    display: none; }
+
+  #casualBTSTab {
+    display: none; }
+
+  #casualBTSMob {
+    width: 350px;
+    height: auto; }
+
+  #numbersDes {
+    display: none; }
+
+  #numbersTab {
+    display: none; }
+
+  #numbersMob {
+    width: 350px;
+    height: auto; }
+
+  #photoCheatTab {
+    display: none; }
+
+  #photoCheatDes {
+    display: none; }
+
+  #photoCheatMob {
+    width: 350px;
+    padding: 0;
+    text-align: center; }
+
+  #portInfographTab {
+    display: none; }
+
+  #portInfographDes {
     display: none; } }
 @media screen and (min-width: 480px) and (max-width: 769px) {
   .proInfo h3 {
@@ -1119,8 +1244,60 @@
   #melloVidMob {
     display: none; }
 
+  #melloVidBottle {
+    float: right;
+    width: 40%;
+    height: auto;
+    clear: both;
+    position: relative;
+    padding: 0; }
+
   .velveetaLabels {
-    display: none; } }
+    display: none; }
+
+  #casualBTSDes {
+    display: none; }
+
+  #casualBTSMob {
+    display: none; }
+
+  #casualBTSTab {
+    float: right;
+    width: 350px;
+    padding-left: 20px; }
+
+  #numbersDes {
+    display: none; }
+
+  #numbersMob {
+    display: none; }
+
+  #casualBTSTab {
+    float: right;
+    width: 350px;
+    padding-left: 20px; }
+
+  #photoCheatMob {
+    display: none; }
+
+  #photoCheatDes {
+    display: none; }
+
+  #photoCheatTab {
+    float: right;
+    width: 40%;
+    padding-left: 30px; }
+
+  #portInfographMob {
+    display: none; }
+
+  #portInfographDes {
+    display: none; }
+
+  #portInfographTab {
+    float: right;
+    width: 40%;
+    padding-left: 40px; } }
 @media screen and (min-width: 770px) {
   .proInfo h3 {
     font-family: 'Avenir', sans-serif;
@@ -1178,8 +1355,117 @@
   #melloVidMob {
     display: none; }
 
+  #melloVidBottle {
+    float: right;
+    clear: both;
+    position: relative;
+    width: 500px;
+    height: auto; }
+
   .velveetaLabelsMob {
-    display: none; } }
+    display: none; }
+
+  #casualBTSDes {
+    float: right; }
+
+  #casualBTSMob {
+    display: none; }
+
+  #casualBTSTab {
+    display: none; }
+
+  #numbersDes {
+    float: right; }
+
+  #numbersMob {
+    display: none; }
+
+  #numbersTab {
+    display: none; }
+
+  #photoCheatMob {
+    display: none; }
+
+  #photoCheatTab {
+    display: none; }
+
+  #photoCheatDes {
+    float: right;
+    width: 40%; }
+
+  #portInfographMob {
+    display: none; }
+
+  #portInfographTab {
+    display: none; }
+
+  #portInfographDes {
+    float: right;
+    width: 50%;
+    padding-left: 50px; } }
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap; }
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%; }
+
+.column img {
+  vertical-align: middle; }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%; } }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%; } }
+.column img {
+  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+  filter: gray;
+  /* IE5+ */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Chrome Canary */ }
+
+.column img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0); }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+.container:hover .image {
+  opacity: 0.3; }
+
+.container:hover .middle {
+  opacity: 1; }
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px; }
+
 @font-face {
   font-family: 'cf_glitch_cityregular';
   src: url("/includes/cfglitchcity-regular-webfont.woff2") format("woff2"), url("/includes/cfglitchcity-regular-webfont.woff") format("woff");
@@ -1215,5 +1501,8 @@ p {
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 10px; }
+
+#experience {
+  visibility: none; }
 
 /*# sourceMappingURL=main.css.map */

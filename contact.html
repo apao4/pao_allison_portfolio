@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href='css/main.css' rel="stylesheet">
+    <link href='css/animate.css' rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/mainwaypoint.js"></script>
+
+    <title>PORTFOLIO</title>
+</head>
+<header id="homeHeader">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <h2 class="hidden">Navigation</h2>
+            
+              <input id="checkbox" type="checkbox" />
+              
+          
+              <span></span>
+              <span></span>
+              <span></span>
+              
+          
+              <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About Me</li></a>
+                <a href="portfolio.html"><li>Portfolio</li></a>
+                <a href="#"><li>Resume</li></a>
+                <a href="#"><li>Contact Me</li></a>
+              </ul>
+            </div>
+            <div id="navTab">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="resume.html">Resume</a>
+                <a href="#">Portfolio</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <div id="navDes">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="#">Portfolio</a>
+                    <a href="contact.html">Contact Me</a>
+            </div>
+          </nav>
+            <div id="smallHeader">
+                <h1>Portfolio</h1>
+                <h1>Portfolio</h1>
+                <h1>Portfolio</h1>
+            </div>
+            <div class="center glitch">
+                    <h1 class="center__text glitch is-glitching" data-text="Contact Me">Contact Me</h1>
+                  </div>
+            <!-- <h3 id="headerCap">Developer. Designer. Videographer.</h3>  -->
+            <h3 id="headerDes">Developer. Designer. Videographer.</h3> 
+            <div id="landingText">
+                <p id="capDes">Designer</p>  
+                <p id="capDev">Developer</p> 
+                <p id="capVid">Videographer</p> 
+            </div>
+    </header>
+    <body>
+            <form action="scripts/sendEmail.php" method="POST"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+        
+                <label fpr="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+    </body>
+    </html>

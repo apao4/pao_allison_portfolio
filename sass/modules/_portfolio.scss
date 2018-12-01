@@ -162,6 +162,17 @@
         max-width: 25%;
     
     }
+
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
 .portCon {
     position: relative;
     width: 100%;
@@ -200,6 +211,9 @@
   background-color: #000;
   color: white;
   font-size: 16px;
+  height: 100%;
+  top: 50%;
+  bottom: 50%;
   width: 200px;
 }
 
@@ -258,3 +272,4 @@ filter: gray; /* IE5+ */
 filter: none;
 -webkit-filter: grayscale(0);
 }
+

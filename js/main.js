@@ -15,3 +15,74 @@ function myFunction() {
     navTab.classList.remove("sticky");
   }
 }
+
+var waypoint = new Waypoint({
+  element:document.getElementById("profile"),
+  handler:function(direction){
+      this.element.classList.add("fadeIn");
+      this.element.classList.add("animated");
+      //this.element.classList.add("see");
+  },
+  offset: "80%"   
+})
+
+var waypoint = new Waypoint({  
+  element:document.getElementById("experience"),
+  handler:function(direction){
+      this.element.classList.add("fadeIn");
+      this.element.classList.add("animated");
+      //this.element.classList.add("see");
+  },
+  offset: "80%"   
+})
+
+var waypoint = new Waypoint({  
+  element:document.getElementById("education"),
+  handler:function(direction){
+      this.element.classList.add("fadeIn");
+      this.element.classList.add("animated");
+      //this.element.classList.add("see");
+  },
+  offset: "80%"   
+})
+
+var waypoint = new Waypoint({  
+  element:document.getElementById("skills"),
+  
+  handler:function(direction){
+      this.element.classList.add("fadeIn");
+      this.element.classList.add("animated");
+      //this.element.classList.add("see");
+  },
+  offset: "80%"   
+})
+
+var waypoint = new Waypoint({  
+  
+  element:document.getElementById("contact"),
+  handler:function(direction){
+      this.element.classList.add("fadeIn");
+      this.element.classList.add("animated");
+      //this.element.classList.add("see");
+  },
+  offset: "80%"   
+})
+
+var waypoint = new Waypoint({  
+  
+  element:document.getElementById("traits"),
+  handler:function(direction){
+      this.element.classList.add("fadeIn");
+      this.element.classList.add("animated");
+      //this.element.classList.add("see");
+  },
+  offset: "80%"   
+})
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

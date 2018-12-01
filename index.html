@@ -102,7 +102,23 @@
                 <p>I love what I do and can't wait to work with you!</p>
             </div>
         </div>
-    
+        <button class="open-button" onclick="openForm()">Contact Me</button>
+        <div class="form-popup" id="myForm">
+            <form action="scripts/sendEmail.php" method="POST" class="form-container"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
+                <h3>Contact Me</h3>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+        
+                <label for="message">Message</label><br>
+                <input type="message" name="message" placeholder="Message"></textarea>
+        
+                <button class="btn submit" type="submit">Send</button>
+                <button type="btn" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
 
 </body>
 

@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 479px) {
-    .proInfo h3
+.proInfo h3
 {
     font-family: 'Avenir', sans-serif;
     font-size: 1.5em;
@@ -88,10 +88,83 @@
     display: none;
 }
 
+#melloVidMob
+{
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#melloVidBottle
+{
+    width: 100%;
+}
+
 .velveetaLabels
     {
         display: none;
     }
+
+#casualBTSDes
+{
+    display: none;
+}
+
+#casualBTSTab
+{
+    display: none;
+}
+
+#casualBTSMob
+{
+    width: 350px;
+    height: auto;
+}
+
+#numbersDes
+{
+    display: none;
+}
+
+#numbersTab
+{
+    display: none;
+}
+
+#numbersMob
+{
+    width: 350px;
+    height: auto;
+}
+
+#photoCheatTab
+{
+    display: none;
+}
+
+#photoCheatDes
+{
+    display: none;
+}
+
+#photoCheatMob
+{
+    width: 350px;
+    padding: 0;
+    text-align: center;
+}
+
+#portInfographTab
+{
+    display: none;
+}
+
+#portInfographDes
+{
+    display: none;
+}
+
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
@@ -173,11 +246,88 @@
         display: none;
     }
 
+    #melloVidBottle
+    {
+        float: right;
+        width: 40%;
+        height: auto;
+        clear: both;
+        position: relative;
+        padding: 0;
+    }
+
     .velveetaLabels
     {
         display: none;
     }
+
+    #casualBTSDes
+    {
+        display: none;
+    }
+
+    #casualBTSMob
+    {
+        display: none;
+    }
+
+    #casualBTSTab
+    {
+        float: right;
+        width: 350px;
+        padding-left: 20px;
+    }
     
+    #numbersDes
+    {
+        display: none;
+    }
+
+    #numbersMob
+    {
+        display: none;
+    }
+
+    #casualBTSTab
+    {
+        float: right;
+        width: 350px;
+        padding-left: 20px;
+    }
+
+    #photoCheatMob
+    {
+        display: none;
+    }
+
+    #photoCheatDes
+    {
+        display: none;
+    }
+
+    #photoCheatTab
+    {
+        float: right;
+        width: 40%;
+        padding-left: 30px;
+    }
+
+    #portInfographMob
+    {
+        display: none;
+    }
+
+    #portInfographDes
+    {
+        display: none;
+    }
+
+    #portInfographTab
+    {
+        float: right;
+        width: 40%;
+        padding-left: 40px;
+    }
     }
 
 @media screen and (min-width: 770px) {
@@ -258,9 +408,79 @@
     display: none;
 }
 
+#melloVidBottle
+{
+    float: right;
+    clear: both;
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
 .velveetaLabelsMob
 {
     display: none;
 }
 
+#casualBTSDes
+{
+    float: right;
+}
+
+#casualBTSMob
+{
+    display: none;
+}
+
+#casualBTSTab
+{
+    display: none;
+}
+
+#numbersDes
+{
+    float: right;
+}
+
+#numbersMob
+{
+    display: none;
+}
+
+#numbersTab
+{
+    display: none;
+}
+
+#photoCheatMob
+{
+    display: none;
+}
+
+#photoCheatTab
+{
+    display: none;
+}
+
+#photoCheatDes
+{
+    float: right;
+    width: 40%;
+}
+
+#portInfographMob
+    {
+        display: none;
+    }
+
+#portInfographTab
+    {
+        display: none;
+    }
+#portInfographDes
+{
+    float: right;
+    width: 50%;
+    padding-left: 50px;
+}
 }
