@@ -13,51 +13,82 @@
     
         <title>ABOUT ME</title>
     </head>
-<body>
-        <header id="aboutHeader">
-                <nav>
+    <header id="homeHeader">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <h2 class="hidden">Navigation</h2>
+                
+                  <input id="checkbox" type="checkbox" />
+                  
+              
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+              
+                  <ul id="menu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#"><li>About Me</li></a>
+                    <a href="resume.html"><li>Resume</li></a>
+                    <a href="portfolio.html"><li>Portfolio</li></a>
+                    <a href="contact.html"><li>Contact Me</li></a>
+                  </ul>
+                </div>
+                <div id="navTab">
                     <a href="index.html">Home</a>
-                    <a href="about.html">About Me</a>
+                    <a href="#">About Me</a>
                     <a href="resume.html">Resume</a>
                     <a href="portfolio.html">Portfolio</a>
                     <a href="contact.html">Contact Me</a>
-                </nav>
-                <h1>About Me</h1>
-                <h1>About Me</h1>
-                <h1>About Me</h1>
-                <div class="center glitch">
-                        <h1 class="center__text glitch is-glitching" data-text="Portfolio">Portfolio</h1>
-                      </div>
-            </header>
-            <div< id="about">
-                <h2>About Me</h2>
-                <h2>About Me</h2>
-                <h2>About Me</h2>
-                <p>Lollipop jujubes sugar plum toffee jelly-o chupa chups carrot cake wafer. 
-                    Jujubes donut dragée pastry chocolate cake dessert I love. Oat cake jujubes 
-                    I love icing cotton candy jelly lollipop. Cheesecake cookie oat cake toffee cake. 
-                    Cotton candy cake chocolate cake I love pudding cookie. Apple pie I love jelly 
-                    beans chupa chups fruitcake sugar plum.
-                </p>
-        </div>
-        <div< id="services">
-                <h2>Services</h2>
-                <h2>Services</h2>
-                <h2>Services</h2>
-                <div id="icons">
-                    <img class="servicesIcon" src="images/desktop-solid.svg">
-                    <img class="servicesIcon" src="images/pencil-ruler-solid.svg">
-                    <img class="servicesIcon" src="images/video-solid.svg">
                 </div>
-                <p>Lollipop jujubes sugar plum toffee jelly-o chupa chups carrot cake wafer. 
-                        Jujubes donut dragée pastry chocolate cake dessert I love. Oat cake jujubes 
-                        I love icing cotton candy jelly lollipop. Cheesecake cookie oat cake toffee cake. 
-                        Cotton candy cake chocolate cake I love pudding cookie. Apple pie I love jelly 
-                        beans chupa chups fruitcake sugar plum.
-                </p>
-        </div>
-
+                <div id="navDes">
+                        <a href="index.html">Home</a>
+                        <a href="#">About Me</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact Me</a>
+                </div>
+              </nav>
+                <div id="smallHeader">
+                    <h1>About Me</h1>
+                    <h1>About Me</h1>
+                    <h1>About Me</h1>
+                </div>
+                <!-- <div class="center glitch">
+                        <h1 class="center__text glitch is-glitching" data-text="Resume">Resume</h1>
+                      </div> -->
+                <!-- <h3 id="headerCap">Developer. Designer. Videographer.</h3>  -->
+                <h3 id="headerDes">Developer. Designer. Videographer.</h3> 
+                <div id="landingText">
+                    <p id="capDes">Designer</p>  
+                    <p id="capDev">Developer</p> 
+                    <p id="capVid">Videographer</p> 
+                </div>
+        </header>
+<body>
+             <div class="contactPopup">
+                <button class="open-button" onclick="openForm()"><img src="images/icons/comments-solid.svg"></button>
+                <div class="form-popup" id="myForm">
+                    <form action="scripts/sendEmail.php" method="POST" class="form-container"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
+                        <button type="btn" class="close" onclick="closeForm()">X</button>
+                        <h3 class="formHeader">Contact Me</h3>
+                        <label for="name"><h5 class="formSub">Name</h5></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                        <label for="email"><h5 class="formSub">Email</h5></label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email" required>
         
+                        <label for="subject"><h5 class="formSub">Subject</h5></label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                
+                        <label for="message"><h5 class="formSub">Message</h5></label><br>
+                        <input type="message" name="message" placeholder="Message"></textarea>
+                
+                        <button class="btn submit" type="submit">Send</button>
+                        
+                    </form>
+                </div>
+                </div>
     
 </body>
 </html>
