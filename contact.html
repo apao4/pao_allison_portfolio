@@ -52,9 +52,9 @@
             </div>
           </nav>
             <div id="smallHeader">
-                <h1>Portfolio</h1>
-                <h1>Portfolio</h1>
-                <h1>Portfolio</h1>
+                <h1>Contact Me</h1>
+                <h1>Contact Me</h1>
+                <h1>Contact Me</h1>
             </div>
             <div class="center glitch">
                     <h1 class="center__text glitch is-glitching" data-text="Contact Me">Contact Me</h1>
@@ -68,17 +68,32 @@
             </div>
     </header>
     <body>
-            <form action="scripts/sendEmail.php" method="POST"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
+        <div id="contactInfo">
+            <h3>Allison Pao</h3>
+            <h5>allisonpao@live.com</h5>
+            <h5>416-312-8815</h5>
+        </div>
+        <div id="contact">
+            <h3>Say Hello</h3>
+            <h6>Leave your message down below and I will get back to you as soon as possible.</h6>
+            <form action="scripts/sendEmail.php" method="POST" class="contactForm"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
+                <label for="name"><h5 class="contactSub">Name</h5></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+                <label for="email"><h5 class="contactSub">Email</h5></label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+    
+                <label for="phone"><h5 class="contactSub">Phone Number</h5></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
+
+                <label for="subject"><h5 class="contactSub">Subject</h5></label>
+                <input type="text" id="subject" name="email" placeholder="Subject" required>
+
+                <label for="message"><h5 class="contactSub">Message</h5></label><br>
+                <input type="message" name="message" placeholder="Message"></textarea>
         
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-        
-                <label fpr="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-        
-                <button type="submit">Submit</button>
+                <button type="submit" id="contactSubmit"><h5>Submit</h5></button>
             </form>
+        </div>
     </body>
     </html>
