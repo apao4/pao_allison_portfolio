@@ -469,6 +469,13 @@
         display: none;
     }
 
+    .sticky 
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
     #homeHeader
     {
         clear: both;
@@ -503,10 +510,11 @@
         text-transform: uppercase;
         width: 100%;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         clear: both;
-        background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
-        height: 50px;
+        background-color: #000;
+        // background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+        height: 20px;
     }
     #navDes a 
     {
@@ -598,7 +606,6 @@
   
   /* Set a style for the submit/login button */
   .form-container .btn {
-    background-color: #666;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -640,6 +647,11 @@
       margin: 0;
       margin-bottom: 15px;
       margin-top: 5px;
+  }
+
+  .contactBtn
+  {
+      color: white;
   }
     
     }

@@ -1,0 +1,54 @@
+//Footer 
+footer
+{
+    position: relative;
+    bottom: 0;
+    clear: both;
+    height: 50px;
+    margin: 0;
+    width: 100%;
+    background-color: #930000;
+    color: white;
+ }
+
+ footer h5
+ {
+     font-family: 'Avenir', sans-serif;
+     padding-left: 2%;
+     font-weight: lighter;
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     clear: both;
+     float: left;
+ }
+
+ @media screen and (max-width: 479px) {
+ .footerIcons
+ {
+    padding: 15px;
+    float: right;
+    color: #fff;
+    margin-top: 5px;
+    size: 100px;
+ }
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+.footerIcons
+{
+    padding: 15px;
+    float: right;
+    color: #fff;
+    margin-top: 5px;
+    size: 100px;
+}
+}
+
+@media screen and (min-width: 770px) {
+    .footerIcons
+    {
+        padding: 10px;
+        float: right;
+        color: #fff;
+    }  
+}

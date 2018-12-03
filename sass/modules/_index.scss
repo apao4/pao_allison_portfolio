@@ -151,5 +151,115 @@
         margin-top: 30px;
     }
 
+    #indexAbout
+    {
+        background-color: #000;
+    }
 
+    #indexAboutTitle 
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    #indexAboutTitle img
+    {
+        position: relative;
+    }
+
+    #indexAboutTitle h2
+    {
+        position: absolute;
+        top: 650px;
+        font-family: 'Avenir', sans-serif;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 410px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 3.5em;
+        letter-spacing: 0.4em;
+    }
+
+    #indexAboutTitle
+    {
+        margin: 0;
+    }
+
+    #indexAboutText
+    {
+        font-family: 'Avenir', sans-serif;
+        font-size: 1em;
+        width: 100%;
+        letter-spacing: 0.05em;
+        text-align: center;
+        padding: 0;
+    }
+
+    #indexAboutText p 
+    {
+        width: 55%;
+        text-align: center;
+        margin: 0 auto;
+        color: #f1f1f1;
+        padding-bottom: 50px;
+        font-weight: lighter;
+        font-size: 1em;
+        padding-top: 50px;
+        letter-spacing: 0.09em;
+    }
+
+    #indexAboutText a
+    {
+        color: #fff;
+        font-family: 'Avenir', sans-serif;
+        font-size: 1em;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+       
+    }
+    #indexServices
+    {
+        background-color: #d5d4d4;
+    }
+
+    #indexServicesTitle
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    #indexServicesTitle img
+    {
+        position: relative;
+    }
+
+    #indexServicesTitle h2
+    {
+        position: absolute;
+        top: 1240px;
+        font-family: 'Avenir', sans-serif;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 440px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 3.5em;
+        letter-spacing: 0.4em;
+    }
+
+    #serviceIcons
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fa
+    {
+        width: 200px;
+    }
 }

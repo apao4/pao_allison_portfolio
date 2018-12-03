@@ -8,6 +8,7 @@
 @import 'modules/work';
 @import 'modules/portfolio-grid';
 @import 'modules/contact';
+@import 'modules/footer';
 
 @font-face {
     font-family: 'cf_glitch_cityregular';
@@ -35,29 +36,18 @@ p
     font-family: 'Avenir', sans-serif;
 }
 
-.rotate 
-{
-    //Safari
-    -webkit-transform: rotate(-90deg);
-    //Firefox
-    -moz-transform: rotate(-90deg);
-    //IE
-    -ms-transform: rotate(-90deg);
-}
-
 .sectionLine
 {
     width: 10%;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+//Sticky Nav
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
   }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
   .sticky + .content {
     padding-top: 10px;
   }
@@ -66,3 +56,4 @@ p
   {
       visibility: none;
   }
+

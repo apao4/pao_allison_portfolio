@@ -351,6 +351,11 @@
   #headerCap {
     display: none; }
 
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%; }
+
   #homeHeader {
     clear: both;
     width: 100%;
@@ -380,11 +385,10 @@
     text-transform: uppercase;
     width: 100%;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     clear: both;
-    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), black);
-    /* Standard syntax (must be last) */
-    height: 50px; }
+    background-color: #000;
+    height: 20px; }
 
   #navDes a {
     padding-left: 70px;
@@ -458,7 +462,6 @@
 
   /* Set a style for the submit/login button */
   .form-container .btn {
-    background-color: #666;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -491,7 +494,10 @@
     letter-spacing: 0.1em;
     margin: 0;
     margin-bottom: 15px;
-    margin-top: 5px; } }
+    margin-top: 5px; }
+
+  .contactBtn {
+    color: white; } }
 @media (max-width: 479px) {
   #whyHire {
     margin: 5px; }
@@ -605,7 +611,91 @@
     height: 250px;
     float: left;
     text-align: center;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  #indexAbout {
+    background-color: #000; }
+
+  #indexAboutTitle {
+    text-align: center;
+    width: 100%; }
+
+  #indexAboutTitle img {
+    position: relative; }
+
+  #indexAboutTitle h2 {
+    position: absolute;
+    top: 650px;
+    font-family: 'Avenir', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 410px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3.5em;
+    letter-spacing: 0.4em; }
+
+  #indexAboutTitle {
+    margin: 0; }
+
+  #indexAboutText {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 0; }
+
+  #indexAboutText p {
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    color: #f1f1f1;
+    padding-bottom: 50px;
+    font-weight: lighter;
+    font-size: 1em;
+    padding-top: 50px;
+    letter-spacing: 0.09em; }
+
+  #indexAboutText a {
+    color: #fff;
+    font-family: 'Avenir', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none; }
+
+  #indexServices {
+    background-color: #d5d4d4; }
+
+  #indexServicesTitle {
+    text-align: center;
+    width: 100%; }
+
+  #indexServicesTitle img {
+    position: relative; }
+
+  #indexServicesTitle h2 {
+    position: absolute;
+    top: 1240px;
+    font-family: 'Avenir', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 440px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3.5em;
+    letter-spacing: 0.4em; }
+
+  #serviceIcons {
+    width: 100%;
+    text-align: center; }
+
+  .fa {
+    width: 200px; } }
 @media (max-width: 479px) {
   header h1 {
     font-family: 'Avenir', sans-serif;
@@ -1974,6 +2064,44 @@
     text-transform: uppercase;
     letter-spacing: 0.15em;
     padding: 0; } }
+footer {
+  position: relative;
+  bottom: 0;
+  clear: both;
+  height: 50px;
+  margin: 0;
+  width: 100%;
+  background-color: #930000;
+  color: white; }
+
+footer h5 {
+  font-family: 'Avenir', sans-serif;
+  padding-left: 2%;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  clear: both;
+  float: left; }
+
+@media screen and (max-width: 479px) {
+  .footerIcons {
+    padding: 15px;
+    float: right;
+    color: #fff;
+    margin-top: 5px;
+    size: 100px; } }
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .footerIcons {
+    padding: 15px;
+    float: right;
+    color: #fff;
+    margin-top: 5px;
+    size: 100px; } }
+@media screen and (min-width: 770px) {
+  .footerIcons {
+    padding: 10px;
+    float: right;
+    color: #fff; } }
 @font-face {
   font-family: 'cf_glitch_cityregular';
   src: url("/includes/cfglitchcity-regular-webfont.woff2") format("woff2"), url("/includes/cfglitchcity-regular-webfont.woff") format("woff");
@@ -1991,21 +2119,14 @@ html, body {
 p {
   font-family: 'Avenir', sans-serif; }
 
-.rotate {
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg); }
-
 .sectionLine {
   width: 10%; }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
   width: 100%; }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 10px; }
 
