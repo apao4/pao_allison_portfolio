@@ -73,7 +73,6 @@
     <div id="indexAbout">
         <div id="indexAboutTitle">
             <img src="images/aboutBackground.jpg">
-            <h2>About Me</h2>
         </div>
         <div id="indexAboutText">
             <p> As an eager young woman, Allison Pao continuously seeks new challenges and opportunities 
@@ -87,7 +86,6 @@
     <div id="indexServices">
         <div id="indexServicesTitle">
             <img src="images/servicesBackground.jpg">
-            <h2>Services</h2>
         </div>
         <div id="serviceIcons">
             <i class="fa fa-laptop data-ref" data-offset="1" style="font-size:75px;color:#fff;"></i>
@@ -100,8 +98,46 @@
             <p class="description1">Service Description</p>
         </div>
     </div>
+
+    <div id="indexRecent">
+        <div id="recentTitle">
+            <img src="images/recentWork.jpg">
+        </div>
+        <div id="recentWork">
+            <img class="recentWorkExam" src="images/portfolio/port-ifrc2.jpg">
+            <img class="recentWorkExam" src="images/portfolio/port-sports.jpg">
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+              <source src="videos/colourWater.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+        </video>
+      <!-- <div class="overlay-desc">
+         <h1>Subscribe for Updates</h1>
+      </div> -->
+     </div>
+     <div id="indexContactForm">
+         <form action>
+            <!-- <h3>Contact Me</h3> -->
+            <label for="name"><h5 class="indexForm">Name</h5></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email"><h5 class="indexForm">Email</h5></label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject"><h5 class="indexForm">Subject</h5></label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+    
+            <label for="message"><h5 class="indexForm">Message</h5></label><br>
+            <input type="message" name="message" placeholder="Message"></textarea>
+    
+            <button class="btn indexSubmit" type="submit">Send</button>
+         </form>
+     </div>
      
-    <div id="whyHire">
+    <!-- <div id="whyHire">
             <h2>Why Hire Me?</h2>
             <hr class="sectionLine">
             <div class="qualities">
@@ -134,7 +170,7 @@
                 <h5>Passionate</h5>
                 <p>I love what I do and can't wait to work with you!</p>
             </div>
-        </div>
+        </div> -->
         <div class="contactPopup">
         <button class="open-button" onclick="openForm()"><img class="contactBtn" src="images/icons/envelope-regular.svg"></button>
         <div class="form-popup" id="myForm">

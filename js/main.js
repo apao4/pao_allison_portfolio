@@ -39,9 +39,9 @@ var waypoint = new Waypoint({
   handler:function(direction){
       this.element.classList.add("fadeIn");
       this.element.classList.add("animated");
-      //this.element.classList.add("see");
+      this.element.classList.add("visible")
   },
-  offset: "80%"   
+  offset: "90%"   
 })
 
 var waypoint = new Waypoint({  
@@ -49,9 +49,9 @@ var waypoint = new Waypoint({
   handler:function(direction){
       this.element.classList.add("fadeIn");
       this.element.classList.add("animated");
-      //this.element.classList.add("see");
+      this.element.classList.add("visible");
   },
-  offset: "80%"   
+  offset: "90%"   
 })
 
 var waypoint = new Waypoint({  

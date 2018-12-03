@@ -7,7 +7,7 @@
         //let targetURL = "./includes/connect.php?modelNo=R58"; //this is the url we have open in the browser window ow //this is a hard coded link
         
         //whenever we click on a thumbnail, pass its id to the php query 
-        let targetURL = `./includes/functions.php?service=${this.id}`; 
+        let targetURL = `/includes/functions.php?service=${this.id}`; 
 
 
         fetch(targetURL) //like telling your dog to go fetch the data from the url and bring it back! good doggy!
@@ -21,10 +21,8 @@
         console.log(error); //if anything broke, lot it in the console    
     }); 
     
-//just trying to get the information we want e.g. price. 
-    function showService(data) { //data accepting what is happening up top. 
-        //debugger; //comment out after bc you dont need to see what you did wrong anymore
-        //parse the DB info and put it where it neds to go
+
+    function showService(data) { 
         const { service, description } = data; //destructuring assignmnet => MDN JS destructuring 
 
 
