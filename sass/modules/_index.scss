@@ -726,7 +726,7 @@
 
     #indexAbout
     {
-        background-color: red;
+        background-color: #000;
     }
 
     #indexAboutTitle 
@@ -779,6 +779,7 @@
         letter-spacing: 0.09em;
         text-align: justify;
         text-justify: inter-word;
+        line-height: 1.7em;
     }
 
     #indexAboutText a
@@ -1029,7 +1030,12 @@
     {
         width: 75px;
     }
-    
+
+    #mute
+    {
+        width: 75px;
+    }
+
     #controls .btn 
     {
         background-color: #000;
@@ -1037,18 +1043,25 @@
         border: none;
     }
 
-    #progress-bar
+    #curTime 
     {
-        width: 45%;
-        text-align: center;
-        margin: 0 auto;
+        font-family: 'Avenir', sans-serif;
+        font-size: 1em;
         color: #fff;
     }
 
-    #progress p
+    #totalTime
     {
+        font-family: 'Avenir', sans-serif;
+        font-size: 1em;
         color: #fff;
     }
 
+    #slash
+    {
+        font-family: 'Avenir', sans-serif;
+        font-size: 1em;
+        color: #fff;
+    }
    
     }
