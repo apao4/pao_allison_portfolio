@@ -123,7 +123,7 @@
     #controls
     {
         text-align: center;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         padding-bottom: 20px;
     }
@@ -150,12 +150,12 @@
     
     #playPauseBtn
     {
-        width: 50px;
+        width: 35px;
     }
 
     #stopBtn
     {
-        width: 65px;
+        width: 35px;
     }
     
     #controls .btn 
@@ -166,17 +166,36 @@
         display: inline;
     }
 
-    #progress-bar
+    #timeline
     {
-        width: 90%;
-        text-align: center;
-        margin: 0 auto;
-        color: #fff;
+        width: 60px;
     }
 
-    #progress p
+    #volume
     {
-        color: #fff;
+        width: 60px;
+    }
+
+    #curTime
+    {
+        display: none;
+    }
+
+    #slash
+    {
+        display: none;
+    }
+
+    #totalTime
+    {
+        display: none;
+    }
+
+    #mute
+    {
+        width: 20px;
+        margin-right: 30px;
+        margin-left: 0;
     }
 
     //Services
@@ -487,6 +506,95 @@
     {
         text-shadow: 2px 2px 20px #fff;
     }
+
+    //Animation Reel  
+    #animationReel
+    {
+        width: 100%;
+        background-color: #000;
+    }
+    #controls
+    {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    #animationReel
+    {
+        width: 100%;
+    }
+
+    #controls button:hover
+    {
+        cursor: pointer;
+    }
+    
+    #playPauseBtn
+    {
+        width: 75px;
+    }
+
+    #stopBtn
+    {
+        width: 75px;
+    }
+    
+    #controls .btn 
+    {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        display: inline;
+    }
+
+    #timeline
+    {
+        width: 100px;
+    }
+
+    #volume
+    {
+        width: 80px;
+    }
+
+    #curTime
+    {
+        font-family: 'Avenir', sans-serif;
+        color: #fff;
+        font-size: 0.8em;
+        margin-left: 20px;
+    }
+
+    #slash
+    {
+        font-family: 'Avenir', sans-serif;
+        color: #fff;
+        font-size: 0.8em;
+    }
+
+    #totalTime
+    {
+        font-family: 'Avenir', sans-serif;
+        color: #fff;
+        font-size: 0.8em;
+    }
+
+    #mute
+    {
+        width: 20px;
+        margin-right: 50px;
+        margin-left: 20px;
+
+    }
+
+    #fullscreenbtn
+    {
+        margin-left: 20px;
+        font-size: 1em;
+    }
+
 
     //Services
     #indexServices
