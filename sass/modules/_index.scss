@@ -30,14 +30,12 @@
         font-weight: lighter;
         padding-bottom: 30px;
     }
-
     .whyHireIcons
     {
         width: 65px;
         height: 65px
 
     }
-
     .qualities
     {
         width: 50%;
@@ -46,6 +44,314 @@
         text-align: center;
     }
 
+    //About 
+    #indexAbout
+    {
+        background-color: #000;
+    }
+
+    #indexAboutTitle 
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    #indexAboutTitle
+    {
+        margin: 0;
+    }
+
+    #indexAboutText
+    {
+        font-family: 'Avenir', sans-serif;
+        font-size: 1em;
+        width: 100%;
+        letter-spacing: 0.05em;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    #indexAboutText p 
+    {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        color: #f1f1f1;
+        padding-bottom: 40px;
+        font-weight: lighter;
+        font-size: 0.8em;
+        padding-top: 50px;
+        letter-spacing: 0.1em;
+    }
+
+    #indexAboutText a
+    {
+        color: #fff;
+        font-family: 'Avenir', sans-serif;
+        font-size: 0.8em;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-bottom: 50px;
+    }
+
+    #indexAbout img 
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0 ;
+    }
+
+    .linkMore a
+    {
+        padding-bottom: 50px;
+    }
+
+    #indexAboutText a:hover
+    {
+        text-shadow: 2px 2px 8px #FF0000;
+    }
+
+    //Animation Reel  
+    #animationReel
+    {
+        width: 100%;
+        background-color: #000;
+    }
+    #controls
+    {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    #animationReel
+    {
+        width: 100%;
+    }
+
+    #controls button:hover
+    {
+        cursor: pointer;
+    }
+
+    #volume-inc-button
+    {
+        width: 100px;
+    }
+
+    #volume-dec-button
+    {
+        width: 100px;
+    }
+    
+    #playPauseBtn
+    {
+        width: 50px;
+    }
+
+    #stopBtn
+    {
+        width: 65px;
+    }
+    
+    #controls .btn 
+    {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        display: inline;
+    }
+
+    #progress-bar
+    {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    #progress p
+    {
+        color: #fff;
+    }
+
+    //Services
+    #indexServices
+    {
+        background-color: #d5d4d4;
+    }
+
+    #indexServices img 
+    {
+        width: 100%;
+    }
+
+    #indexServicesTitle
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    #indexServicesTitle h3
+    {
+        position: absolute;
+        top: 1240px;
+        font-family: 'Avenir', sans-serif;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 440px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 3.5em;
+        letter-spacing: 0.4em;
+    }
+
+    #serviceInfo h3
+    {
+        font-family: 'Avenir', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        padding: 0;
+    }
+
+    #serviceInfo 
+    {
+        width: 85%;
+        text-align: left;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    #serviceIcons
+    {
+        text-align: center;
+        float: left;
+        font-size: 50px;
+        display: inline;
+        clear: both;
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    //Recent Work
+    #indexRecent
+    {
+        background-color: #000;
+        width: 100%;
+    }
+
+    #recentTitle img 
+    {
+        width: 100%;
+    }
+
+    .recentWorkExam
+    {
+        width: 100%;
+        padding: 0;
+        float: left;
+    }
+
+    .recentWorkExam
+    {
+        filter: gray; /* IE5+ */
+        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    }
+
+    //Contact Form
+    #indexContactForm
+    {
+        width: 75%;
+        background-image: url("/images/contactBackground.jpg");
+        margin: 0 auto;
+            
+    }
+    #indexContactForm h3
+    {
+        font-family: 'Avenir', sans-serif;
+        color: #000;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: lighter;
+        width: 100%;
+    }
+
+    .indexForm
+    {
+        font-family: 'Avenir', sans-serif;
+        display: block;
+    }
+
+    #indexContactForm input[type=message] 
+    {
+        width: 75%;
+        height: 50px;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    #indexContactForm input[type=text] 
+    {
+        width: 75%;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    #indexContactForm label
+    {
+        display: none;
+    }
+
+    .indexSubmit
+    {
+        background-color: #666;
+        height: 30px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+        margin-bottom: 10px;
+        margin-left: 140px;
+        margin-top: 20px;
+        float: right;
+    }
+
+        .indexSubmit:hover
+    {
+        background-color: #993333;
+        height: 30px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+        margin-bottom: 10px;
+        margin-left: 140px;
+        margin-top: 20px;
+        float: right;
+    }
+
+    #contactVid
+    {
+        display: none;
+    }
+
+    #contactMobImg
+    {
+        width: 100%;
+    }
     }
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
@@ -94,6 +400,273 @@
         height: 250px;
         float: left;
         text-align: center;
+    }
+
+    #indexAbout
+    {
+        background-color: #000;
+    }
+
+    #indexAboutTitle 
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    #indexAboutTitle img 
+    {
+        width: 100%;
+    }
+
+    #indexAboutTitle h2
+    {
+        position: absolute;
+        top: 650px;
+        font-family: 'Avenir', sans-serif;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 410px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 3.5em;
+        letter-spacing: 0.4em;
+    }
+
+    #indexAboutTitle
+    {
+        margin: 0;
+    }
+
+    #indexAboutText
+    {
+        font-family: 'Avenir', sans-serif;
+        font-size: 1em;
+        width: 100%;
+        letter-spacing: 0.05em;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    #indexAboutText p 
+    {
+        width: 65%;
+        text-align: center;
+        margin: 0 auto;
+        color: #f1f1f1;
+        padding-bottom: 40px;
+        font-weight: lighter;
+        font-size: 0.9em;
+        padding-top: 50px;
+        letter-spacing: 0.09em;
+        line-height: 1.9em;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    #indexAboutText a
+    {
+        color: #fff;
+        font-family: 'Avenir', sans-serif;
+        font-size: 1em;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-bottom: 50px;
+       
+    }
+
+    .linkMore a
+    {
+        padding-bottom: 50px;
+    }
+
+    #indexAboutText a:hover
+    {
+        text-shadow: 2px 2px 20px #fff;
+    }
+
+    //Services
+    #indexServices
+    {
+        background-color: #d5d4d4;
+    }
+
+    #indexServices img 
+    {
+        width: 100%;
+    }
+
+    #indexServicesTitle
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    #indexServicesTitle h3
+    {
+        position: absolute;
+        top: 1240px;
+        font-family: 'Avenir', sans-serif;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 440px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 3.5em;
+        letter-spacing: 0.4em;
+    }
+
+    #serviceInfo h3
+    {
+        font-family: 'Avenir', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        padding: 0;
+    }
+
+    #serviceInfo 
+    {
+        width: 85%;
+        text-align: left;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+
+    #serviceIcons
+    {
+        text-align: center;
+        float: left;
+        font-size: 45px;
+        display: inline;
+        clear: both;
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    //Recent Work
+    #indexRecent
+    {
+        background-color: #000;
+        width: 100%;
+    }
+
+    #recentTitle img 
+    {
+        width: 100%;
+    }
+
+    .recentWorkExam
+    {
+        width: 50%;
+        display: inline-block;
+        padding: 0;
+        float: left;
+    }
+
+    .recentWorkExam
+    {
+        filter: gray; /* IE5+ */
+        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        -webkit-transition: all .1s ease-in-out;  
+    }
+        
+    .recentWorkExam:hover 
+    {
+        filter: none;
+        -webkit-filter: grayscale(0);
+    }
+
+    //Contact Form
+    #contactMobImg
+    {
+        display: none;
+    }
+    #indexContactForm
+    {
+        width: 50%;
+        float: left;
+        background-image: url("/images/contactBackground.jpg");
+            
+    }
+    #indexContactForm h3
+    {
+        font-family: 'Avenir', sans-serif;
+        color: #000;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: lighter;
+        width: 100%;
+        margin-left: 20px;      
+    }
+
+    .indexForm
+    {
+        font-family: 'Avenir', sans-serif;
+        display: block;
+    }
+
+    #indexContactForm input[type=message] 
+    {
+        width: 75%;
+        height: 50px;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        border: none;
+        margin-left: 35px;
+        float: right;
+        border-bottom: 1px solid black;
+    }
+
+    #indexContactForm input[type=text] 
+    {
+        width: 75%;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        border: none;
+        margin-left: 35px;
+        float: right;
+        border-bottom: 1px solid black;
+    }
+
+    #indexContactForm label
+    {
+        display: none;
+    }
+
+        .indexSubmit
+    {
+        background-color: #666;
+        height: 30px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+        margin-bottom: 10px;
+        margin-left: 140px;
+        margin-top: 20px;
+        float: right;
+    }
+
+        .indexSubmit:hover
+    {
+        background-color: #993333;
+        height: 30px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+        margin-bottom: 10px;
+        margin-left: 140px;
+        margin-top: 20px;
+        float: right;
     }
 }
 
@@ -153,7 +726,7 @@
 
     #indexAbout
     {
-        background-color: #000;
+        background-color: red;
     }
 
     #indexAboutTitle 
@@ -190,6 +763,7 @@
         letter-spacing: 0.05em;
         text-align: center;
         padding: 0;
+        padding-bottom: 50px;
     }
 
     #indexAboutText p 
@@ -198,11 +772,13 @@
         text-align: center;
         margin: 0 auto;
         color: #f1f1f1;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
         font-weight: lighter;
         font-size: 1em;
         padding-top: 50px;
         letter-spacing: 0.09em;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     #indexAboutText a
@@ -214,8 +790,21 @@
         width: 100%;
         text-transform: uppercase;
         text-decoration: none;
+        padding-bottom: 50px;
        
     }
+
+    .linkMore a
+    {
+        padding-bottom: 50px;
+    }
+
+    #indexAboutText a:hover
+    {
+        text-shadow: 2px 2px 20px #fff;
+    }
+
+    //Services
     #indexServices
     {
         background-color: #d5d4d4;
@@ -227,7 +816,7 @@
         width: 100%;
     }
 
-    #indexServicesTitle h2
+    #indexServicesTitle h3
     {
         position: absolute;
         top: 1240px;
@@ -242,9 +831,26 @@
         letter-spacing: 0.4em;
     }
 
+    #serviceInfo h3
+    {
+        font-family: 'Avenir', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        padding: 0;
+    }
+
+    #serviceInfo 
+    {
+        width: 55%;
+        text-align: left;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+
     #serviceIcons
     {
-        width: 100%;
+        font-size: 75px;
         text-align: center;
     }
 
@@ -253,6 +859,7 @@
         width: 200px;
     }
 
+    //Recent Work
     #indexRecent
     {
         background-color: #000;
@@ -267,27 +874,27 @@
         float: left;
     }
 
-    .recentWorkExam{
-
-        /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    .recentWorkExam
+    {
         filter: gray; /* IE5+ */
         -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
         -webkit-transition: all .1s ease-in-out;  
-        }
+    }
         
-        .recentWorkExam:hover {
+    .recentWorkExam:hover 
+    {
         filter: none;
         -webkit-filter: grayscale(0);
-        }
+    }
 
-        #indexContactForm
-        {
-            width: 50%;
-            float: left;
-            background-image: url("/images/contactBackground.jpg");
+    #indexContactForm
+    {
+        width: 50%;
+        float: left;
+        background-image: url("/images/contactBackground.jpg");
             
-        }
-        #indexContactForm h3
+    }
+    #indexContactForm h3
         {
             font-family: 'Avenir', sans-serif;
             color: #000;
@@ -362,4 +969,86 @@
         margin-top: 20px;
         float: right;
     }
-}
+
+    .glitchImg {
+        font-family: Helvetica;
+        font-size: 80px;
+        display:inline-block;
+        top:10%;
+      }
+      .glitchImg:hover{
+        animation: noise-3 1s linear infinite;
+      }
+      
+      @keyframes noise-3 {
+        0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+        4.3% {opacity: 1; transform: scaleY(1.5);}
+        43% {opacity: 1; transform: scaleX(10); transform: scaleY(.1);}
+      }
+
+    //Animation Reel  
+    #animationReel
+    {
+        width: 100%;
+        background-color: #000;
+    }
+    #controls
+    {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    #animationReel
+    {
+        width: 100%;
+    }
+
+    #controls button:hover
+    {
+        cursor: pointer;
+    }
+
+    #volume-inc-button
+    {
+        width: 200px;
+    }
+
+    #volume-dec-button
+    {
+        width: 200px;
+    }
+    
+    #playPauseBtn
+    {
+        width: 75px;
+    }
+
+    #stopBtn
+    {
+        width: 75px;
+    }
+    
+    #controls .btn 
+    {
+        background-color: #000;
+        color: #fff;
+        border: none;
+    }
+
+    #progress-bar
+    {
+        width: 45%;
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    #progress p
+    {
+        color: #fff;
+    }
+
+   
+    }

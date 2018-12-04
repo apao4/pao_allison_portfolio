@@ -38,13 +38,7 @@
                 <a href="contact.html"><li>Contact Me</li></a>
               </ul>
             </div>
-            <div id="navTab">
-                <a href="#">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="resume.html">Resume</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact Me</a>
-            </div>
+            
             <div id="navDes">
                 <a href="#">Home</a>
                 <a href="about.html">About Me</a>
@@ -71,7 +65,7 @@
     </header>  
 
     <div id="indexAbout">
-        <div id="indexAboutTitle">
+        <div id="indexAboutTitle" class="glitchImg">
             <img src="images/aboutBackground.jpg">
         </div>
         <div id="indexAboutText">
@@ -81,35 +75,66 @@
             </p>
             <a class="linkMore" href="about.html">Read More ></a>
         </div>
+    <div id="reelPlayer">
+         <video width="1000px" height="auto" id="animationReel" width="1000px">
+            <source src="videos/casual2018.m4v" type="video/mp4">
+         </video>
+         <div id="controls">
+            <button id='playPauseBtn' class='play btn' title='play'
+            onclick='togglePlayPause();'>PLAY</button>
+            <button id='stopBtn' class='stop btn' title='stop' onclick='stopPlayer();'>STOP</button>
+            
+            <input id="timeline" type="range" min="0" max="100" value="0" step="1">
+            <span id="curTime">00:00</span> / <span id="totalTime">00:00</span>
+            <button id="mute">MUTES</button>
+            <input id="volume" type="range" min="0" max="100" value="100" step="1">
+            <button id="fullscreenbtn">[ &nbsp; ]</button>
+            <!-- <div id="volumeControl">
+		<i class="fa fa-volume-down"></i>
+		<div id="volume"></div>
+		<i class="fa fa-volume-up"></i>
+    </div> -->
+            
+        </div>
+        </div>
+    </div>
         
     </div>
     <div id="indexServices">
-        <div id="indexServicesTitle">
+        <div id="indexServicesTitle" class="glitchImg">
             <img src="images/servicesBackground.jpg">
         </div>
         <div id="serviceIcons">
-            <i class="fa fa-laptop data-ref" data-offset="1" style="font-size:75px;color:#fff;"></i>
-            <i class="fa fa-pencil data-ref" data-offset="2" style="font-size:75px;color:#fff;"></i>
-            <i class="fa fa-video-camera data-ref" data-offset="3" style="font-size:75px;color:#fff;"></i>
-            <i class="fa fa-camera data-ref" data-offset="4" style="font-size:75px;color:#fff;"></i>
+            <div class="glitchImg">
+                <i class="fa fa-laptop data-ref" data-offset="1" style="color:#fff;"></i>
+            </div>
+            <div class="glitchImg">
+                <i class="fa fa-pencil data-ref" data-offset="2" style="color:#fff;"></i>
+            </div>
+            <div class="glitchImg">
+                <i class="fa fa-video-camera data-ref" data-offset="3" style="color:#fff;"></i>
+            </div>
+            <div class="glitchImg">
+                <i class="fa fa-camera data-ref" data-offset="4" style="color:#fff;"></i>
+            </div>
         </div>
         <div id="serviceInfo">
-            <h3 class="service1">Service Title</h3>
-            <p class="description1">Service Description</p>
+            <h3 class="service1">Service</h3>
+            <p class="description1">Description</p>
         </div>
     </div>
 
     <div id="indexRecent">
         <div id="recentTitle">
-            <img src="images/recentWork.jpg">
+            <img src="images/recentWork.jpg" class="glitchImg">
         </div>
         <div id="recentWork">
-            <img class="recentWorkExam" src="images/portfolio/port-ifrc2.jpg">
-            <img class="recentWorkExam" src="images/portfolio/port-sports.jpg">
+            <a href="portfolio-sites/ifrc.html"><img class="recentWorkExam" src="images/portfolio/port-ifrc3.jpg"></a>
+            <a href="portfolio-sites/ifrc.html"><img class="recentWorkExam" src="images/portfolio/port-ifrc1.jpg"></a>
         </div>
     </div>
 
-    <div class="video-container">
+    <div id="contactVid">
         <video autoplay loop muted>
               <source src="videos/colourWater.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -119,6 +144,7 @@
       </div> -->
      </div>
      <div id="indexContactForm">
+         <img id="contactMobImg" src="images/contactBackground.jpg">
          <form action>
             <!-- <h3>Contact Me</h3> -->
             <label for="name"><h5 class="indexForm">Name</h5></label>
@@ -206,6 +232,7 @@
     <script src="js/database.js"></script>
     <script src="js/database.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/videoplayer.js"></script>
 
 
 </html>
