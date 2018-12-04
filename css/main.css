@@ -1367,7 +1367,8 @@
     top: 10%; }
 
   .glitchImg:hover {
-    animation: noise-3 1s linear infinite; }
+    animation: noise-3 0.5s linear;
+    animation-iteration-count: 1; }
 
   @keyframes noise-3 {
     0%,3%,5%,42%,44%,100% {

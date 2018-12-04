@@ -1085,8 +1085,9 @@
         display:inline-block;
         top:10%;
       }
-      .glitchImg:hover{
-        animation: noise-3 1s linear infinite;
+    .glitchImg:hover{
+        animation: noise-3 0.5s linear;
+        animation-iteration-count: 1; //Will only glitch once on hover so that it doesn't take away from image
       }
       
       @keyframes noise-3 {
