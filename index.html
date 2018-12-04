@@ -17,6 +17,7 @@
     <title>ALLISON PAO</title>
 </head>
 <body>
+<div id="indexBack">
     <header id="homeHeader">
         <nav role="navigation">
             <div id="menuToggle">
@@ -47,27 +48,30 @@
                 <a href="contact.html">Contact Me</a>
             </div>
           </nav>
-            <div id="smallHeader">
+            <div id="smallHeader" class="animated fadeOut">
                 <h1>Allison Pao</h1>
                 <h1>Allison Pao</h1>
                 <h1>Allison Pao</h1>
+            </div>
+            <div id="headerLogo">
+                <img class="animated fadeIn" id="aplogo" src="images/logo-white.png" width="200px">
             </div>
             <!-- <div class="center glitch">
                     <h1 class="center__text glitch is-glitching" data-text="Allison Pao">Allison Pao</h1>
                   </div> -->
             <!-- <h3 id="headerCap">Developer. Designer. Videographer.</h3>  -->
-            <h3 id="headerDes">Developer. Designer. Videographer.</h3> 
+            <h3 id="headerDes" class="animated fadeIn">Developer. Designer. Videographer.</h3> 
             <div id="landingText">
                 <p id="capDes">Designer</p>  
                 <p id="capDev">Developer</p> 
                 <p id="capVid">Videographer</p> 
             </div>
     </header>  
-
-    <div id="indexAbout">
-        <div id="indexAboutTitle">
-            <img src="images/aboutBackground.jpg">
-        </div>
+<div id="indexAbout">
+            <button class="open-button stickyCon" onclick="openForm()"><i class="fa fa-envelope"></i></button>
+            <div class="splitTextDark">
+                    <h1 data-word="About Me">About Me</h1>
+                </div>
         <div id="indexAboutText">
             <p> As an eager young woman, Allison Pao continuously seeks new challenges and opportunities 
                 to use her creativity and talent.  Whether these be in and around her two campuses or in her community, she 
@@ -99,52 +103,51 @@
         </div>
     </div>
         
-    </div>
+    
     <div id="indexServices">
-        <div id="indexServicesTitle">
-            <img src="images/servicesBackground.jpg">
+        <div class="splitTextLight">
+            <h1 data-word="Services">Services</h1>
         </div>
         <div id="serviceIcons">
             <div class="glitchImg">
-                <i class="fa fa-laptop data-ref" data-offset="1" style="color:#fff;"></i>
+                <i class="fa fa-laptop data-ref" data-offset="1" style="color:#646464;"></i>
             </div>
             <div class="glitchImg">
-                <i class="fa fa-pencil data-ref" data-offset="2" style="color:#fff;"></i>
+                <i class="fa fa-pencil data-ref" data-offset="2" style="color:#646464;"></i>
             </div>
             <div class="glitchImg">
-                <i class="fa fa-video-camera data-ref" data-offset="3" style="color:#fff;"></i>
+                <i class="fa fa-video-camera data-ref" data-offset="3" style="color:#646464;"></i>
             </div>
             <div class="glitchImg">
-                <i class="fa fa-camera data-ref" data-offset="4" style="color:#fff;"></i>
+                <i class="fa fa-camera data-ref" data-offset="4" style="color:#646464;"></i>
             </div>
         </div>
         <div id="serviceInfo">
             <h3 class="service1">Service</h3>
             <p class="description1">Description</p>
         </div>
+        <div id="skillsContainer">
+            <div class="skills">
+            </div>
+        </div>
     </div>
 
     <div id="indexRecent">
-        <div id="recentTitle">
-            <img src="images/recentWork.jpg">
+        <div class="splitTextDark">
+            <h1 data-word="Recent">Recent</h1>
         </div>
         <div id="recentWork">
             <a href="portfolio-sites/ifrc.html"><img class="recentWorkExam glitchImg" src="images/portfolio/port-ifrc3.jpg"></a>
             <a href="portfolio-sites/ifrc.html"><img class="recentWorkExam glitchImg" src="images/portfolio/port-ifrc1.jpg"></a>
         </div>
     </div>
+</div>
+    
 
-    <div id="contactVid">
-        <video autoplay loop muted>
-              <source src="videos/colourWater.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-        </video>
-      <!-- <div class="overlay-desc">
-         <h1>Subscribe for Updates</h1>
-      </div> -->
-     </div>
      <div id="indexContactForm">
-         <img id="contactMobImg" src="images/contactBackground.jpg">
+            <div class="splitTextLight">
+                    <h1 data-word="Contact">Contact</h1>
+                </div>
          <form action>
             <!-- <h3>Contact Me</h3> -->
             <label for="name"><h5 class="indexForm">Name</h5></label>
@@ -198,7 +201,7 @@
             </div>
         </div> -->
         <div class="contactPopup">
-        <button class="open-button" onclick="openForm()"><img class="contactBtn" src="images/icons/envelope-regular.svg"></button>
+        
         <div class="form-popup" id="myForm">
             <form action="scripts/sendEmail.php" method="POST" class="form-container"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
                 <button type="btn" class="close" onclick="closeForm()">X</button>
@@ -219,7 +222,7 @@
                 
             </form>
         </div>
-        </div>
+
 
 </body>
 <footer>
@@ -228,6 +231,7 @@
     <a href="www.linkedin.com/in/allison-pao-722551176/"><i class="fa fa-linkedin footerIcons" style="font-size:35px;color:#fff;"></i></a>
     <a href="www.github.com/apao4"><i class="fa fa-github footerIcons" style="font-size:35px;color:#fff;"></i></a> 
 </footer>
+</div>
 
     <script src="js/database.js"></script>
     <script src="js/database.js"></script>

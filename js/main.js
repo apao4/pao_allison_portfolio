@@ -16,6 +16,7 @@ function myFunction() {
   }
 }
 
+
 var waypoint = new Waypoint({
   element:document.getElementById("profile"),
   handler:function(direction){

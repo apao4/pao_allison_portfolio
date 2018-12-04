@@ -10,6 +10,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 	<script src="js/noframework.waypoints.min.js"></script>
     <script src="js/mainwaypoint.js"></script>
 
@@ -36,13 +37,6 @@
                 <a href="contact.html"><li>Contact Me</li></a>
               </ul>
             </div>
-            <div id="navTab">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="resume.html">Resume</a>
-                <a href="#">Portfolio</a>
-                <a href="contact.html">Contact Me</a>
-            </div>
             <div id="navDes">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Me</a>
@@ -51,11 +45,14 @@
                 <a href="contact.html">Contact Me</a>
             </div>
           </nav>
-            <div id="smallHeader">
+            <div id="smallHeader" class="animated fadeOut">
                 <h1>Portfolio</h1>
                 <h1>Portfolio</h1>
                 <h1>Portfolio</h1>
             </div>
+            <div id="headerLogo">
+                    <img class="animated fadeIn" id="aplogo" src="images/logo-white.png" width="200px">
+                </div>
             <!-- <div class="center glitch">
                     <h1 class="center__text glitch is-glitching" data-text="Portfolio">Portfolio</h1>
                   </div> -->
@@ -68,6 +65,7 @@
             </div>
     </header>
 <body>
+        <button class="open-button stickyCon" onclick="openForm()"><i class="fa fa-envelope"></i></button>
     <div class="row"> 
             <div class="column">
               <a href="portfolio-sites/casual.html"><img src="images/portfolio/port-casual.jpg" style="width:100%"></a>
@@ -88,7 +86,7 @@
             </div>
           </div>
           <div class="contactPopup">
-            <button class="open-button" onclick="openForm()"><img class="contactBtn" src="images/icons/envelope-regular.svg"></button>
+           
             <div class="form-popup" id="myForm">
                 <form action="scripts/sendEmail.php" method="POST" class="form-container"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
                     <button type="btn" class="close" onclick="closeForm()">X</button>
@@ -111,7 +109,36 @@
             </div>
             </div>
 
+            <main id="app">
+                    <h4 class="welcome-message"> {{ welcomemessage }}</h4>
+                    <ul>
+                        <li v-for="video in videodata"> <!-- fetches the database stuff -->
+                            <button v-on:click="fetchSingle" :data-movie="video.id" class="more-details">More Details...</button>
+                            <a :href="video.vid_path" v-on:click="loadMovie">
+                                <img :src="'images/'  + video.vid_thumb" alt="movie poster">
+                            </a>
+                            <p>put genre data here</p>  <!-- add a field to the DB (or subquery another table) and plug data in -->
+                        </li>
+                    </ul>
+            
+                    <p class="instructions">
+                        <i>Click on a poster to preview the movie!</i>
+                    </p>
+            
+                    <section class="hidden-movies" :class="{'show-movie' : showDetails }">
+                        <h3 class="movie-title"> {{ videotitle }}</h3>
+                        <video :src="'video/' + videosource" autoplay></video> <!--short hand binding requires the : -->
+                        <div class="movie-details">
+                            <p> {{ videodescription }} </p>
+                        </div>
+                    </section>
+                    <div class="up-arrow">
+                        <span class="showDetails">^</span>
+                    </div>
+                </main>
+
             
 <script src="js/main.js"></script>
+<script src="js/portfoliovue.js"></script>
 </body>
 </html>

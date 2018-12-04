@@ -1,4 +1,5 @@
 @media (max-width: 479px) {
+
 /* MENU TOGGLE*/
     #navTab
     {
@@ -144,14 +145,9 @@
         display: none;
     }
 
-    #landingText
-    {
-        margin-top: 100%;
-    }
-
+//Landing Text (header) 
     #landingText p 
     {
-
         color: #fff;
         margin: 0 auto;
         text-align: center;
@@ -159,10 +155,16 @@
         font-family: 'Avenir', sans-serif;
         font-weight: lighter;
         letter-spacing: 0.4rem;
-        font-size: 1.2em;
+        font-size: 0.9em;
         animation-name: topFadeOut;
         animation-duration: 3s;
         animation-fill-mode: both;
+        display: block;
+    }
+
+    #headerDes
+    {
+        display: none;
     }
 
     #capDev
@@ -192,14 +194,25 @@
         }
       }
 
-          /* Button used to open the contact form - fixed at the bottom of the page */
+/* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-    background-color: #fff;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
+    background-color: #000;
+    // position: fixed;
+    // bottom: 50px;
+    // right: 50px;
     width: 10%;
+    border-radius: 5px;
     text-align: center;
+    border: none;
+    float: right;
+    margin-right: 40px;
+    opacity: 0.8;
+  }
+
+  .open-button i 
+  {
+      font-size: 2em;
+      color: #fff;
   }
   
   /* The popup form - hidden by default */
@@ -286,8 +299,27 @@
       letter-spacing: 0.1em;
       padding: 0;
   }
-    
-    }
+
+  //mobile animations
+  #smallHeader
+  {
+      animation-delay: 1.5s;
+  }
+
+  #aplogo
+  {
+      animation-delay: 2s;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 230px;
+      padding-left: 120px;
+      clear: both;
+  }
+  
+
+  }
+
 
 
  //TABLET   
@@ -464,12 +496,23 @@
 
         /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-    background-color: #fff;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 5%;
+    background-color: #000;
+    // position: fixed;
+    // bottom: 50px;
+    // right: 50px;
+    width: 7%;
+    border-radius: 5px;
     text-align: center;
+    border: none;
+    float: right;
+    margin-right: 40px;
+    opacity: 0.8;
+  }
+
+  .open-button i 
+  {
+      font-size: 2.5em;
+      color: #fff;
   }
   
   /* The popup form - hidden by default */
@@ -557,11 +600,30 @@
       padding: 0;
   }
 
+  //tablet animations
+  #smallHeader
+  {
+      animation-delay: 1s;
+  }
+  
+  #aplogo
+  {
+      animation-delay: 1.2s;
+      width: 30%;
+      margin-left: 300px;
+      margin-top: 200px;
+  }
+
     }
 
 
 // DESKTOP
 @media (min-width: 769px) {
+    #smallHeader
+    {
+        display: none;
+    }
+    
     #menuToggle
     {
         display: none;
@@ -602,7 +664,7 @@
         font-weight: lighter;
         letter-spacing: 0.5rem;
         font-size: 1.3em;
-        margin-top: -270px;
+        margin-top: 10px;
         clear: both;
         margin-bottom: 300px;
         background-image: url("images/headerMob.jpg");
@@ -661,12 +723,22 @@
     
         /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-    background-color: #fff;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 5%;
-    text-align: center;
+    background-color: #000;
+    // position: fixed;
+    // bottom: 50px;
+    // right: 50px;
+    width: 4.5%;
+    text-align: left;
+    border: none;
+    opacity: 0.8;
+    border-radius: 15px;
+  }
+
+  .open-button i 
+  {
+      font-size: 4em;
+      color: #fff;
+      
   }
   
   /* The popup form - hidden by default */
@@ -760,6 +832,40 @@
   .contactBtn
   {
       color: white;
+  }
+
+  .animated
+  {
+    -webkit-animation-duration: 200ms;
+    -moz-animation-duration: 200ms;
+    animation-duration: 200ms;
+    animation-delay: 0.7s;
+  }
+
+  #headerLogo
+  {
+      margin: 0 auto;
+      width: 100%;
+  }
+
+  #aplogo
+  {
+      width: 20%;
+      margin: 0 auto;
+      text-align: center;
+      margin-left: 500px;
+      margin-top: 180px;
+      animation-delay: 0.5s;
+      position: relative;
+  }
+
+  #headerDes
+  {
+      animation-delay: 1.5s;
+      position: absolute;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
   }
     
     }
