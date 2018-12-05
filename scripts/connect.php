@@ -1,26 +1,15 @@
-<?php
-$db_dsn = array(
-    'host' => 'localhost',
-    'dbname' => 'db_movies',
-    'charset' => 'utf8',
-); //you are putting info into the right of the = but the left is what is naming it so you can call it later 
+<?php 
 
-$dsn = 'mysql:'.http_build_query($db_dsn,'',';');
-//$dsn = 'mysql:host=localhost;dbname=db_movies;charset=utf8'; this basically means the top one 
+$user = "allisonp_allison";
+$pwd = "allisonportfolio1";
 
-//Setup up connection credentials
-$db_user = 'root';
-$db_pass = 'root'; //this should be blank if you are on a windows computer
+try {
+    $conn = new PDO('mysql:host=localhost;dbname=allisonp_portfolio',$user, $pwd);
+    //var_dump($conn); //check connection - instead of doing a var element, use var_dump to 
+    
 
-try{
-    $pdo = new PDO($dsn,$db_user,$db_pass);
-}catch(PDOException $exception){
-    echo 'Found ==>' .$exception->getMessage();
-    exit();
+} catch (PDOException $exception) {
+    echo 'connect error!' . $exception->getMessage();
 }
 
-//$pdo = new PDO($dsn,$db_user,$db_pass); //this is the line that actually makes the datqbase connection. everything before this line is prepping the docuument e.g. what database, etc.
-
-//var_dump($pdo);
-//up until this point, we have no connected the database 
-?> 
+?>

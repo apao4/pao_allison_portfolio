@@ -24,6 +24,8 @@ if (!$conn) { //this is if the connection is broken
 //}
 
 //get one item from the database (so that we aren't getting all the info. just one row's)
+include 'connect.php';
+
 if (isset($_GET["service"])) { //does it have a model number key and if it does, find me the row values that match it
     $info = $_GET["service"];
 

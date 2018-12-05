@@ -627,10 +627,10 @@
     text-align: center; } }
 @media (max-width: 479px) {
   #indexBack {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   #indexAbout {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   #indexAboutTitle {
     text-align: center;
@@ -682,7 +682,7 @@
 
   #animationReel {
     width: 100%;
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   #controls {
     text-align: center;
@@ -703,7 +703,7 @@
     width: 35px; }
 
   #controls .btn {
-    background-color: #000;
+    background-color: #1a1a1a;
     color: #fff;
     border: none;
     display: inline; }
@@ -773,7 +773,7 @@
     margin-bottom: 30px; }
 
   #indexRecent {
-    background-color: #000;
+    background-color: #1a1a1a;
     width: 100%; }
 
   #recentTitle img {
@@ -802,7 +802,7 @@
     padding-bottom: 100px; }
 
   #indexContactForm h1 {
-    margin-top: 600px; }
+    margin-top: 700px; }
 
   .indexForm {
     font-family: 'Avenir', sans-serif;
@@ -815,7 +815,9 @@
     margin-bottom: 20px;
     margin: 0 auto;
     border: none;
-    border-bottom: 1px solid white; }
+    border-bottom: 1px solid #fff;
+    color: #1a1a1a;
+    text-transform: uppercase; }
 
   #indexContactForm input[type=text] {
     width: 75%;
@@ -823,13 +825,15 @@
     margin-bottom: 20px;
     margin: 0 auto;
     border: none;
-    border-bottom: 1px solid white; }
+    border-bottom: 1px solid white;
+    color: #1a1a1a;
+    text-transform: uppercase; }
 
   #indexContactForm label {
     display: none; }
 
   .indexSubmit {
-    background-color: #666;
+    background-color: #646464;
     height: 30px;
     color: white;
     border: none;
@@ -859,7 +863,7 @@
     width: 100%; } }
 @media screen and (min-width: 480px) and (max-width: 769px) {
   #indexBack {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   #whyHire {
     margin: 5px; }
@@ -899,7 +903,7 @@
     text-align: center; }
 
   #indexAbout {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   #indexAboutTitle {
     text-align: center;
@@ -965,7 +969,7 @@
 
   #animationReel {
     width: 100%;
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   #controls {
     text-align: center;
@@ -986,7 +990,7 @@
     width: 75px; }
 
   #controls .btn {
-    background-color: #000;
+    background-color: #1a1a1a;
     color: #fff;
     border: none;
     display: inline; }
@@ -1068,7 +1072,7 @@
     margin-bottom: 30px; }
 
   #indexRecent {
-    background-color: #000;
+    background-color: #1a1a1a;
     width: 100%; }
 
   #recentTitle img {
@@ -1113,7 +1117,9 @@
     border: none;
     border-bottom: 1px solid white;
     margin-left: 170px;
-    background-color: #000; }
+    background-color: #1a1a1a;
+    color: #fff;
+    text-transform: uppercase; }
 
   #indexContactForm input[type=text] {
     width: 50%;
@@ -1123,13 +1129,15 @@
     border: none;
     border-bottom: 1px solid white;
     margin-left: 170px;
-    background-color: #000; }
+    background-color: #1a1a1a;
+    color: #fff;
+    text-transform: uppercase; }
 
   #indexContactForm label {
     display: none; }
 
   .indexSubmit {
-    background-color: #666;
+    background-color: #646464;
     height: 30px;
     color: white;
     border: none;
@@ -1153,7 +1161,7 @@
     float: right; } }
 @media (min-width: 769px) {
   #indexBack {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   .qualities {
     width: 33%;
@@ -1163,7 +1171,7 @@
     margin-top: 30px; }
 
   #indexAbout {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   #indexAboutTitle {
     text-align: center;
@@ -1195,7 +1203,7 @@
     padding-bottom: 50px; }
 
   #indexAboutText p {
-    width: 55%;
+    width: 45%;
     text-align: center;
     margin: 0 auto;
     color: #f1f1f1;
@@ -1222,6 +1230,9 @@
 
   #indexAboutText a:hover {
     text-shadow: 2px 2px 20px #fff; }
+
+  .services {
+    width: 50%; }
 
   #indexServices {
     background-color: #ffffff;
@@ -1265,12 +1276,12 @@
     width: 200px; }
 
   #indexRecent {
-    background-color: #000;
+    background-color: #1a1a1a;
     width: 100%;
     clear: both; }
 
   #recentWork {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   .recentWorkExam {
     width: 50%;
@@ -1294,7 +1305,7 @@
 
   #indexContactForm {
     width: 50%;
-    background-color: #000;
+    background-color: #1a1a1a;
     background-image: url("/images/contactBackground.jpg");
     margin: 0 auto;
     margin-top: 600px; }
@@ -1314,7 +1325,9 @@
     margin-left: 35px;
     float: left;
     border-bottom: 1px solid white;
-    background-color: #000; }
+    background-color: #1a1a1a;
+    color: #fff;
+    text-transform: uppercase; }
 
   #indexContactForm input[type=text] {
     width: 75%;
@@ -1325,7 +1338,9 @@
     margin-left: 35px;
     float: left;
     border-bottom: 1px solid white;
-    background-color: #000; }
+    background-color: #1a1a1a;
+    color: #fff;
+    text-transform: uppercase; }
 
   #indexContactForm label {
     display: none; }
@@ -1377,7 +1392,7 @@
       transform: scaleY(0.1); } }
   #animationReel {
     width: 100%;
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   #controls {
     text-align: center;
@@ -1404,7 +1419,7 @@
     width: 75px; }
 
   #controls .btn {
-    background-color: #000;
+    background-color: #1a1a1a;
     color: #fff;
     border: none; }
 
@@ -2929,7 +2944,8 @@ footer {
     text-decoration: none; } }
 @media screen and (min-width: 770px) {
   footer {
-    height: 250px; }
+    height: 250px;
+    margin-top: 20%; }
 
   .footerIcons {
     display: inline-block;
@@ -3059,10 +3075,10 @@ p {
       transform: translatex(0) translatez(0); }
 
   .splitTextDark {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   .splitTextLight h1 {
-    color: #000;
+    color: #1a1a1a;
     position: relative;
     visibility: hidden;
     font-size: 4em;
@@ -3123,10 +3139,10 @@ p {
       transform: translatex(0) translatez(0); }
 
   .splitTextDark {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   .splitTextLight h1 {
-    color: #000;
+    color: #1a1a1a;
     position: relative;
     visibility: hidden;
     font-size: 5em;
@@ -3187,10 +3203,10 @@ p {
       transform: translatex(0) translatez(0); }
 
   .splitTextDark {
-    background-color: #000; }
+    background-color: #1a1a1a; }
 
   .splitTextLight h1 {
-    color: #000;
+    color: #1a1a1a;
     position: relative;
     visibility: hidden;
     font-size: 7em;

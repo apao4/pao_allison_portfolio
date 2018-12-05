@@ -1,14 +1,12 @@
-
-
 @media (max-width: 479px) {
     #indexBack
     {
-        background-color: #000;
+        background-color: $dark-grey;
     }
     //About 
     #indexAbout
     {
-        background-color: #000;
+        background-color: $dark-grey;
     }
 
     #indexAboutTitle 
@@ -79,7 +77,7 @@
     #animationReel
     {
         width: 100%;
-        background-color: #000;
+        background-color: $dark-grey;
     }
     #controls
     {
@@ -111,7 +109,7 @@
     
     #controls .btn 
     {
-        background-color: #000;
+        background-color: $dark-grey;
         color: #fff;
         border: none;
         display: inline;
@@ -211,7 +209,7 @@
     //Recent Work
     #indexRecent
     {
-        background-color: #000;
+        background-color: $dark-grey;
         width: 100%;
     }
 
@@ -250,7 +248,7 @@
     }
     #indexContactForm h1
     {
-        margin-top: 600px;
+        margin-top: 700px;
     }
 
     .indexForm
@@ -267,7 +265,9 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #fff;
+        color: $dark-grey;
+        text-transform: uppercase;
     }
 
     #indexContactForm input[type=text] 
@@ -278,6 +278,8 @@
         margin: 0 auto;
         border: none;
         border-bottom: 1px solid white;
+        color: $dark-grey;
+        text-transform: uppercase;
     }
 
     #indexContactForm label
@@ -287,7 +289,7 @@
 
     .indexSubmit
     {
-        background-color: #666;
+        background-color: $grey;
         height: 30px;
         color: white;
         border: none;
@@ -327,7 +329,7 @@
 @media screen and (min-width: 480px) and (max-width: 769px) {
     #indexBack
     {
-        background-color: #000;
+        background-color: $dark-grey;
     }
     #whyHire 
     {
@@ -378,7 +380,7 @@
 
     #indexAbout
     {
-        background-color: #000;
+        background-color: $dark-grey;
     }
 
     #indexAboutTitle 
@@ -466,7 +468,7 @@
     #animationReel
     {
         width: 100%;
-        background-color: #000;
+        background-color: $dark-grey;
     }
     #controls
     {
@@ -498,7 +500,7 @@
     
     #controls .btn 
     {
-        background-color: #000;
+        background-color: $dark-grey;
         color: #fff;
         border: none;
         display: inline;
@@ -614,7 +616,7 @@
     //Recent Work
     #indexRecent
     {
-        background-color: #000;
+        background-color: $dark-grey;
         width: 100%;
     }
 
@@ -675,7 +677,9 @@
         border: none;
         border-bottom: 1px solid white;
         margin-left: 170px;
-        background-color: #000;
+        background-color: $dark-grey;
+        color: #fff;
+        text-transform: uppercase;
     }
 
     #indexContactForm input[type=text] 
@@ -687,7 +691,9 @@
         border: none;
         border-bottom: 1px solid white;
         margin-left: 170px;
-        background-color: #000;
+        background-color: $dark-grey;
+        color: #fff;
+        text-transform: uppercase;
     }
 
     #indexContactForm label
@@ -697,7 +703,7 @@
 
         .indexSubmit
     {
-        background-color: #666;
+        background-color: $grey;
         height: 30px;
         color: white;
         border: none;
@@ -727,7 +733,7 @@
 @media (min-width: 769px) {
     #indexBack
     {
-        background-color: #000;
+        background-color: $dark-grey;
     }
 
     .qualities
@@ -741,7 +747,7 @@
 
     #indexAbout
     {
-        background-color: #000;
+        background-color: $dark-grey;
     }
 
     #indexAboutTitle 
@@ -783,7 +789,7 @@
 
     #indexAboutText p 
     {
-        width: 55%;
+        width: 45%;
         text-align: center;
         margin: 0 auto;
         color: #f1f1f1;
@@ -820,6 +826,11 @@
     }
 
     //Services
+    .services 
+    {
+        width: 50%;
+    }
+
     #indexServices
     {
         background-color: #ffffff;
@@ -878,14 +889,14 @@
     //Recent Work
     #indexRecent
     {
-        background-color: #000;
+        background-color: $dark-grey;
         width: 100%;
         clear: both;
     }
 
     #recentWork
     {
-        background-color: #000;
+        background-color: $dark-grey;
     }
     .recentWorkExam
     {
@@ -916,7 +927,7 @@
     #indexContactForm
     {
         width: 50%;
-        background-color: #000;
+        background-color: $dark-grey;
         background-image: url("/images/contactBackground.jpg");
         margin: 0 auto;
         margin-top: 600px;
@@ -941,7 +952,9 @@
             margin-left: 35px;
             float: left;
             border-bottom: 1px solid white;
-            background-color: #000;
+            background-color: $dark-grey;
+            color: #fff;
+            text-transform: uppercase;
         }
 
         #indexContactForm input[type=text] 
@@ -954,7 +967,9 @@
             margin-left: 35px;
             float: left;
             border-bottom: 1px solid white;
-            background-color: #000;
+            background-color: $dark-grey;
+            color: #fff;
+            text-transform: uppercase;
         }
 
         #indexContactForm label
@@ -1011,7 +1026,7 @@
     #animationReel
     {
         width: 100%;
-        background-color: #000;
+        background-color: $dark-grey;
     }
     #controls
     {
@@ -1053,7 +1068,7 @@
 
     #controls .btn 
     {
-        background-color: #000;
+        background-color: $dark-grey;
         color: #fff;
         border: none;
     }
@@ -1100,7 +1115,7 @@
       
     //   .skills span 
     //   {
-    //     color: #000;
+    //     color: $dark-grey;
     //     display: block;
     //     font-size: 0.7em;
     //     font-family: 'Helvetica';
