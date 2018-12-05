@@ -9,6 +9,19 @@ footer
     color: white;
  }
 
+ #backtoTopBtn
+ {
+     font-family: 'Avenir', sans-serif;
+     font-weight: bolder;
+     font-size: 1em;
+     background-color: #000;
+     color: #fff;
+     border-style: none;
+     cursor: pointer;
+     text-transform: uppercase;
+
+ }
+
  @media screen and (max-width: 479px) {
     footer
     {
@@ -255,4 +268,6 @@ footer
     {
         text-decoration: none;
     }
+
+    
 }

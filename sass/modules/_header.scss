@@ -49,7 +49,7 @@
         height: 2px;
         margin-bottom: 5px;
         position: relative;
-        background-color: #fff;
+        background-color: #666;
         z-index: 1;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -207,6 +207,7 @@
     float: right;
     margin-right: 40px;
     opacity: 0.8;
+    z-index: 1;
   }
 
   .open-button i 
@@ -619,10 +620,7 @@
 
 // DESKTOP
 @media (min-width: 769px) {
-    #smallHeader
-    {
-        display: none;
-    }
+
     
     #menuToggle
     {
@@ -685,6 +683,7 @@
         background-color: #000;
         // background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
         height: 20px;
+        z-index: 1; //put the nav above all other elements
     }
     #navDes a 
     {
@@ -704,6 +703,10 @@
         text-shadow: 2px 2px red;
     }
 
+    .active a:active
+    {
+        text-shadow: 2px 2px white;
+    }
     header h3
     {
         color: #fff;

@@ -36,7 +36,7 @@
     height: 2px;
     margin-bottom: 5px;
     position: relative;
-    background-color: #fff;
+    background-color: #666;
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
@@ -145,7 +145,8 @@
     border: none;
     float: right;
     margin-right: 40px;
-    opacity: 0.8; }
+    opacity: 0.8;
+    z-index: 1; }
 
   .open-button i {
     font-size: 2em;
@@ -434,9 +435,6 @@
     margin-left: 300px;
     margin-top: 200px; } }
 @media (min-width: 769px) {
-  #smallHeader {
-    display: none; }
-
   #menuToggle {
     display: none; }
 
@@ -483,7 +481,8 @@
     padding-bottom: 10px;
     clear: both;
     background-color: #000;
-    height: 20px; }
+    height: 20px;
+    z-index: 1; }
 
   #navDes a {
     padding-left: 70px;
@@ -496,6 +495,9 @@
 
   #navDes a:hover {
     text-shadow: 2px 2px red; }
+
+  .active a:active {
+    text-shadow: 2px 2px white; }
 
   header h3 {
     color: #fff;
@@ -694,12 +696,6 @@
   #controls button:hover {
     cursor: pointer; }
 
-  #volume-inc-button {
-    width: 100px; }
-
-  #volume-dec-button {
-    width: 100px; }
-
   #playPauseBtn {
     width: 35px; }
 
@@ -819,7 +815,7 @@
     margin-bottom: 20px;
     margin: 0 auto;
     border: none;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid white; }
 
   #indexContactForm input[type=text] {
     width: 75%;
@@ -827,7 +823,7 @@
     margin-bottom: 20px;
     margin: 0 auto;
     border: none;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid white; }
 
   #indexContactForm label {
     display: none; }
@@ -1101,7 +1097,8 @@
   #indexContactForm {
     width: 100%;
     float: left;
-    background-image: url("/images/contactBackground.jpg"); }
+    background-image: url("/images/contactBackground.jpg");
+    margin-bottom: 40px; }
 
   .indexForm {
     font-family: 'Avenir', sans-serif;
@@ -1114,8 +1111,9 @@
     margin-bottom: 20px;
     margin: 0 auto;
     border: none;
-    border-bottom: 1px solid black;
-    margin-left: 170px; }
+    border-bottom: 1px solid white;
+    margin-left: 170px;
+    background-color: #000; }
 
   #indexContactForm input[type=text] {
     width: 50%;
@@ -1123,8 +1121,9 @@
     margin-bottom: 20px;
     margin: 0 auto;
     border: none;
-    border-bottom: 1px solid black;
-    margin-left: 170px; }
+    border-bottom: 1px solid white;
+    margin-left: 170px;
+    background-color: #000; }
 
   #indexContactForm label {
     display: none; }
@@ -1155,41 +1154,6 @@
 @media (min-width: 769px) {
   #indexBack {
     background-color: #000; }
-
-  #whyHire {
-    margin: 5px;
-    width: 80%;
-    margin: 0 auto; }
-
-  #whyHire h2 {
-    font-family: 'Avenir', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2em;
-    letter-spacing: 0.3em;
-    font-weight: lighter;
-    margin-top: 80px;
-    text-shadow: 2px 2px #8B0505; }
-
-  #whyHire h5 {
-    font-family: 'Avenir', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.9em;
-    font-weight: lighter; }
-
-  #whyHire p {
-    font-family: 'Avenir', sans-serif;
-    text-align: center;
-    font-size: 0.85em;
-    font-weight: lighter;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px; }
-
-  .whyHireIcons {
-    width: 55px;
-    height: 55px; }
 
   .qualities {
     width: 33%;
@@ -1260,7 +1224,8 @@
     text-shadow: 2px 2px 20px #fff; }
 
   #indexServices {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    height: 650px; }
 
   #indexServicesTitle {
     text-align: center;
@@ -1329,7 +1294,7 @@
 
   #indexContactForm {
     width: 50%;
-    background-color: #fff;
+    background-color: #000;
     background-image: url("/images/contactBackground.jpg");
     margin: 0 auto;
     margin-top: 600px; }
@@ -1348,7 +1313,8 @@
     border: none;
     margin-left: 35px;
     float: left;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid white;
+    background-color: #000; }
 
   #indexContactForm input[type=text] {
     width: 75%;
@@ -1358,7 +1324,8 @@
     border: none;
     margin-left: 35px;
     float: left;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid white;
+    background-color: #000; }
 
   #indexContactForm label {
     display: none; }
@@ -1395,7 +1362,7 @@
 
   .glitchImg:hover {
     animation: noise-3 0.5s linear;
-    animation-iteration-count: 1; }
+    animation-iteration-count: 2; }
 
   @keyframes noise-3 {
     0%,3%,5%,42%,44%,100% {
@@ -1417,9 +1384,6 @@
     width: 90%;
     margin: 0 auto;
     padding-bottom: 20px; }
-
-  #animationReel {
-    width: 100%; }
 
   #controls button:hover {
     cursor: pointer; }
@@ -2834,6 +2798,16 @@ footer {
   background-color: #000;
   color: white; }
 
+#backtoTopBtn {
+  font-family: 'Avenir', sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+  background-color: #000;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+  text-transform: uppercase; }
+
 @media screen and (max-width: 479px) {
   footer {
     height: 250px; }
@@ -3054,52 +3028,6 @@ p {
 #experience {
   visibility: none; }
 
-.wrapper {
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px; }
-
-.section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
-  /* For text formatting. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000; }
-
-.static {
-  background: red; }
-
-.video-container {
-  position: relative; }
-
-video {
-  height: 300px;
-  vertical-align: middle;
-  width: 50%;
-  float: right; }
-
-.overlay-desc {
-  background: rgba(0, 0, 0, 0);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
 @media (max-width: 479px) {
   .splitTextDark h1 {
     color: #fff;
@@ -3109,7 +3037,6 @@ video {
     line-height: 1.3;
     text-transform: uppercase;
     font-family: 'Avenir', sans-serif;
-    text-shadow: 2px 2px 8px white;
     text-align: center;
     position: relative; }
     .splitTextDark h1::before, .splitTextDark h1::after {
@@ -3142,7 +3069,6 @@ video {
     line-height: 1.3;
     text-transform: uppercase;
     font-family: 'Avenir', sans-serif;
-    text-shadow: 2px 2px 8px #000;
     text-align: center;
     position: relative; }
     .splitTextLight h1::before, .splitTextLight h1::after {
@@ -3175,7 +3101,6 @@ video {
     line-height: 1.3;
     text-transform: uppercase;
     font-family: 'Avenir', sans-serif;
-    text-shadow: 2px 2px 8px white;
     text-align: center;
     position: relative; }
     .splitTextDark h1::before, .splitTextDark h1::after {
@@ -3208,7 +3133,6 @@ video {
     line-height: 1.3;
     text-transform: uppercase;
     font-family: 'Avenir', sans-serif;
-    text-shadow: 2px 2px 8px #000;
     text-align: center;
     position: relative; }
     .splitTextLight h1::before, .splitTextLight h1::after {
@@ -3241,7 +3165,6 @@ video {
     line-height: 1.3;
     text-transform: uppercase;
     font-family: 'Avenir', sans-serif;
-    text-shadow: 2px 2px 8px white;
     text-align: center;
     position: relative; }
     .splitTextDark h1::before, .splitTextDark h1::after {
@@ -3274,7 +3197,6 @@ video {
     line-height: 1.3;
     text-transform: uppercase;
     font-family: 'Avenir', sans-serif;
-    text-shadow: 2px 2px 8px #000;
     text-align: center;
     position: relative; }
     .splitTextLight h1::before, .splitTextLight h1::after {

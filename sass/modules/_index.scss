@@ -1,5 +1,5 @@
 
-//WHY HIRE ME
+
 @media (max-width: 479px) {
     #indexBack
     {
@@ -97,16 +97,6 @@
     #controls button:hover
     {
         cursor: pointer;
-    }
-
-    #volume-inc-button
-    {
-        width: 100px;
-    }
-
-    #volume-dec-button
-    {
-        width: 100px;
     }
     
     #playPauseBtn
@@ -277,7 +267,7 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid white;
     }
 
     #indexContactForm input[type=text] 
@@ -287,7 +277,7 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid white;
     }
 
     #indexContactForm label
@@ -664,6 +654,7 @@
         width: 100%;
         float: left;
         background-image: url("/images/contactBackground.jpg");
+        margin-bottom: 40px;
             
     }
 
@@ -682,8 +673,9 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid white;
         margin-left: 170px;
+        background-color: #000;
     }
 
     #indexContactForm input[type=text] 
@@ -693,8 +685,9 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid white;
         margin-left: 170px;
+        background-color: #000;
     }
 
     #indexContactForm label
@@ -735,50 +728,6 @@
     #indexBack
     {
         background-color: #000;
-    }
-
-    #whyHire 
-    {
-        margin: 5px;
-        width: 80%;
-        margin: 0 auto;
-    }
-    #whyHire h2 
-    {
-        font-family: 'Avenir', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 2em;
-        letter-spacing: 0.3em;
-        font-weight: lighter;
-        margin-top: 80px;
-        text-shadow: 2px 2px #8B0505;
-    }
-    #whyHire h5
-    {
-        font-family: 'Avenir', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 0.9em;
-        font-weight: lighter;
-
-
-    }
-    #whyHire p 
-    {
-        font-family: 'Avenir', sans-serif;
-        text-align: center;
-        font-size: 0.85em;
-        font-weight: lighter;
-        padding-bottom: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .whyHireIcons
-    {
-        width: 55px;
-        height: 55px
     }
 
     .qualities
@@ -874,6 +823,7 @@
     #indexServices
     {
         background-color: #ffffff;
+        height: 650px;
     }
 
     #indexServicesTitle
@@ -966,7 +916,7 @@
     #indexContactForm
     {
         width: 50%;
-        background-color: #fff;
+        background-color: #000;
         background-image: url("/images/contactBackground.jpg");
         margin: 0 auto;
         margin-top: 600px;
@@ -990,7 +940,8 @@
             border: none;
             margin-left: 35px;
             float: left;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid white;
+            background-color: #000;
         }
 
         #indexContactForm input[type=text] 
@@ -1002,7 +953,8 @@
             border: none;
             margin-left: 35px;
             float: left;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid white;
+            background-color: #000;
         }
 
         #indexContactForm label
@@ -1046,7 +998,7 @@
       }
     .glitchImg:hover{
         animation: noise-3 0.5s linear;
-        animation-iteration-count: 1; //Will only glitch once on hover so that it doesn't take away from image
+        animation-iteration-count: 2; //Will only glitch once on hover so that it doesn't take away from image
       }
       
       @keyframes noise-3 {
@@ -1067,11 +1019,6 @@
         width: 90%;
         margin: 0 auto;
         padding-bottom: 20px;
-    }
-
-    #animationReel
-    {
-        width: 100%;
     }
 
     #controls button:hover

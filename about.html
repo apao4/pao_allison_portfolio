@@ -42,28 +42,24 @@
                         <a href="contact.html">Contact Me</a>
                 </div>
               </nav>
-                <div id="smallHeader" class="animated fadeOut">
+                <div id="smallHeader" class="animated fadeIn">
                     <h1>About Me</h1>
                     <h1>About Me</h1>
                     <h1>About Me</h1>
                 </div>
                 <div id="pageTitle">
-                        <img class="animated fadeIn" id="aplogo" src="images/logo-white.png" width="200px">
+                        <img class="animated fadeOut" id="aplogo" src="images/logo-white.png" width="200px">
                     </div>
                 <!-- <div class="center glitch">
                         <h1 class="center__text glitch is-glitching" data-text="Resume">Resume</h1>
                       </div> -->
                 <!-- <h3 id="headerCap">Developer. Designer. Videographer.</h3>  -->
-                <h3 id="headerDes">Developer. Designer. Videographer.</h3> 
-                <div id="landingText">
-                    <p id="capDes">Designer</p>  
-                    <p id="capDev">Developer</p> 
-                    <p id="capVid">Videographer</p> 
-                </div>
+
         </header>
 <body>
+        <button class="open-button" onclick="openForm()"><img class="contactBtn" src="images/icons/envelope-regular.svg"></button>
              <div class="contactPopup">
-                <button class="open-button" onclick="openForm()"><img class="contactBtn" src="images/icons/envelope-regular.svg"></button>
+                
                 <div class="form-popup" id="myForm">
                     <form action="scripts/sendEmail.php" method="POST" class="form-container"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
                         <button type="btn" class="close" onclick="closeForm()">X</button>

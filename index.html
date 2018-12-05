@@ -67,8 +67,9 @@
                 <p id="capVid">Videographer</p> 
             </div>
     </header>  
+    <button class="open-button stickyCon" onclick="openForm()"><i class="fa fa-envelope"></i></button>
 <div id="indexAbout">
-            <button class="open-button stickyCon" onclick="openForm()"><i class="fa fa-envelope"></i></button>
+            
             <div class="splitTextDark">
                     <h1 data-word="About Me">About Me</h1>
                 </div>
@@ -84,9 +85,9 @@
             <source src="videos/casual2018.m4v" type="video/mp4">
          </video>
          <div id="controls">
-            <button id='playPauseBtn' class='play btn' title='play'
+            <button id='playPauseBtn' class='play btn'
             onclick='togglePlayPause();'>PLAY</button>
-            <button id='stopBtn' class='stop btn' title='stop' onclick='stopPlayer();'>STOP</button>
+            <button id='stopBtn' class='stop btn' onclick='stopPlayer();'>STOP</button>
             
             <input id="timeline" type="range" min="0" max="100" value="0" step="1">
             <span id="curTime">00:00</span><span id="slash"> / </span><span id="totalTime">00:00</span>
@@ -141,11 +142,9 @@
             <a href="portfolio-sites/ifrc.html"><img class="recentWorkExam glitchImg" src="images/portfolio/port-ifrc1.jpg"></a>
         </div>
     </div>
-</div>
-    
 
      <div id="indexContactForm">
-            <div class="splitTextLight">
+            <div class="splitTextDark">
                     <h1 data-word="Contact">Contact</h1>
                 </div>
          <form action>
@@ -165,41 +164,6 @@
             <button class="btn indexSubmit" type="submit">Send</button>
          </form>
      </div>
-     
-    <!-- <div id="whyHire">
-            <h2>Why Hire Me?</h2>
-            <hr class="sectionLine">
-            <div class="qualities">
-                <img class="whyHireIcons" src="images/icons/users-solid.svg">
-                <h5>Friendly</h5>
-                <p>I am very outgoing and love meeting new people.</p>
-            </div>
-            <div class="qualities">
-                <img class="whyHireIcons" src="images/icons/paint-brush-solid.svg">
-                <h5>Creative</h5>
-                <p>I have tons of ideas that will work to benefit your organization.</p>
-            </div>
-            <div class="qualities">
-                <img class="whyHireIcons" src="images/icons/comments-solid.svg">
-                <h5>Good Communicator</h5>
-                <p>Communication is key in any relationship - even professional.  I will ensure to communicate updates as well as any concerns I may have along the way.</p>
-            </div>
-            <div class="qualities">
-                    <img class="whyHireIcons" src="images/icons/clock-solid.svg">
-                    <h5>Punctual</h5>
-                    <p>Being on time is essential to any projects.  I take deadlines very seriously and will ensure that everything is complete by the specified date.</p>
-                </div>
-            <div class="qualities">
-                <img class="whyHireIcons" src="images/icons/brain-solid.svg">
-                <h5>Educated</h5>
-                <p>With both a degree and diploma, I have obtained a well-rounded level of education.</p>
-            </div>
-            <div class="qualities">
-                <img class="whyHireIcons" src="images/icons/heart-solid.svg">
-                <h5>Passionate</h5>
-                <p>I love what I do and can't wait to work with you!</p>
-            </div>
-        </div> -->
         <div class="contactPopup">
         
         <div class="form-popup" id="myForm">
@@ -222,7 +186,7 @@
                 
             </form>
         </div>
-
+</div>
 
 </body>
 <footer>
@@ -249,8 +213,10 @@
         <a href="www.linkedin.com/in/allison-pao-722551176/"><i class="fa fa-linkedin footerIcons" style="font-size:35px;color:#666;"></i></a>
         <a href="www.github.com/apao4"><i class="fa fa-github footerIcons" style="font-size:35px;color:#666;"></i></a> 
         <a href="mailto:alliisonpao@live.com"><i class="fa fa-envelope footerIcons" style="font-size:35px;color:#666;"></i></a> 
-        </div>
-</footer>
+        <button onclick="topFunction()" id="backtoTopBtn" title="Go to top">Top ^</button>
+    </div>
+    
+    </footer>
 
 </div>
 
