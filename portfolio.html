@@ -104,23 +104,33 @@
             </div>
 
             <main id="app">
-                    <h4 class="welcome-message"> {{ welcomemessage }}</h4>
-                    <ul>
-                        <button v-on:click="fetchAnimation">Animation</button>
-                        <button v-on:click="fetchWeb">Web Design</button>
-                        <button v-on:click="fetchGraphic">Graphic</button>
-                        <button v-on:click="fetchBranding">Branding</button>
-                        <button v-on:click="fetchPhoto">Photography</button>
-                        <button v-on:click="fetchVideo">Videography</button>
-                        <li v-for="item in portdata"> <!-- fetches the database stuff -->
-                            <!-- <button v-on:click="fetchSingle" :data-movie="video.id" class="more-details">More Details...</button> -->
-                            <a :href="item.pro_path" v-on:load="loadPort">
-                                <img :src="'images/portfolio/'  + item.pro_thumb" alt="movie poster">
-                            </a>
-                            <p>put genre data here</p>  <!-- add a field to the DB (or subquery another table) and plug data in -->
-                        </li>
-                    </ul>
+                <h4 class="welcome-message"> {{ welcomemessage }}</h4>
+                <ul>
+                    <li v-for="video in videodata"> <!-- fetches the database stuff -->
+                        <button v-on:click="fetchSingle" :data-movie="video.id" class="more-details">More Details...</button>
+                        <a :href="video.vid_path" v-on:click="loadMovie">
+                            <img :src="'images/'  + video.vid_thumb" alt="movie poster">
+                        </a>
+                        <p>put genre data here</p>  <!-- add a field to the DB (or subquery another table) and plug data in -->
+                    </li>
+                </ul>
+        
+                <p class="instructions">
+                    <i>Click on a poster to preview the movie!</i>
+                </p>
+        
+                <section class="hidden-movies" :class="{'show-movie' : showDetails }">
+                    <h3 class="movie-title"> {{ videotitle }}</h3>
+                    <video :src="'videos/' + videosource" autoplay></video> <!--short hand binding requires the : -->
+                    <div class="movie-details">
+                        <p> {{ videodescription }} </p>
+                    </div>
+                </section>
+                <div class="up-arrow">
+                    <span class="showDetails">^</span>
+                </div>
             </main>
+        
 <footer>
     <div id="footerCol1">
         <img id="footerLogo" src="images/logo-white.png">
