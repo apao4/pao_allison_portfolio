@@ -5,19 +5,19 @@
         data: {
             welcomemessage : "Howdy! Welcome to my video app!",
             
-            videodata : [],
+            portdata : [],
             singledata : [],
 
-            videotitle : "",
-            videodescription : "",
-            videosource : "",
+            porttitle : "",
+            portdescription : "",
+            portsource : "",
 
             showDetails : false
         },
 
         created : function(){
             //get all of the movie data on page load
-            this.fetchMovieData(null);
+            this.fetchPortfolioData('port');
         },
 
         methods : {
@@ -28,40 +28,70 @@
 
             fetchSingle(e) {
                 //debugger;
-                this.fetchMovieData(e.currentTarget.dataset.movie);
+                this.fetchPortfolioData(e.currentTarget.dataset.port);
             },
 
-            loadMovie(e) {
+            fetchAnimation(e) {
+                //debugger;
+                this.fetchPortfolioData(e.currentTarget.dataset.pro_category1 = 'animation');
+            },
+
+            fetchWeb(e) {
+                //debugger;
+                this.fetchPortfolioData(e.currentTarget.dataset.pro_category1 = 'web');
+            },
+
+            fetchGraphic(e) {
+                //debugger;
+                this.fetchPortfolioData(e.currentTarget.dataset.pro_category1 = 'graphic');
+            },
+
+            fetchPhoto(e) {
+                //debugger;
+                this.fetchPortfolioData(e.currentTarget.dataset.pro_category1 = 'photo');
+            },
+
+            fetchVideo(e) {
+                //debugger;
+                this.fetchPortfolioData(e.currentTarget.dataset.pro_category1 = 'video');
+            },
+
+            fetchBranding(e) {
+                //debugger;
+                this.fetchPortfolioData(e.currentTarget.dataset.pro_category1 = 'branding');
+            },
+
+            loadPort(e) {
                 //debugger;
                 e.preventDefault(); //block a page reload (anchor tag default behaviour)
 
                 dataKey = e.currentTarget.getAttribute('href');
-                currentData = this.videodata.filter(video => video.vid_path === dataKey);
+                currentData = this.portdata.filter(tbl_portfolio => tbl_portfolio.pro_path === dataKey);
 
-                this.videotitle = currentData[0].vid_name;
-                this.videodescription = currentData[0].vid_desc;
-                this.videosource = dataKey;
+                this.porttitle = currentData[0].pro_name;
+                this.portdescription = currentData[0].pro_desc;
+                this.portsource = dataKey;
 
                 this.showDetails = true;
 
-                setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
+                // setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
             },
 
-            fetchMovieData(movie) {
+            fetchPortfolioData(port) {
                 //this is a ternary statement (shorthand for if/else). left of the : is true, right is false
-                let url = movie ? `./includes/index.php?movie=${movie}` : './includes/index.php';
+                let url = port ? `./scripts/index.php?port=${port}` : './scripts/index.php';
 
                 fetch(url) // pass in the one or many query
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
 
-                    if (movie) {
+                    if (port) {
                         // getting one movie, so use the single array
-                        this.singledata = data; //this is gonna go to the data
+                        this.portdata = data; //this is gonna go to the data
                     } else {
                         // push all the video (or portfolio content) into the video array
-                        this.videodata = data;
+                        this.portdata = data;
                     }
                 })
                 .catch(function(error) {

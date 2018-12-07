@@ -802,7 +802,7 @@
     padding-bottom: 100px; }
 
   #indexContactForm h1 {
-    margin-top: 700px; }
+    margin-top: 650px; }
 
   .indexForm {
     font-family: 'Avenir', sans-serif;
@@ -1306,7 +1306,6 @@
   #indexContactForm {
     width: 50%;
     background-color: #1a1a1a;
-    background-image: url("/images/contactBackground.jpg");
     margin: 0 auto;
     margin-top: 600px; }
 
@@ -2362,9 +2361,16 @@
     width: 40%;
     padding-left: 40px; } }
 @media screen and (min-width: 770px) {
-  .proInfo h3 {
+  .portHeader h3 {
     font-family: 'Avenir', sans-serif;
     font-size: 2.5em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 0; }
+
+  .portHeader h5 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 2em;
     font-weight: lighter;
     text-transform: uppercase;
     margin: 0; }

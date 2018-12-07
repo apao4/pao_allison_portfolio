@@ -26,7 +26,7 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
+ 
 //Resume
 var waypoint = new Waypoint({
   element:document.getElementById("profile"),
