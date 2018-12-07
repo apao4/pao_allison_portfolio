@@ -3,7 +3,7 @@ include 'connect.php';
 
     //get one video
     function get_single_video($pdo, $vid) {
-        $query = "SELECT * FROM tbl_portfolio WHERE id = '$vid'";
+        $query = "SELECT * FROM tbl_portfolio WHERE pro_category1 = '$vid'";
 
         $get_video = $pdo->query($query);
         $results = array();

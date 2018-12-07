@@ -17,7 +17,7 @@
 
       created : function(){
           //get all of the movie data on page load
-          this.fetchMovieData(null);
+          this.fetchMovieData('movie');
       },
 
       methods : {
@@ -30,6 +30,36 @@
               //debugger;
               this.fetchMovieData(e.currentTarget.dataset.movie);
           },
+
+        fetchAnimation1(e) {
+            //debugger;
+            this.fetchMovieData(e.currentTarget.dataset.pro_category1 = 'animation');
+        },
+
+        fetchWeb(e) {
+            //debugger;
+            this.fetchMovieData(e.currentTarget.dataset.pro_category1 = 'web');
+        },
+
+        fetchVideo(e) {
+            //debugger;
+            this.fetchMovieData(e.currentTarget.dataset.pro_category1 = 'video');
+        },
+
+        fetchGraphic(e) {
+            //debugger;
+            this.fetchMovieData(e.currentTarget.dataset.pro_category1 = 'graphic');
+        },
+
+        fetchBranding(e) {
+            //debugger;
+            this.fetchMovieData(e.currentTarget.dataset.pro_category1 = 'branding');
+        },
+
+        fetchPhoto(e) {
+            //debugger;
+            this.fetchMovieData(e.currentTarget.dataset.pro_category1 = 'photo');
+        },
 
           loadMovie(e) {
               //debugger;
