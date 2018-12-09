@@ -34,7 +34,7 @@
                 <a href="about.html"><li>About Me</li></a>
                 <a href="#"><li>Portfolio</li></a>
                 <a href="resume.html"><li>Resume</li></a>
-                <a href="contact.html"><li>Contact Me</li></a>
+                <a href="index.html#indexContactForm">Contact Me</a>
               </ul>
             </div>
             <div id="navDes">
@@ -42,7 +42,7 @@
                 <a href="about.html">About Me</a>
                 <a href="resume.html">Resume</a>
                 <a href="#">Portfolio</a>
-                <a href="contact.html">Contact Me</a>
+                <a href="index.html#indexContactForm">Contact Me</a>
             </div>
           </nav>
             <div id="smallHeader" class="animated fadeIn">
@@ -59,26 +59,6 @@
             <!-- <h3 id="headerCap">Developer. Designer. Videographer.</h3>  -->
     </header>
 <body>
-        <button class="open-button stickyCon" onclick="openForm()"><i class="fa fa-envelope"></i></button>
-    <div class="row"> 
-            <div class="column">
-              <a href="portfolio-sites/casual.html"><img src="images/portfolio/port-casual.jpg" style="width:100%"></a>
-              <a href="portfolio-sites/oneteam.html"><img src="images/portfolio/port-onedream.png" style="width:100%"></a>
-            </div>
-            <div class="column">
-              <a href="portfolio-sites/lsfc.html"><img id="portImages" src="images/portfolio/port-lsfc.png" style="width:100%"></a>
-              <a href="portfolio-sites/spectrum.html"><img src="images/portfolio/port-spectrum.png" style="width:100%"></a>
-              <a href="portfolio-sites/organ.html"><img src="images/portfolio/port-organ.png" style="width:100%"></a>
-            </div>  
-            <div class="column">
-              <a href="portfolio-sites/organ.html"><img src="images/portfolio/port-velveeta.png" style="width:100%"></a>
-              <a href="portfolio-sites/info.html"><img src="images/portfolio/port-info.png" style="width:100%"></a>
-            </div>
-            <div class="column">
-              <a href="portfolio-sites/photocheat.html"><img src="images/portfolio/port-photocheat.jpg" style="width:100%"></a>
-              <a href="portfolio-sites/mello.html"><img src="images/portfolio/port-mello.jpg" style="width:100%"></a>
-            </div>
-          </div>
           <div class="contactPopup">
            
             <div class="form-popup" id="myForm">
@@ -102,63 +82,62 @@
                 </form>
             </div>
             </div>
+            <div id="portIntro">
+                <h3>My Work</h3>
+                <p>Below are some of my most recent works.<br>Click on them to read more about each project.</p>
+            </div>
 
-            <main id="app">
-                <h4 class="welcome-message"> {{ welcomemessage }}</h4>
+            <main id="app" class="portfolioGall">
+                <!-- <h4 class="welcome-message"> {{ welcomemessage }}</h4> -->
                 <ul>
-                    <button v-on:click="fetchAnimation1">Animation</button>
-                    <button v-on:click="fetchWeb">Web Design</button>
-                    <button v-on:click="fetchVideo">Video</button>
-                    <button v-on:click="fetchBranding">Branding</button>
-                    <button v-on:click="fetchGraphic">Graphic</button>
-                    <button v-on:click="fetchPhoto">Photos</button>
+                    <button class="glitchImg" v-on:click="fetchAnimation1"><h3>Animation</h3></button>
+                    <button class="glitchImg" v-on:click="fetchWeb"><h3>Web Design</h3></button>
+                    <button class="glitchImg" v-on:click="fetchVideo"><h3>Videography</h3></button>
+                    <button class="glitchImg" v-on:click="fetchBranding"><h3>Branding</h3></button>
+                    <button class="glitchImg" v-on:click="fetchGraphic"><h3>Graphic Design</h3></button>
+                    <button class="glitchImg" v-on:click="fetchPhoto"><h3>Photography</h3></button>
+                    
+                    
                     <li v-for="item in videodata"> <!-- fetches the database stuff -->
                         <!-- <button v-on:click="fetchSingle" :data-movie="video.id" class="more-details">More Details...</button> -->
-                        <a :href="'images/portfolio/' + item.pro_path" v-on:load="loadMovie">
-                            <img :src="'images/portfolio/'  + item.pro_thumb" alt="movie poster">
+                        <a :href="'./portfolio-sites/' + item.pro_path" v-on:load="loadMovie">
+                            <img class="portImg" :src="'./images/portfolio/'  + item.pro_thumb">
                         </a>
-                        <p>put genre data here</p>  <!-- add a field to the DB (or subquery another table) and plug data in -->
                     </li>
                 </ul>
-        
-                <p class="instructions">
-                    <i>Click on a poster to preview the movie!</i>
-                </p>
-        
-                
-                <div class="up-arrow">
-                    <span class="showDetails">^</span>
-                </div>
             </main>
         
-<footer>
-    <div id="footerCol1">
-        <img id="footerLogo" src="images/logo-white.png">
-        <h5>&copy; 2018 Allison Pao.<br>All Rights Reserved.</h5>
-    </div>
-    <div id="footerCol2">
-        <h3>Allison Pao</h3>
-        <a href="about.html"><h4>About Me</h4></a>
-        <a href="resume.html"><h4>Resume</h4></a>
-    </div>
-    <div id="footerCol3">
-        <h3>Portfolio</h3>
-        <a href="#"><h4>Animation</h4></a>
-        <a href="#"><h4>Branding</h4></a>
-        <a href="#"><h4>Graphic Design</h4></a>
-        <a href="#"><h4>Videography</h4></a>
-        <a href="#"><h4>Web Design</h4></a>
-    </div>
-    <div id="footerCol4">
-        <h3>Connect</h3>
-        <a href="www.instagram.com/allipao"><i class="fa fa-instagram footerIcons" style="font-size:35px;color:#666;"></i></a>
-        <a href="www.linkedin.com/in/allison-pao-722551176/"><i class="fa fa-linkedin footerIcons" style="font-size:35px;color:#666;"></i></a>
-        <a href="www.github.com/apao4"><i class="fa fa-github footerIcons" style="font-size:35px;color:#666;"></i></a> 
-        <a href="mailto:alliisonpao@live.com"><i class="fa fa-envelope footerIcons" style="font-size:35px;color:#666;"></i></a> 
-        </div>
-</footer>
+            <footer>
+                <div id="footerCol1">
+                    <a href="index.html"><img id="footerLogo" src="images/logo-white.png"></a>
+                    <h5>&copy; 2018 Allison Pao.<br>All Rights Reserved.</h5>
+                </div>
+                <div id="footerCol2">
+                    <h3>Allison Pao</h3>
+                    <a href="about.html"><h4>About Me</h4></a>
+                    <a href="resume.html"><h4>Resume</h4></a>
+                </div>
+                <div id="footerCol3">
+                    <h3>Portfolio</h3>
+                    <a href="#"><h4>Animation</h4></a>
+                    <a href="#"><h4>Branding</h4></a>
+                    <a href="#"><h4>Graphic Design</h4></a>
+                    <a href="#"><h4>Videography</h4></a>
+                    <a href="#"><h4>Web Design</h4></a>
+                </div>
+                <div id="footerCol4">
+                    <h3>Connect</h3>
+                    <a href="www.instagram.com/allipao"><i class="fa fa-instagram footerIcons" style="font-size:35px;color:#666;"></i></a>
+                    <a href="www.linkedin.com/in/allison-pao-722551176/"><i class="fa fa-linkedin footerIcons" style="font-size:35px;color:#666;"></i></a>
+                    <a href="www.github.com/apao4"><i class="fa fa-github footerIcons" style="font-size:35px;color:#666;"></i></a> 
+                    <a href="mailto:alliisonpao@live.com"><i class="fa fa-envelope footerIcons" style="font-size:35px;color:#666;"></i></a> 
+                    <button onclick="topFunction()" id="backtoTopBtn" title="Go to top">Top ^</button>
+                </div>
+                
+                </footer>
             
 <!-- <script src="js/portfoliovue.js"></script> -->
+<script src="js/portfolio.js"></script>
 <script src="js/main.js"></script>
 
 </body>

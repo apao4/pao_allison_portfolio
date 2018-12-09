@@ -22,7 +22,7 @@
 
     #indexAboutText
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         font-size: 1em;
         width: 100%;
         letter-spacing: 0.05em;
@@ -36,7 +36,7 @@
         width: 90%;
         text-align: center;
         margin: 0 auto;
-        color: #f1f1f1;
+        color: $off-white;
         padding-bottom: 40px;
         font-weight: lighter;
         font-size: 0.8em;
@@ -47,7 +47,7 @@
     #indexAboutText a
     {
         color: #fff;
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         font-size: 0.8em;
         text-align: center;
         width: 100%;
@@ -70,7 +70,7 @@
 
     #indexAboutText a:hover
     {
-        text-shadow: 2px 2px 8px #FF0000;
+        text-shadow: 2px 2px 8px $red;
     }
 
     //Animation Reel  
@@ -150,7 +150,7 @@
     //Services
     #indexServices
     {
-        background-color: #ffffff;
+        background-color: #fff;
     }
 
     #indexServices img 
@@ -168,7 +168,7 @@
     {
         position: absolute;
         top: 1240px;
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         color: #fff;
         text-align: center;
         margin: 0 auto;
@@ -181,7 +181,7 @@
 
     #serviceInfo h3
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-transform: uppercase;
         letter-spacing: 0.3em;
         padding: 0;
@@ -198,12 +198,21 @@
     #serviceIcons
     {
         text-align: center;
-        float: left;
         font-size: 50px;
         display: inline;
         clear: both;
-        width: 95%;
-        margin-bottom: 30px;
+        // width: 95%;
+        // margin-bottom: 30px;
+        margin-left: 5%;
+    }
+
+    #serviceIcons div
+    {
+        display: inline;
+        margin-left: 7%;
+
+        // width: 95%;
+        // margin-bottom: 30px;
     }
 
     //Recent Work
@@ -227,9 +236,11 @@
 
     .recentWorkExam
     {
-        filter: gray; /* IE5+ */
-        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        filter: gray; 
+        -webkit-filter: grayscale(1); 
     }
+
+
 
     //Contact Form
     #indexContactForm
@@ -253,11 +264,24 @@
 
     .indexForm
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         display: block;
     }
 
     #indexContactForm input[type=message] 
+    {
+        width: 75%;
+        height: 50px;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: $dark-grey;
+        text-transform: uppercase;
+    }
+
+    #indexContactForm input[type=tel] 
     {
         width: 75%;
         height: 50px;
@@ -303,7 +327,7 @@
 
         .indexSubmit:hover
     {
-        background-color: #993333;
+        background-color: $red;
         height: 30px;
         color: white;
         border: none;
@@ -324,50 +348,77 @@
     {
         width: 100%;
     }
+
+    #indexReel main a video 
+    {
+        width: 100%;
+        margin-left: 0;
+        float: left;
+        display: block;
     }
+
+    #indexReel main a video 
+    {
+        width: 50%;
+        margin-left: 0;
+        margin: 0 auto;
+        display: block;
+        clear: both;
+        margin-bottom: 20px;
+        z-index: 0;
+    }
+
+    #indexReel button 
+    {
+        color: $off-white;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #indexReel h3 
+    {
+        color: $dark-grey;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #indexReel main a video 
+    {
+        width: 100%;
+        margin-left: 0;
+        margin: 0 auto;
+        display: block;
+        clear: both;
+        margin-bottom: 20px;
+        z-index: 0;
+    }
+
+    #indexReel button 
+    {
+        color: $off-white;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #indexReel h3 
+    {
+        color: $dark-grey;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #indexReel 
+    {
+        clear: both;
+        width: 100%;
+        height: 700px;
+    }
+}
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
     #indexBack
     {
         background-color: $dark-grey;
-    }
-    #whyHire 
-    {
-        margin: 5px;
-    }
-    #whyHire h2 
-    {
-        font-family: 'Avenir', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 2.5em;
-        letter-spacing: 0.3em;
-        text-shadow: 2px 2px #8B0505;
-    }
-    #whyHire h5
-    {
-        font-family: 'Avenir', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 1em;
-        font-weight: lighter;
-
-    }
-    #whyHire p 
-    {
-        font-family: 'Avenir', sans-serif;
-        text-align: center;
-        font-size: 0.8em;
-        font-weight: lighter;
-        padding-bottom: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .whyHireIcons
-    {
-        width: 65px;
-        height: 65px
     }
 
     .qualities
@@ -398,7 +449,7 @@
     {
         position: absolute;
         top: 650px;
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         color: #fff;
         text-align: center;
         margin: 0 auto;
@@ -416,7 +467,7 @@
 
     #indexAboutText
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         font-size: 1em;
         width: 100%;
         letter-spacing: 0.05em;
@@ -430,7 +481,7 @@
         width: 65%;
         text-align: center;
         margin: 0 auto;
-        color: #f1f1f1;
+        color: $off-white;
         padding-bottom: 40px;
         font-weight: lighter;
         font-size: 0.9em;
@@ -444,7 +495,7 @@
     #indexAboutText a
     {
         color: #fff;
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         font-size: 1em;
         text-align: center;
         width: 100%;
@@ -518,7 +569,7 @@
 
     #curTime
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         color: #fff;
         font-size: 0.8em;
         margin-left: 20px;
@@ -526,14 +577,14 @@
 
     #slash
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         color: #fff;
         font-size: 0.8em;
     }
 
     #totalTime
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         color: #fff;
         font-size: 0.8em;
     }
@@ -556,7 +607,7 @@
     //Services
     #indexServices
     {
-        background-color: #ffffff;
+        background-color: #fff;
     }
 
     #indexServices img 
@@ -574,7 +625,7 @@
     {
         position: absolute;
         top: 1240px;
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         color: #fff;
         text-align: center;
         margin: 0 auto;
@@ -587,7 +638,7 @@
 
     #serviceInfo h3
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-transform: uppercase;
         letter-spacing: 0.3em;
         padding: 0;
@@ -605,12 +656,20 @@
     #serviceIcons
     {
         text-align: center;
-        float: left;
         font-size: 45px;
-        display: inline;
         clear: both;
         width: 95%;
         margin-bottom: 30px;
+    
+    }
+
+    #serviceIcons div
+    {
+        display: inline;
+        margin-left: 7%;
+
+        // width: 95%;
+        // margin-bottom: 30px;
     }
 
     //Recent Work
@@ -630,13 +689,12 @@
         width: 50%;
         display: inline-block;
         padding: 0;
-        float: left;
     }
 
     .recentWorkExam
     {
-        filter: gray; /* IE5+ */
-        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        filter: $dark-grey; 
+        -webkit-filter: grayscale(1); 
         -webkit-transition: all .1s ease-in-out;  
     }
         
@@ -663,7 +721,7 @@
 
     .indexForm
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         display: block;
     }
 
@@ -682,9 +740,10 @@
         text-transform: uppercase;
     }
 
-    #indexContactForm input[type=text] 
+    #indexContactForm input[type=tel] 
     {
         width: 50%;
+        height: 50px;
         padding: 15px;
         margin-bottom: 20px;
         margin: 0 auto;
@@ -695,6 +754,20 @@
         color: #fff;
         text-transform: uppercase;
     }
+
+
+    #indexContactForm input[type=tel] 
+        {
+            width: 75%;
+            height: 50px;
+            padding: 15px;
+            margin-bottom: 20px;
+            margin: 0 auto;
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: $dark-grey;
+            text-transform: uppercase;
+        }
 
     #indexContactForm label
     {
@@ -717,7 +790,7 @@
 
         .indexSubmit:hover
     {
-        background-color: #993333;
+        background-color: $red;
         height: 30px;
         color: white;
         border: none;
@@ -728,9 +801,43 @@
         margin-top: 20px;
         float: right;
     }
+
+    #indexReel main a video 
+    {
+        width: 100%;
+        margin-left: 0;
+        margin: 0 auto;
+        display: block;
+        clear: both;
+        margin-bottom: 20px;
+        z-index: 0;
+    }
+
+    #indexReel button 
+    {
+        color: $off-white;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #indexReel h3 
+    {
+        color: $dark-grey;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #indexReel 
+    {
+        clear: both;
+        width: 100%;
+        height: 700px;
+    }
+      
 }
 
 @media (min-width: 769px) {
+   
     #indexBack
     {
         background-color: $dark-grey;
@@ -792,7 +899,7 @@
         width: 45%;
         text-align: center;
         margin: 0 auto;
-        color: #f1f1f1;
+        color: $off-white;
         padding-bottom: 40px;
         font-weight: lighter;
         font-size: 1em;
@@ -833,7 +940,7 @@
 
     #indexServices
     {
-        background-color: #ffffff;
+        background-color: #fff;
         height: 650px;
     }
 
@@ -847,7 +954,7 @@
     {
         position: absolute;
         top: 1240px;
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         color: #fff;
         text-align: center;
         margin: 0 auto;
@@ -860,7 +967,7 @@
 
     #serviceInfo h3
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-transform: uppercase;
         letter-spacing: 0.3em;
         padding: 0;
@@ -886,6 +993,9 @@
         width: 200px;
     }
 
+    //Reel
+
+
     //Recent Work
     #indexRecent
     {
@@ -900,16 +1010,16 @@
     }
     .recentWorkExam
     {
-        width: 50%;
+        width: 49.5%;
         display: inline-block;
         padding: 0;
-        float: left;
+        z-index: -99;
     }
 
     .recentWorkExam
     {
-        filter: gray; /* IE5+ */
-        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        filter: gray;
+        -webkit-filter: grayscale(1); 
         -webkit-transition: all .1s ease-in-out;  
     }
         
@@ -930,13 +1040,13 @@
         background-color: $dark-grey;
         
         margin: 0 auto;
-        margin-top: 600px;
+        margin-top: 60px;
     }
 
 
         .indexForm
         {
-            font-family: 'Avenir', sans-serif;
+            font-family: $body-text;
             display: block;
             margin: 0 auto;
         }
@@ -972,6 +1082,21 @@
             text-transform: uppercase;
         }
 
+        #indexContactForm input[type=tel] 
+        {
+            width: 75%;
+            padding: 15px;
+            margin-bottom: 20px;
+            margin: 0 auto;
+            border: none;
+            margin-left: 35px;
+            float: left;
+            border-bottom: 1px solid white;
+            background-color: $dark-grey;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
         #indexContactForm label
         {
             display: none;
@@ -979,7 +1104,7 @@
 
         .indexSubmit
     {
-        background-color: #666;
+        background-color: $grey;
         height: 30px;
         color: white;
         border: none;
@@ -993,7 +1118,7 @@
 
         .indexSubmit:hover
     {
-        background-color: #993333;
+        background-color: $red;
         height: 30px;
         color: white;
         border: none;
@@ -1006,14 +1131,16 @@
     }
 
     .glitchImg {
-        font-family: Helvetica;
+        font-family: $body-text;
         font-size: 80px;
         display:inline-block;
         top:10%;
+        cursor: grab;
       }
     .glitchImg:hover{
         animation: noise-3 0.5s linear;
         animation-iteration-count: 2; //Will only glitch once on hover so that it doesn't take away from image
+        cursor: grab;
       }
       
       @keyframes noise-3 {
@@ -1075,82 +1202,55 @@
 
     #curTime 
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         font-size: 1em;
         color: #fff;
     }
 
     #totalTime
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         font-size: 1em;
         color: #fff;
     }
 
     #slash
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         font-size: 1em;
         color: #fff;
+    }    
+
+    #indexReel main a video 
+    {
+        width: 50%;
+        margin-left: 0;
+        margin: 0 auto;
+        display: block;
+        clear: both;
+        margin-bottom: 20px;
+        z-index: 0;
     }
 
-    //Recent works lightbox
-    
+    #indexReel button 
+    {
+        color: $off-white;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #indexReel h3 
+    {
+        color: $dark-grey;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #indexReel 
+    {
+        clear: both;
+        width: 100%;
+        height: 700px;
+        background-color: #fff;
+    }
 }
-
-    //SKILLS FLOAT TEXT
-
-    // #skillsContainer
-    // {
-    //     width: 100%;
-    //     height: 200px;
-    //     position: fixed;
-    // }
-    // .skills {
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     z-index: 1;
-    //     width: 100%;
-    //     height: 200px;
-    //   }
-      
-    //   .skills span 
-    //   {
-    //     color: $dark-grey;
-    //     display: block;
-    //     font-size: 0.7em;
-    //     font-family: 'Helvetica';
-    //     position: absolute;
-    //     user-select: none;
-    //     pointer-events: none;
-    //     z-index: 1;
-    //     opacity: 0;
-    //     will-change: transform, opacity;
-    //     animation-timing-function: ease-out;
-    //     animation-name: move;
-    //     width: 50%;
-    //     height: 200px;
-    //   }
-      
-    //   @keyframes move {
-    //     0% {
-    //       opacity: 0;
-    //       transform: translateY(100vh);
-    //     }
-    //     25% {
-    //       opacity: 1;
-    //     }
-    //     50% {
-    //       opacity: 1;
-    //     }
-    //     75% {
-    //       opacity: 0;
-    //     }
-    //     100% {
-    //       opacity: 0;
-    //       transform: none;
-    //     }
-    //   }
-    // }

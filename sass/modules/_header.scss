@@ -49,7 +49,7 @@
         height: 2px;
         margin-bottom: 5px;
         position: relative;
-        background-color: #666;
+        background-color: $grey;
         z-index: 1;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -98,7 +98,7 @@
 
     #menu li:hover
     {
-        color: blue;
+        color: $blue;
     }
 
     #menuToggle input:checked ~ ul
@@ -110,7 +110,7 @@
     {
         text-align: center;
         margin: 0 auto;
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         text-transform: uppercase;
         width: 100%;
         padding-top: 20px;
@@ -129,7 +129,7 @@
     
     nav a:hover
     {
-        color: blue;
+        color:$blue;
     }
    
     #homeHeader
@@ -137,7 +137,7 @@
         clear: both;
         width: 100%;
         height: 675px;
-        background-image: url("../images/headerMobile.JPG");
+        background-image: url('/images/headerMobile.jpg');
         background-repeat: no-repeat;
     }
     #headerCaption
@@ -194,12 +194,8 @@
         }
       }
 
-/* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
     background-color: #000;
-    // position: fixed;
-    // bottom: 50px;
-    // right: 50px;
     width: 10%;
     border-radius: 5px;
     text-align: center;
@@ -216,25 +212,23 @@
       color: #fff;
   }
   
-  /* The popup form - hidden by default */
   .form-popup {
     display: none;
     position: fixed;
     bottom: 0;
     right: 15px;
-    border: 3px solid #f1f1f1;
+    border: 3px solid $off-white;
     z-index: 9;
     width: 80%;
   }
   
-  /* Add styles to the form container */
   .form-container {
     max-width: 100%;
     padding: 10px;
     background-color: white;
   }
   
-  /* Full-width input fields */
+
   .form-container input[type=text]
   {
     width: 90%;
@@ -249,16 +243,15 @@
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
+    background: $off-white;
   }
-  /* When the inputs get focus, do something */
+
   .form-container input[type=text]:focus
   {
-    background-color: #ddd;
+    background-color: $off-white;
     outline: none;
   }
   
-  /* Set a style for the submit/login button */
   .form-container .btn {
     background-color: #666;
     color: white;
@@ -270,7 +263,6 @@
     opacity: 0.8;
   }
   
-  /* Add a red background color to the cancel button */
   .form-container .close 
   {
     float: right;
@@ -278,24 +270,23 @@
   }
 
   .form-container .submit {
-    background-color: green;
+    background-color: $red;
   }
   
-  /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
 
   .formHeader
   {
-    font-family: 'Avenir', sans-serif;
+    font-family: $header-font;
     text-transform: uppercase;
     letter-spacing: 0.2em;
   }
 
   .formSub
   {
-      font-family: 'Avenir', sans-serif;
+      font-family: $body-text;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       padding: 0;
@@ -316,11 +307,8 @@
       padding-top: 230px;
       padding-left: 120px;
       clear: both;
-  }
-  
-
-  }
-
+}
+}
 
 
  //TABLET   
@@ -340,7 +328,7 @@
         clear: both;
         width: 100%;
         height: 700px;
-        background-image: url("../images/headerTab.JPG");
+        background-image: url(/images/headerTab.jpg);
         background-repeat: no-repeat;
     }
     
@@ -422,7 +410,7 @@
 
     #menu li:hover
     {
-        color: blue;
+        color: $blue;
     }
 
     #menuToggle input:checked ~ ul
@@ -434,7 +422,7 @@
     {
         text-align: center;
         margin: 0 auto;
-        font-family: 'Avenir', sans-serif;
+        font-family: $body-text;
         text-transform: uppercase;
         width: 100%;
         padding-top: 20px;
@@ -453,32 +441,8 @@
     
     nav a:hover
     {
-        color: blue;
+        color: $blue;
     }
-    // #navTab
-    // {
-    //     text-align: center;
-    //     margin: 0 auto;
-    //     font-family: 'Avenir', sans-serif;
-    //     text-transform: uppercase;
-    //     width: 100%;
-    //     padding-top: 20px;
-    //     padding-bottom: 20px;
-    //     clear: both;
-    //     background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1));
-    //     height: 50px;
-    // }
-    // #navTab a 
-    // {
-    //     padding-left: 30px;
-    //     padding-right: 30px;
-    //     text-decoration: none;
-    //     color: #fff;
-    // }
-    // #navTab a:hover
-    // {
-    //     text-shadow: 2px 2px red;
-    // }
 
     header h3
     {
@@ -495,12 +459,9 @@
         display: none;
     }
 
-        /* Button used to open the contact form - fixed at the bottom of the page */
+//Form button
 .open-button {
     background-color: #000;
-    // position: fixed;
-    // bottom: 50px;
-    // right: 50px;
     width: 7%;
     border-radius: 5px;
     text-align: center;
@@ -515,52 +476,49 @@
       font-size: 2.5em;
       color: #fff;
   }
-  
-  /* The popup form - hidden by default */
+//Popup form
   .form-popup {
     display: none;
     position: fixed;
     bottom: 0;
     right: 15px;
-    border: 3px solid #f1f1f1;
+    border: 3px solid $off-white;
     z-index: 9;
     width: 50%;
   }
-  
-  /* Add styles to the form container */
+
   .form-container {
     max-width: 100%;
     padding: 10px;
     background-color: white;
   }
   
-  /* Full-width input fields */
   .form-container input[type=text]
   {
     width: 90%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
+    background: $off-white;
   }
   
-    .form-container input[type=message] {
+.form-container input[type=message] {
     width: 90%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
+    background: $off-white;
   }
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus
-  {
-    background-color: #ddd;
+
+.form-container input[type=text]:focus
+{
+    background-color: $off-white;
     outline: none;
-  }
+}
   
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-    background-color: #666;
+  .form-container .btn 
+{
+    background-color: $grey;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -568,60 +526,57 @@
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
-  }
+}
   
-  /* Add a red background color to the cancel button */
-  .form-container .close 
-  {
+.form-container .close 
+{
     float: right;
     border: none;
-  }
+}
 
-  .form-container .submit {
+.form-container .submit 
+{
     background-color: green;
-  }
+}
   
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover, .open-button:hover 
+{
     opacity: 1;
-  }
+}
 
-  .formHeader
-  {
+.formHeader
+{
     font-family: 'Avenir', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-  }
+}
 
-  .formSub
-  {
-      font-family: 'Avenir', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      padding: 0;
-  }
+.formSub
+{
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0;   
+}
 
-  //tablet animations
-  #smallHeader
-  {
-      animation-delay: 1s;
-  }
+//tablet animations
+#smallHeader
+{
+    animation-delay: 1s;
+}
   
-  #aplogo
-  {
-      animation-delay: 1.2s;
-      width: 30%;
-      margin-left: 300px;
-      margin-top: 200px;
-  }
-
-    }
+#aplogo
+{
+    animation-delay: 1.2s;
+    width: 30%;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+}
 
 
 // DESKTOP
 @media (min-width: 769px) {
-
-    
     #menuToggle
     {
         display: none;
@@ -649,7 +604,7 @@
         clear: both;
         width: 100%;
         height: 700px;
-        background-image: url("../images/header.JPG");
+        background-image: url(/images/header.JPG);
         background-repeat: no-repeat;
     }
 
@@ -665,7 +620,6 @@
         margin-top: 10px;
         clear: both;
         margin-bottom: 300px;
-        background-image: url("images/headerMob.jpg");
     }
 
     #navDes
@@ -681,9 +635,8 @@
         padding-bottom: 10px;
         clear: both;
         background-color: #000;
-        // background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
         height: 20px;
-        z-index: 1; //put the nav above all other elements
+        z-index: 1; //this puts the nav above all other elements
     }
     #navDes a 
     {
@@ -700,7 +653,7 @@
 
     #navDes a:hover
     {
-        text-shadow: 2px 2px red;
+        text-shadow: 2px 2px $red;
     }
 
     .active a:active
@@ -721,15 +674,13 @@
     #landingText
     {
         display: none;
-    }
+}
 
-    
-        /* Button used to open the contact form - fixed at the bottom of the page */
+
+//Popup form open button
 .open-button {
     background-color: #000;
-    // position: fixed;
-    // bottom: 50px;
-    // right: 50px;
+
     width: 4.5%;
     text-align: left;
     border: none;
@@ -744,33 +695,30 @@
       
   }
   
-  /* The popup form - hidden by default */
+//Popup form
   .form-popup {
     display: none;
     position: fixed;
     bottom: 0;
     right: 15px;
-    border: 3px solid #f1f1f1;
+    border: 3px solid $off-white;
     z-index: 9;
     width: 30%;
   }
   
-  /* Add styles to the form container */
   .form-container {
     max-width: 100%;
     padding: 20px;
     background-color: white;
   }
   
-  /* Full-width input fields */
   .form-container input[type=text]
   {
     width: 90%;
     padding: 15px;
     margin: 0 auto;
-    // margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
+    background: $off-white;
   }
   
     .form-container input[type=message] {
@@ -778,16 +726,15 @@
     padding: 15px;
     margin-bottom: 20px;
     border: none;
-    background: #f1f1f1;
+    background: $off-white;
   }
-  /* When the inputs get focus, do something */
+
   .form-container input[type=text]:focus
   {
-    background-color: #ddd;
+    background-color: $off-white;
     outline: none;
   }
   
-  /* Set a style for the submit/login button */
   .form-container .btn {
     color: white;
     padding: 16px 20px;
@@ -798,7 +745,6 @@
     opacity: 0.8;
   }
   
-  /* Add a red background color to the cancel button */
   .form-container .close 
   {
     float: right;
@@ -809,7 +755,6 @@
     background-color: green;
   }
   
-  /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
@@ -870,5 +815,4 @@
       width: 100%;
       text-align: center;
   }
-    
-    }
+}

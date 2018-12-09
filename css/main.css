@@ -36,7 +36,7 @@
     height: 2px;
     margin-bottom: 5px;
     position: relative;
-    background-color: #666;
+    background-color: #646464;
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
@@ -70,7 +70,7 @@
     font-size: 1.1em; }
 
   #menu li:hover {
-    color: blue; }
+    color: #0000ff; }
 
   #menuToggle input:checked ~ ul {
     transform: none; }
@@ -78,7 +78,7 @@
   nav {
     text-align: center;
     margin: 0 auto;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     text-transform: uppercase;
     width: 100%;
     padding-top: 20px;
@@ -92,13 +92,13 @@
     color: #fff; }
 
   nav a:hover {
-    color: blue; }
+    color: #0000ff; }
 
   #homeHeader {
     clear: both;
     width: 100%;
     height: 675px;
-    background-image: url("../images/headerMobile.JPG");
+    background-image: url("/images/headerMobile.jpg");
     background-repeat: no-repeat; }
 
   #headerCaption {
@@ -136,7 +136,6 @@
       opacity: 1; }
     100% {
       opacity: 0; } }
-  /* Button used to open the contact form - fixed at the bottom of the page */
   .open-button {
     background-color: #000;
     width: 10%;
@@ -152,7 +151,6 @@
     font-size: 2em;
     color: #fff; }
 
-  /* The popup form - hidden by default */
   .form-popup {
     display: none;
     position: fixed;
@@ -162,13 +160,11 @@
     z-index: 9;
     width: 80%; }
 
-  /* Add styles to the form container */
   .form-container {
     max-width: 100%;
     padding: 10px;
     background-color: white; }
 
-  /* Full-width input fields */
   .form-container input[type=text] {
     width: 90%;
     padding: 15px;
@@ -183,12 +179,10 @@
     border: none;
     background: #f1f1f1; }
 
-  /* When the inputs get focus, do something */
   .form-container input[type=text]:focus {
-    background-color: #ddd;
+    background-color: #f1f1f1;
     outline: none; }
 
-  /* Set a style for the submit/login button */
   .form-container .btn {
     background-color: #666;
     color: white;
@@ -199,25 +193,23 @@
     margin-bottom: 10px;
     opacity: 0.8; }
 
-  /* Add a red background color to the cancel button */
   .form-container .close {
     float: right;
     border: none; }
 
   .form-container .submit {
-    background-color: green; }
+    background-color: #930000; }
 
-  /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1; }
 
   .formHeader {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em; }
 
   .formSub {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 0; }
@@ -244,7 +236,7 @@
     clear: both;
     width: 100%;
     height: 700px;
-    background-image: url("../images/headerTab.JPG");
+    background-image: url(/images/headerTab.jpg);
     background-repeat: no-repeat; }
 
   #menuToggle {
@@ -305,7 +297,7 @@
     font-size: 1.1em; }
 
   #menu li:hover {
-    color: blue; }
+    color: #0000ff; }
 
   #menuToggle input:checked ~ ul {
     transform: none; }
@@ -313,7 +305,7 @@
   nav {
     text-align: center;
     margin: 0 auto;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     text-transform: uppercase;
     width: 100%;
     padding-top: 20px;
@@ -327,7 +319,7 @@
     color: #fff; }
 
   nav a:hover {
-    color: blue; }
+    color: #0000ff; }
 
   header h3 {
     color: #fff;
@@ -341,7 +333,6 @@
   #landingText {
     display: none; }
 
-  /* Button used to open the contact form - fixed at the bottom of the page */
   .open-button {
     background-color: #000;
     width: 7%;
@@ -356,7 +347,6 @@
     font-size: 2.5em;
     color: #fff; }
 
-  /* The popup form - hidden by default */
   .form-popup {
     display: none;
     position: fixed;
@@ -366,13 +356,11 @@
     z-index: 9;
     width: 50%; }
 
-  /* Add styles to the form container */
   .form-container {
     max-width: 100%;
     padding: 10px;
     background-color: white; }
 
-  /* Full-width input fields */
   .form-container input[type=text] {
     width: 90%;
     padding: 15px;
@@ -387,14 +375,12 @@
     border: none;
     background: #f1f1f1; }
 
-  /* When the inputs get focus, do something */
   .form-container input[type=text]:focus {
-    background-color: #ddd;
+    background-color: #f1f1f1;
     outline: none; }
 
-  /* Set a style for the submit/login button */
   .form-container .btn {
-    background-color: #666;
+    background-color: #646464;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -403,7 +389,6 @@
     margin-bottom: 10px;
     opacity: 0.8; }
 
-  /* Add a red background color to the cancel button */
   .form-container .close {
     float: right;
     border: none; }
@@ -411,7 +396,6 @@
   .form-container .submit {
     background-color: green; }
 
-  /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1; }
 
@@ -453,7 +437,7 @@
     clear: both;
     width: 100%;
     height: 700px;
-    background-image: url("../images/header.JPG");
+    background-image: url(/images/header.JPG);
     background-repeat: no-repeat; }
 
   #headerDes {
@@ -466,8 +450,7 @@
     font-size: 1.3em;
     margin-top: 10px;
     clear: both;
-    margin-bottom: 300px;
-    background-image: url("images/headerMob.jpg"); }
+    margin-bottom: 300px; }
 
   #navDes {
     text-align: center;
@@ -494,7 +477,7 @@
     text-shadow: 2px 2px white; }
 
   #navDes a:hover {
-    text-shadow: 2px 2px red; }
+    text-shadow: 2px 2px #930000; }
 
   .active a:active {
     text-shadow: 2px 2px white; }
@@ -512,7 +495,6 @@
   #landingText {
     display: none; }
 
-  /* Button used to open the contact form - fixed at the bottom of the page */
   .open-button {
     background-color: #000;
     width: 4.5%;
@@ -525,7 +507,6 @@
     font-size: 4em;
     color: #fff; }
 
-  /* The popup form - hidden by default */
   .form-popup {
     display: none;
     position: fixed;
@@ -535,13 +516,11 @@
     z-index: 9;
     width: 30%; }
 
-  /* Add styles to the form container */
   .form-container {
     max-width: 100%;
     padding: 20px;
     background-color: white; }
 
-  /* Full-width input fields */
   .form-container input[type=text] {
     width: 90%;
     padding: 15px;
@@ -556,12 +535,10 @@
     border: none;
     background: #f1f1f1; }
 
-  /* When the inputs get focus, do something */
   .form-container input[type=text]:focus {
-    background-color: #ddd;
+    background-color: #f1f1f1;
     outline: none; }
 
-  /* Set a style for the submit/login button */
   .form-container .btn {
     color: white;
     padding: 16px 20px;
@@ -571,7 +548,6 @@
     margin-bottom: 10px;
     opacity: 0.8; }
 
-  /* Add a red background color to the cancel button */
   .form-container .close {
     float: right;
     border: none; }
@@ -579,7 +555,6 @@
   .form-container .submit {
     background-color: green; }
 
-  /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1; }
 
@@ -640,7 +615,7 @@
     margin: 0; }
 
   #indexAboutText {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     font-size: 1em;
     width: 100%;
     letter-spacing: 0.05em;
@@ -661,7 +636,7 @@
 
   #indexAboutText a {
     color: #fff;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     font-size: 0.8em;
     text-align: center;
     width: 100%;
@@ -678,7 +653,7 @@
     padding-bottom: 50px; }
 
   #indexAboutText a:hover {
-    text-shadow: 2px 2px 8px #FF0000; }
+    text-shadow: 2px 2px 8px #930000; }
 
   #animationReel {
     width: 100%;
@@ -729,7 +704,7 @@
     margin-left: 0; }
 
   #indexServices {
-    background-color: #ffffff; }
+    background-color: #fff; }
 
   #indexServices img {
     width: 100%; }
@@ -741,7 +716,7 @@
   #indexServicesTitle h3 {
     position: absolute;
     top: 1240px;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     color: #fff;
     text-align: center;
     margin: 0 auto;
@@ -752,7 +727,7 @@
     letter-spacing: 0.4em; }
 
   #serviceInfo h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     padding: 0; }
@@ -765,12 +740,14 @@
 
   #serviceIcons {
     text-align: center;
-    float: left;
     font-size: 50px;
     display: inline;
     clear: both;
-    width: 95%;
-    margin-bottom: 30px; }
+    margin-left: 5%; }
+
+  #serviceIcons div {
+    display: inline;
+    margin-left: 7%; }
 
   #indexRecent {
     background-color: #1a1a1a;
@@ -786,9 +763,7 @@
 
   .recentWorkExam {
     filter: gray;
-    /* IE5+ */
-    -webkit-filter: grayscale(1);
-    /* Webkit Nightlies & Chrome Canary */ }
+    -webkit-filter: grayscale(1); }
 
   #indexContactForm {
     background-color: #fff;
@@ -805,10 +780,21 @@
     margin-top: 650px; }
 
   .indexForm {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     display: block; }
 
   #indexContactForm input[type=message] {
+    width: 75%;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #1a1a1a;
+    text-transform: uppercase; }
+
+  #indexContactForm input[type=tel] {
     width: 75%;
     height: 50px;
     padding: 15px;
@@ -845,7 +831,7 @@
     float: right; }
 
   .indexSubmit:hover {
-    background-color: #993333;
+    background-color: #930000;
     height: 30px;
     color: white;
     border: none;
@@ -860,41 +846,59 @@
     display: none; }
 
   #contactMobImg {
-    width: 100%; } }
+    width: 100%; }
+
+  #indexReel main a video {
+    width: 100%;
+    margin-left: 0;
+    float: left;
+    display: block; }
+
+  #indexReel main a video {
+    width: 50%;
+    margin-left: 0;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+    z-index: 0; }
+
+  #indexReel button {
+    color: #f1f1f1;
+    margin: 0 auto;
+    text-align: center; }
+
+  #indexReel h3 {
+    color: #1a1a1a;
+    margin: 0 auto;
+    text-align: center; }
+
+  #indexReel main a video {
+    width: 100%;
+    margin-left: 0;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+    z-index: 0; }
+
+  #indexReel button {
+    color: #f1f1f1;
+    margin: 0 auto;
+    text-align: center; }
+
+  #indexReel h3 {
+    color: #1a1a1a;
+    margin: 0 auto;
+    text-align: center; }
+
+  #indexReel {
+    clear: both;
+    width: 100%;
+    height: 700px; } }
 @media screen and (min-width: 480px) and (max-width: 769px) {
   #indexBack {
     background-color: #1a1a1a; }
-
-  #whyHire {
-    margin: 5px; }
-
-  #whyHire h2 {
-    font-family: 'Avenir', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5em;
-    letter-spacing: 0.3em;
-    text-shadow: 2px 2px #8B0505; }
-
-  #whyHire h5 {
-    font-family: 'Avenir', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1em;
-    font-weight: lighter; }
-
-  #whyHire p {
-    font-family: 'Avenir', sans-serif;
-    text-align: center;
-    font-size: 0.8em;
-    font-weight: lighter;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px; }
-
-  .whyHireIcons {
-    width: 65px;
-    height: 65px; }
 
   .qualities {
     width: 33%;
@@ -915,7 +919,7 @@
   #indexAboutTitle h2 {
     position: absolute;
     top: 650px;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     color: #fff;
     text-align: center;
     margin: 0 auto;
@@ -929,7 +933,7 @@
     margin: 0; }
 
   #indexAboutText {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     font-size: 1em;
     width: 100%;
     letter-spacing: 0.05em;
@@ -953,7 +957,7 @@
 
   #indexAboutText a {
     color: #fff;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     font-size: 1em;
     text-align: center;
     width: 100%;
@@ -1002,18 +1006,18 @@
     width: 80px; }
 
   #curTime {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     color: #fff;
     font-size: 0.8em;
     margin-left: 20px; }
 
   #slash {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     color: #fff;
     font-size: 0.8em; }
 
   #totalTime {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     color: #fff;
     font-size: 0.8em; }
 
@@ -1027,7 +1031,7 @@
     font-size: 1em; }
 
   #indexServices {
-    background-color: #ffffff; }
+    background-color: #fff; }
 
   #indexServices img {
     width: 100%; }
@@ -1039,7 +1043,7 @@
   #indexServicesTitle h3 {
     position: absolute;
     top: 1240px;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     color: #fff;
     text-align: center;
     margin: 0 auto;
@@ -1050,7 +1054,7 @@
     letter-spacing: 0.4em; }
 
   #serviceInfo h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     padding: 0; }
@@ -1064,12 +1068,14 @@
 
   #serviceIcons {
     text-align: center;
-    float: left;
     font-size: 45px;
-    display: inline;
     clear: both;
     width: 95%;
     margin-bottom: 30px; }
+
+  #serviceIcons div {
+    display: inline;
+    margin-left: 7%; }
 
   #indexRecent {
     background-color: #1a1a1a;
@@ -1081,14 +1087,11 @@
   .recentWorkExam {
     width: 50%;
     display: inline-block;
-    padding: 0;
-    float: left; }
+    padding: 0; }
 
   .recentWorkExam {
-    filter: gray;
-    /* IE5+ */
+    filter: #1a1a1a;
     -webkit-filter: grayscale(1);
-    /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .1s ease-in-out; }
 
   .recentWorkExam:hover {
@@ -1105,7 +1108,7 @@
     margin-bottom: 40px; }
 
   .indexForm {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     display: block; }
 
   #indexContactForm input[type=message] {
@@ -1121,8 +1124,9 @@
     color: #fff;
     text-transform: uppercase; }
 
-  #indexContactForm input[type=text] {
+  #indexContactForm input[type=tel] {
     width: 50%;
+    height: 50px;
     padding: 15px;
     margin-bottom: 20px;
     margin: 0 auto;
@@ -1131,6 +1135,17 @@
     margin-left: 170px;
     background-color: #1a1a1a;
     color: #fff;
+    text-transform: uppercase; }
+
+  #indexContactForm input[type=tel] {
+    width: 75%;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #1a1a1a;
     text-transform: uppercase; }
 
   #indexContactForm label {
@@ -1149,7 +1164,7 @@
     float: right; }
 
   .indexSubmit:hover {
-    background-color: #993333;
+    background-color: #930000;
     height: 30px;
     color: white;
     border: none;
@@ -1158,7 +1173,31 @@
     margin-bottom: 10px;
     margin-left: 140px;
     margin-top: 20px;
-    float: right; } }
+    float: right; }
+
+  #indexReel main a video {
+    width: 100%;
+    margin-left: 0;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+    z-index: 0; }
+
+  #indexReel button {
+    color: #f1f1f1;
+    margin: 0 auto;
+    text-align: center; }
+
+  #indexReel h3 {
+    color: #1a1a1a;
+    margin: 0 auto;
+    text-align: center; }
+
+  #indexReel {
+    clear: both;
+    width: 100%;
+    height: 700px; } }
 @media (min-width: 769px) {
   #indexBack {
     background-color: #1a1a1a; }
@@ -1235,7 +1274,7 @@
     width: 50%; }
 
   #indexServices {
-    background-color: #ffffff;
+    background-color: #fff;
     height: 650px; }
 
   #indexServicesTitle {
@@ -1245,7 +1284,7 @@
   #indexServicesTitle h3 {
     position: absolute;
     top: 1240px;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     color: #fff;
     text-align: center;
     margin: 0 auto;
@@ -1256,7 +1295,7 @@
     letter-spacing: 0.4em; }
 
   #serviceInfo h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     padding: 0; }
@@ -1284,16 +1323,14 @@
     background-color: #1a1a1a; }
 
   .recentWorkExam {
-    width: 50%;
+    width: 49.5%;
     display: inline-block;
     padding: 0;
-    float: left; }
+    z-index: -99; }
 
   .recentWorkExam {
     filter: gray;
-    /* IE5+ */
     -webkit-filter: grayscale(1);
-    /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .1s ease-in-out; }
 
   .recentWorkExam:hover {
@@ -1307,10 +1344,10 @@
     width: 50%;
     background-color: #1a1a1a;
     margin: 0 auto;
-    margin-top: 600px; }
+    margin-top: 60px; }
 
   .indexForm {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     display: block;
     margin: 0 auto; }
 
@@ -1341,11 +1378,24 @@
     color: #fff;
     text-transform: uppercase; }
 
+  #indexContactForm input[type=tel] {
+    width: 75%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    border: none;
+    margin-left: 35px;
+    float: left;
+    border-bottom: 1px solid white;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-transform: uppercase; }
+
   #indexContactForm label {
     display: none; }
 
   .indexSubmit {
-    background-color: #666;
+    background-color: #646464;
     height: 30px;
     color: white;
     border: none;
@@ -1357,7 +1407,7 @@
     float: right; }
 
   .indexSubmit:hover {
-    background-color: #993333;
+    background-color: #930000;
     height: 30px;
     color: white;
     border: none;
@@ -1369,14 +1419,16 @@
     float: right; }
 
   .glitchImg {
-    font-family: Helvetica;
+    font-family: "Avenir", "sans-serif";
     font-size: 80px;
     display: inline-block;
-    top: 10%; }
+    top: 10%;
+    cursor: grab; }
 
   .glitchImg:hover {
     animation: noise-3 0.5s linear;
-    animation-iteration-count: 2; }
+    animation-iteration-count: 2;
+    cursor: grab; }
 
   @keyframes noise-3 {
     0%,3%,5%,42%,44%,100% {
@@ -1423,22 +1475,47 @@
     border: none; }
 
   #curTime {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     font-size: 1em;
     color: #fff; }
 
   #totalTime {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     font-size: 1em;
     color: #fff; }
 
   #slash {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", "sans-serif";
     font-size: 1em;
-    color: #fff; } }
+    color: #fff; }
+
+  #indexReel main a video {
+    width: 50%;
+    margin-left: 0;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+    z-index: 0; }
+
+  #indexReel button {
+    color: #f1f1f1;
+    margin: 0 auto;
+    text-align: center; }
+
+  #indexReel h3 {
+    color: #1a1a1a;
+    margin: 0 auto;
+    text-align: center; }
+
+  #indexReel {
+    clear: both;
+    width: 100%;
+    height: 700px;
+    background-color: #fff; } }
 @media (max-width: 479px) {
   header h1 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     color: #fff;
     font-size: 4em;
     text-transform: uppercase;
@@ -1455,11 +1532,11 @@
     float: left; }
 
   h1:nth-child(2) {
-    color: blue;
+    color: #0000ff;
     animation: glitch2 1s infinite; }
 
   h1:nth-child(3) {
-    color: red;
+    color: #930000;
     animation: glitch3 1s infinite; }
 
   /*Keyframes*/
@@ -1585,7 +1662,7 @@
       opacity: 0.25; } } }
 @media screen and (min-width: 480px) and (max-width: 769px) {
   header h1 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     color: #fff;
     font-size: 6.5em;
     text-transform: uppercase;
@@ -1601,11 +1678,11 @@
     float: left; }
 
   h1:nth-child(2) {
-    color: blue;
+    color: #0000ff;
     animation: glitch2 1s infinite; }
 
   h1:nth-child(3) {
-    color: red;
+    color: #930000;
     animation: glitch3 1s infinite; }
 
   /*Keyframes*/
@@ -1731,7 +1808,7 @@
       opacity: 0.25; } } }
 @media screen and (min-width: 770px) {
   header h1 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     color: #fff;
     font-size: 7.5em;
     text-transform: uppercase;
@@ -1748,11 +1825,11 @@
     float: left; }
 
   h1:nth-child(2) {
-    color: blue;
+    color: #0000ff;
     animation: glitch2 1s infinite; }
 
   h1:nth-child(3) {
-    color: red;
+    color: #930000;
     animation: glitch3 1s infinite; }
 
   /*Keyframes*/
@@ -1924,220 +2001,8 @@
 #services p {
   padding-top: 50px; }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 479px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    width: 100%; }
-
-  .portCon {
-    position: relative;
-    width: 100%; }
-
-  .portExamples {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden; }
-
-  .midText {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center; }
-
-  .portCon:hover .portExamples {
-    opacity: 0.9; }
-
-  .portCon:hover .midText {
-    opacity: 1; }
-
-  .text {
-    background-color: #000;
-    color: white;
-    width: 300px; }
-
-  .text h3 {
-    font-size: 1em;
-    font-family: 'Avenir', sans-serif;
-    font-weight: lighter;
-    text-transform: uppercase; }
-
-  .text h5 {
-    font-size: 0.8em;
-    font-family: 'Avenir', sans-serif;
-    font-weight: lighter;
-    font-style: oblique; }
-
-  .midText a {
-    text-decoration: none;
-    color: #fff; }
-
-  .midText a:hover {
-    color: red; } }
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (min-width: 480px) and (max-width: 769px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    width: 50%; }
-
-  .portCon {
-    position: relative;
-    width: 100%; }
-
-  .portExamples {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden; }
-
-  .midText {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    margin-top: 50%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center; }
-
-  .portCon:hover .portExamples {
-    opacity: 0.9; }
-
-  .portCon:hover .midText {
-    opacity: 1; }
-
-  .text {
-    background-color: #000;
-    color: white;
-    width: 300px; }
-
-  .text h3 {
-    font-size: 1em;
-    font-family: 'Avenir', sans-serif;
-    font-weight: lighter;
-    letter-spacing: 0.1em;
-    text-transform: uppercase; }
-
-  .text h5 {
-    font-size: 0.8em;
-    font-family: 'Avenir', sans-serif;
-    font-weight: lighter;
-    font-style: oblique; }
-
-  .midText a {
-    text-decoration: none;
-    color: #fff; }
-
-  .midText a:hover {
-    color: red; } }
-@media screen and (min-width: 770px) {
-  .column {
-    -ms-flex: 25%;
-    /* IE10 */
-    flex: 25%;
-    max-width: 25%; }
-
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-  .portCon {
-    position: relative;
-    width: 100%; }
-
-  .portExamples {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden; }
-
-  .midText {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center; }
-
-  .portCon:hover .portExamples {
-    opacity: 0.9; }
-
-  .portCon:hover .midText {
-    opacity: 1; }
-
-  .text {
-    background-color: #000;
-    color: white;
-    font-size: 16px;
-    height: 100%;
-    top: 50%;
-    bottom: 50%;
-    width: 200px; }
-
-  .text h3 {
-    font-size: 1em;
-    font-family: 'Avenir', sans-serif;
-    font-weight: lighter;
-    text-transform: uppercase; }
-
-  .text h5 {
-    font-size: 0.8em;
-    font-family: 'Avenir', sans-serif;
-    font-weight: lighter;
-    font-style: oblique; }
-
-  .midText a {
-    text-decoration: none;
-    color: #fff; }
-
-  .midText a:hover {
-    color: red; } }
-.row {
-  display: -ms-flexbox;
-  /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE10 */
-  flex-wrap: wrap; }
-
-/* Create four equal columns that sits next to each other */
-.column #portImg {
-  vertical-align: middle; }
-
-#portImg {
-  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-  filter: gray;
-  /* IE5+ */
-  -webkit-filter: grayscale(1);
-  /* Webkit Nightlies & Chrome Canary */
-  -webkit-transition: all .1s ease-in-out; }
-
-#portImg:hover {
-  filter: none;
-  -webkit-filter: grayscale(0); }
-
 .backBtn a {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", "sans-serif";
   padding: 15px;
   text-decoration: none;
   text-transform: lowercase; }
@@ -2146,15 +2011,58 @@
   margin-top: 15px; }
 
 @media (max-width: 479px) {
+  .portHeader h3 {
+    font-family: "Avenir", sans-serif;
+    font-size: 4em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    margin-left: 40px; }
+
+  .portHeader h5 {
+    font-family: "Avenir", sans-serif;
+    font-size: 1.8em;
+    font-weight: lighter;
+    margin: 0;
+    color: #fff;
+    margin-left: 40px;
+    padding-top: 90px;
+    font-style: oblique; }
+
+  .portHeader img {
+    width: 45%;
+    float: right;
+    margin-top: 50px; }
+
+  .portHeader h3 {
+    font-family: "Avenir", sans-serif;
+    font-size: 1.7em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    margin-left: 20px; }
+
+  .portHeader h5 {
+    font-family: "Avenir", sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 0;
+    color: #fff;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-style: oblique; }
+
   .proInfo h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 1.5em;
     font-weight: lighter;
     text-transform: uppercase;
     margin: 0; }
 
   .proInfo h5 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 1.1em;
     font-weight: lighter;
     padding: 0;
@@ -2162,24 +2070,23 @@
     margin-top: 50px; }
 
   .proInfo h6 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 0.9em;
+    font-family: "Avenir", sans-serif;
+    font-size: 1.3em;
     font-weight: lighter;
     margin: 0; }
 
   .proInfo h4 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 1em;
+    font-family: "Avenir", sans-serif;
+    font-size: 1.3em;
     text-transform: uppercase;
     font-weight: lighter;
     margin: 0; }
 
   .proInfo p {
-    font-family: 'Avenir', sans-serif;
-    font-size: 0.75em;
+    font-family: "Avenir", sans-serif;
+    font-size: 0.9em;
     font-weight: lighter;
-    padding: 0;
-    margin-left: 20px; }
+    padding: 0; }
 
   .proInfo {
     width: 100%; }
@@ -2192,6 +2099,81 @@
     width: 40%;
     float: right;
     clear: both; }
+
+  .proCap {
+    font-family: "Avenir", sans-serif;
+    font-size: 1.7em;
+    font-style: oblique;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+  .programIcons {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px; }
+
+  .programIcons img {
+    width: 35px;
+    text-align: center;
+    padding: 10px; }
+
+  .morePics {
+    width: 100%;
+    display: inline-block;
+    clear: both; }
+
+  #lsfcHeader {
+    background-color: #f4bf42;
+    width: 100%;
+    height: 200px; }
+
+  #engageHeader {
+    background-color: #3f3f3f;
+    width: 100%;
+    height: 200px; }
+
+  #melloHeader {
+    background-color: #cce4e8;
+    width: 100%;
+    height: 200px; }
+
+  #audiHeader {
+    background-color: #000;
+    width: 100%;
+    height: 200px; }
+
+  #casualHeader {
+    background-color: #2e6fcc;
+    width: 100%;
+    height: 200px; }
+
+  #ifrcHeader {
+    background-color: #f8ceba;
+    width: 100%;
+    height: 200px; }
+
+  #velveetaHeader {
+    background-color: #c9ced1;
+    width: 100%;
+    height: 200px; }
+
+  #infoHeader {
+    background-color: #a6a9d4;
+    width: 100%;
+    height: 200px; }
+
+  #photoHeader {
+    background-color: #b2b3ae;
+    width: 100%;
+    height: 300px; }
+
+  #teamHeader {
+    background-color: #30004b;
+    width: 100%;
+    height: 200px; }
 
   #organVid {
     width: 100%;
@@ -2249,15 +2231,45 @@
   #portInfographDes {
     display: none; } }
 @media screen and (min-width: 480px) and (max-width: 769px) {
+  .proCap {
+    font-style: oblique;
+    width: 80%;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 0 auto; }
+
+  .portHeader h3 {
+    font-family: "Avenir", sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 40px;
+    color: #fff; }
+
+  .portImgHead {
+    width: 50%;
+    margin-top: 50px; }
+
+  .portHeader h5 {
+    font-family: "Avenir", sans-serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-transform: lowercase;
+    margin: 0;
+    color: #1a1a1a;
+    padding-left: 40px;
+    font-style: oblique;
+    padding-top: 50px; }
+
   .proInfo h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 2em;
     font-weight: lighter;
     text-transform: uppercase;
     margin: 0; }
 
   .proInfo h5 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 1.1em;
     font-weight: lighter;
     padding: 0;
@@ -2265,20 +2277,20 @@
     margin-top: 50px; }
 
   .proInfo h6 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 1.2em;
     font-weight: lighter;
     margin: 0; }
 
   .proInfo h4 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: lighter;
     margin: 0; }
 
   .proInfo p {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 0.9em;
     font-weight: lighter;
     padding: 0;
@@ -2291,11 +2303,99 @@
     width: 90%;
     margin: 0 auto; }
 
-  .portImg {
+  .portImgHead {
     width: 40%;
     float: right;
     clear: both;
     padding-left: 20px; }
+
+  .proInfo p {
+    font-family: "Avenir", "sans-serif";
+    font-size: 1.1em;
+    font-weight: lighter;
+    padding: 0; }
+
+  .proCap {
+    font-family: "Avenir", "sans-serif";
+    font-size: 1.2em;
+    font-style: oblique;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+  .proInfo {
+    width: 90%;
+    margin: 0 auto; }
+
+  .programIcons {
+    font-size: 55px;
+    text-align: center; }
+
+  .programIcons img {
+    width: 55px;
+    text-align: center; }
+
+  .morePics {
+    width: 100%;
+    display: inline-block;
+    clear: both; }
+
+  .morePics img {
+    width: 49%;
+    display: inline-block;
+    clear: both; }
+
+  #lsfcHeader {
+    background-color: #f4bf42;
+    width: 100%;
+    height: 300px; }
+
+  #engageHeader {
+    background-color: #3f3f3f;
+    width: 100%;
+    height: 300px; }
+
+  #melloHeader {
+    background-color: #cce4e8;
+    width: 100%;
+    height: 300px; }
+
+  #audiHeader {
+    background-color: #000;
+    width: 100%;
+    height: 300px; }
+
+  #casualHeader {
+    background-color: #2e6fcc;
+    width: 100%;
+    height: 300px; }
+
+  #ifrcHeader {
+    background-color: #f8ceba;
+    width: 100%;
+    height: 300px; }
+
+  #velveetaHeader {
+    background-color: #c9ced1;
+    width: 100%;
+    height: 300px; }
+
+  #infoHeader {
+    background-color: #b2b3ae;
+    width: 100%;
+    height: 300px; }
+
+  #photoHeader {
+    background-color: #b2b3ae;
+    width: 100%;
+    height: 300px; }
+
+  #teamHeader {
+    background-color: #30004b;
+    width: 100%;
+    height: 300px; }
 
   #melloVidDes {
     width: 40%;
@@ -2362,21 +2462,31 @@
     padding-left: 40px; } }
 @media screen and (min-width: 770px) {
   .portHeader h3 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 2.5em;
-    font-weight: lighter;
+    font-family: "Avenir", sans-serif;
+    font-size: 4em;
+    font-weight: bolder;
     text-transform: uppercase;
-    margin: 0; }
+    margin: 0;
+    color: #fff;
+    margin-left: 40px; }
 
   .portHeader h5 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 2em;
+    font-family: "Avenir", sans-serif;
+    font-size: 1.8em;
     font-weight: lighter;
-    text-transform: uppercase;
-    margin: 0; }
+    margin: 0;
+    color: #fff;
+    margin-left: 40px;
+    padding-top: 90px;
+    font-style: oblique; }
+
+  .portHeader img {
+    width: 40%;
+    float: right;
+    margin-top: 50px; }
 
   .proInfo h5 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 1.3em;
     font-weight: lighter;
     padding: 0;
@@ -2384,36 +2494,119 @@
     margin-top: 50px; }
 
   .proInfo h6 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 1.2em;
-    font-weight: lighter;
-    margin: 0; }
+    font-family: "Avenir", sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0;
+    text-transform: uppercase;
+    font-style: oblique; }
 
   .proInfo h4 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: lighter;
     margin: 0; }
 
   .proInfo p {
-    font-family: 'Avenir', sans-serif;
-    font-size: 1em;
+    font-family: "Avenir", sans-serif;
+    font-size: 1.3em;
     font-weight: lighter;
-    padding: 0;
-    margin-left: 20px; }
+    padding: 0; }
+
+  .proCap {
+    font-family: "Avenir", sans-serif;
+    font-size: 1.7em;
+    font-style: oblique;
+    margin-left: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px; }
 
   .proInfo {
-    width: 50%; }
+    width: 70%;
+    margin: 0 auto; }
+
+  .programIcons {
+    font-size: 75px;
+    text-align: center; }
+
+  .programIcons img {
+    width: 75px;
+    text-align: center; }
 
   .portfolio {
     width: 90%;
     margin: 0 auto; }
 
-  .portImg {
-    width: 40%;
-    float: right;
+  .portVideos {
+    width: 100%; }
+
+  .morePics img {
+    width: 45%; }
+
+  .morePics video {
+    width: 50%; }
+
+  .morePics {
+    width: 100%;
+    display: inline-block;
     clear: both; }
+
+  .velImg img {
+    width: 100%; }
+
+  #lsfcHeader {
+    background-color: #f4bf42;
+    width: 100%;
+    height: 500px; }
+
+  #engageHeader {
+    background-color: #3f3f3f;
+    width: 100%;
+    height: 500px; }
+
+  #melloHeader {
+    background-color: #cce4e8;
+    width: 100%;
+    height: 500px; }
+
+  #audiHeader {
+    background-color: #000;
+    width: 100%;
+    height: 500px; }
+
+  #casualHeader {
+    background-color: #2e6fcc;
+    width: 100%;
+    height: 500px; }
+
+  #ifrcHeader {
+    background-color: #f8ceba;
+    width: 100%;
+    height: 500px; }
+
+  #velveetaHeader {
+    background-color: #c9ced1;
+    width: 100%;
+    height: 500px; }
+
+  #infoHeader {
+    background-color: #a6a9d4;
+    width: 100%;
+    height: 500px; }
+
+  #photoHeader {
+    background-color: #b2b3ae;
+    width: 100%;
+    height: 500px; }
+
+  #teamHeader {
+    background-color: #30004b;
+    width: 100%;
+    height: 500px; }
 
   #melloVidDes {
     width: 40%;
@@ -2425,11 +2618,8 @@
     display: none; }
 
   #melloVidBottle {
-    float: right;
-    clear: both;
-    position: relative;
-    width: 500px;
-    height: auto; }
+    width: 50%;
+    margin: 0 auto; }
 
   .velveetaLabelsMob {
     display: none; }
@@ -2472,75 +2662,12 @@
     float: right;
     width: 50%;
     padding-left: 50px; } }
-.row {
-  display: -ms-flexbox;
-  /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE10 */
-  flex-wrap: wrap; }
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%;
-  /* IE10 */
-  flex: 25%;
-  max-width: 25%; }
-
-.column img {
-  vertical-align: middle; }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%; } }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%; } }
-.column img {
-  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-  filter: gray;
-  /* IE5+ */
-  -webkit-filter: grayscale(1);
-  /* Webkit Nightlies & Chrome Canary */ }
-
-.column img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0); }
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center; }
-
-.container:hover .image {
-  opacity: 0.3; }
-
-.container:hover .middle {
-  opacity: 1; }
-
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px; }
-
 @media (max-width: 479px) {
   #contactInfo {
     display: none; }
 
   #contact h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5em;
@@ -2548,7 +2675,7 @@
     font-style: oblique; }
 
   #contact h6 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-align: center;
     font-size: 1em;
     font-style: oblique;
@@ -2586,14 +2713,14 @@
     margin-left: 35px; }
 
   .contactSub {
-    font-family: "Avenir", sans-serif;
+    font-family: "Avenir", "sans-serif";
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-align: center;
     font-size: 0.9em; }
 
   #contactSubmit {
-    background-color: #666;
+    background-color: #1a1a1a;
     color: white;
     border: none;
     cursor: pointer;
@@ -2604,7 +2731,7 @@
     margin-top: 20px; }
 
   #contactSubmit:hover {
-    background-color: #993333;
+    background-color: #930000;
     color: white;
     border: none;
     cursor: pointer;
@@ -2625,7 +2752,7 @@
     display: none; }
 
   #contact h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.4em;
@@ -2633,7 +2760,7 @@
     font-style: oblique; }
 
   #contact h6 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-align: center;
     font-size: 1em;
     font-style: oblique;
@@ -2678,8 +2805,8 @@
     font-size: 0.9em; }
 
   #contactSubmit {
-    background-color: #666;
-    color: white;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
     border: none;
     cursor: pointer;
     width: 60%;
@@ -2688,8 +2815,8 @@
     margin-top: 20px; }
 
   #contactSubmit:hover {
-    background-color: #993333;
-    color: white;
+    background-color: #930000;
+    color: #f1f1f1;
     border: none;
     cursor: pointer;
     width: 60%;
@@ -2708,11 +2835,11 @@
     float: left;
     width: 50%;
     height: 600px;
-    background-color: #630000; }
+    background-color: #930000; }
 
   #contactInfo h3 {
     font-size: 3em;
-    color: #fff;
+    color: #f1f1f1;
     font-family: 'Avenir', sans-serif;
     text-transform: uppercase;
     text-align: right;
@@ -2720,7 +2847,7 @@
 
   #contactInfo h5 {
     font-size: 1em;
-    color: #fff;
+    color: #f1f1f1;
     font-family: 'Avenir', sans-serif;
     letter-spacing: 0.1em;
     text-align: right;
@@ -2787,8 +2914,8 @@
     font-size: 0.9em; }
 
   #contactSubmit {
-    background-color: #666;
-    color: white;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
     border: none;
     cursor: pointer;
     width: 60%;
@@ -2797,8 +2924,8 @@
     margin-left: 130px; }
 
   #contactSubmit:hover {
-    background-color: #993333;
-    color: white;
+    background-color: #930000;
+    color: #f1f1f1;
     border: none;
     cursor: pointer;
     width: 60%;
@@ -2820,11 +2947,11 @@ footer {
   color: white; }
 
 #backtoTopBtn {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", "sans-serif";
   font-weight: bolder;
   font-size: 1em;
   background-color: #000;
-  color: #fff;
+  color: #f1f1f1;
   border-style: none;
   cursor: pointer;
   text-transform: uppercase; }
@@ -2862,29 +2989,29 @@ footer {
     display: inline-block; }
 
   footer h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
-    color: #fff;
+    color: #f1f1f1;
     font-size: 0.8em; }
 
   footer h4 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: capitalize;
     font-weight: lighter;
-    color: #666;
+    color: #646464;
     font-size: 0.7em;
     line-height: 2em; }
 
   footer h5 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     padding-left: 5px;
     font-weight: lighter;
     text-transform: uppercase;
     clear: both;
     float: left;
     padding-top: 50px;
-    color: #666; }
+    color: #646464; }
 
   footer a {
     text-decoration: none; } }
@@ -2921,17 +3048,17 @@ footer {
     display: inline-block; }
 
   footer h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
     color: #fff;
     font-size: 0.9em; }
 
   footer h4 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: capitalize;
     font-weight: lighter;
-    color: #666;
+    color: #646464;
     font-size: 0.8em;
     line-height: 0.9em; }
 
@@ -2944,14 +3071,14 @@ footer {
     clear: both;
     float: left;
     padding-top: 50px;
-    color: #666; }
+    color: #646464; }
 
   footer a {
     text-decoration: none; } }
 @media screen and (min-width: 770px) {
   footer {
     height: 250px;
-    margin-top: 20%; }
+    margin-top: 10%; }
 
   .footerIcons {
     display: inline-block;
@@ -2982,22 +3109,22 @@ footer {
     display: inline-block; }
 
   footer h3 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
     color: #fff;
     font-size: 0.9em; }
 
   footer h4 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-transform: capitalize;
     font-weight: lighter;
-    color: #666;
+    color: #646464;
     font-size: 0.8em;
     line-height: 0.9em; }
 
   footer h5 {
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     padding-left: 55px;
     font-weight: lighter;
     text-transform: uppercase;
@@ -3005,10 +3132,291 @@ footer {
     clear: both;
     float: left;
     padding-top: 50px;
-    color: #666; }
+    color: #646464; }
 
   footer a {
     text-decoration: none; } }
+@media (max-width: 479px) {
+  #portIntro h3 {
+    font-size: 2em;
+    font-family: "Avenir", sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px; }
+
+  #portIntro p {
+    font-size: 0.9em;
+    font-style: oblique;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    color: #1a1a1a; }
+
+  .portfolioGall ul {
+    list-style: none;
+    margin: 0%;
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  .portfolioGall button {
+    width: 45%;
+    margin: 0 auto;
+    background: none;
+    font-family: "Avenir", sans-serif;
+    font-size: 0.5em;
+    border-style: none;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block; }
+
+  .portfolioGall button:hover {
+    font-weight: bolder; }
+
+  .portfolioGall {
+    width: 100%;
+    margin: 0 auto; }
+
+  .portImg {
+    filter: #1a1a1a;
+    -webkit-filter: grayscale(1);
+    width: 100%;
+    display: inline-block;
+    padding: 0; } }
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  #portIntro h3 {
+    font-size: 2em;
+    font-family: "Avenir", sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px; }
+
+  #portIntro p {
+    font-size: 1em;
+    font-style: oblique;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    color: #1a1a1a; }
+
+  .portfolioGall ul {
+    list-style: none;
+    margin: 0; }
+
+  .portfolioGall button {
+    width: 16%;
+    margin: 0 auto;
+    background: none;
+    font-family: "Avenir", sans-serif;
+    font-size: 0.8em;
+    border-style: none;
+    cursor: grab;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .portfolioGall {
+    width: 100%;
+    margin: 0 auto; }
+
+  .portfolioGall ul {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  .portImg {
+    filter: #1a1a1a;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .1s ease-in-out;
+    width: 50%;
+    float: left;
+    padding: 0;
+    cursor: grab; }
+
+  .portImg:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    cursor: grab; } }
+@media screen and (min-width: 770px) {
+  #portIntro h3 {
+    font-size: 2em;
+    font-family: "Avenir", sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px; }
+
+  #portIntro p {
+    font-size: 1.2em;
+    font-style: oblique;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    color: #1a1a1a; }
+
+  .portfolioGall ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  .portfolioGall button {
+    width: 16%;
+    margin: 0 auto;
+    background: none;
+    font-family: "Avenir", "sans-serif";
+    font-size: 1em;
+    border-style: none;
+    cursor: pointer;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+  .portfolioGall button:hover {
+    font-weight: bolder; }
+
+  .portfolioGall button:active {
+    text-shadow: 2px 2px #930000; }
+
+  .portfolioGall {
+    width: 100%;
+    margin: 0 auto;
+    float: left; }
+
+  .portImg {
+    filter: #1a1a1a;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .1s ease-in-out;
+    width: 33%;
+    float: left;
+    padding: 0; }
+
+  .portImg:hover {
+    filter: none;
+    -webkit-filter: grayscale(0); } }
+@media (max-width: 479px) {
+  .checkmark {
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto; }
+
+  #lottieCheck {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #000;
+    height: 800px; }
+
+  #lottieCheck h4 {
+    color: #fff;
+    font-family: "Avenir", "sans-serif";
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; }
+
+  #lottieCheck p {
+    color: #fff;
+    font-family: "Avenir", "sans-serif";
+    font-size: 0.9em;
+    font-weight: lighter;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px; }
+
+  #lottieCheck a {
+    padding-bottom: 100px;
+    text-decoration: none;
+    font-family: "Avenir", "sans-serif";
+    font-style: oblique;
+    text-transform: uppercase;
+    color: #646464; }
+
+  #lottieCheck #another {
+    font-size: 0.7em; } }
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .checkmark {
+    width: 30%;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto; }
+
+  #lottieCheck {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #000;
+    height: 800px; }
+
+  #lottieCheck h4 {
+    color: #fff;
+    font-family: "Avenir", "sans-serif";
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em; }
+
+  #lottieCheck p {
+    color: #fff;
+    font-family: "Avenir", "sans-serif";
+    font-size: 1.2em;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 40px; }
+
+  #lottieCheck a {
+    padding-bottom: 100px;
+    text-decoration: none;
+    font-family: "Avenir", "sans-serif";
+    font-style: oblique;
+    text-transform: uppercase;
+    color: #646464; }
+
+  #lottieCheck #another {
+    font-size: 0.5em; } }
+@media screen and (min-width: 770px) {
+  .checkmark {
+    width: 19%;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto; }
+
+  #lottieCheck {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #000;
+    height: 800px; }
+
+  #lottieCheck h4 {
+    color: #fff;
+    font-family: "Avenir", "sans-serif";
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em; }
+
+  #lottieCheck p {
+    color: #fff;
+    font-family: "Avenir", "sans-serif";
+    font-size: 1em; }
+
+  #lottieCheck a {
+    padding-bottom: 100px;
+    text-decoration: none;
+    font-family: "Avenir", "sans-serif";
+    font-style: oblique;
+    text-transform: uppercase;
+    color: #646464; }
+
+  #lottieCheck #another {
+    font-size: 0.9em; } }
 @font-face {
   font-family: 'cf_glitch_cityregular';
   src: url("/includes/cfglitchcity-regular-webfont.woff2") format("woff2"), url("/includes/cfglitchcity-regular-webfont.woff") format("woff");
@@ -3024,10 +3432,11 @@ html, body {
   margin: 0;
   padding: 0;
   margin-top: -10px;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  scroll-behavior: smooth; }
 
 p {
-  font-family: 'Avenir', sans-serif; }
+  font-family: "Avenir", "sans-serif"; }
 
 .sectionLine {
   width: 10%; }
@@ -3050,15 +3459,20 @@ p {
 #experience {
   visibility: none; }
 
+.downloadBtn p {
+  font-family: "Avenir", "sans-serif";
+  text-transform: uppercase;
+  padding-left: 20px; }
+
 @media (max-width: 479px) {
   .splitTextDark h1 {
-    color: #fff;
+    color: #f1f1f1;
     position: relative;
     visibility: hidden;
     font-size: 4em;
     line-height: 1.3;
     text-transform: uppercase;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-align: center;
     position: relative; }
     .splitTextDark h1::before, .splitTextDark h1::after {
@@ -3090,7 +3504,7 @@ p {
     font-size: 4em;
     line-height: 1.3;
     text-transform: uppercase;
-    font-family: 'Avenir', sans-serif;
+    font-family: "Avenir", sans-serif;
     text-align: center;
     position: relative; }
     .splitTextLight h1::before, .splitTextLight h1::after {
@@ -3113,10 +3527,10 @@ p {
       transform: translatex(0) translatez(0); }
 
   .splitTextLight {
-    background-color: #fff; } }
+    background-color: #f1f1f1; } }
 @media screen and (min-width: 480px) and (max-width: 769px) {
   .splitTextDark h1 {
-    color: #fff;
+    color: #f1f1f1;
     position: relative;
     visibility: hidden;
     font-size: 5em;
@@ -3180,7 +3594,7 @@ p {
     background-color: #fff; } }
 @media (min-width: 769px) {
   .splitTextDark h1 {
-    color: #fff;
+    color: #f1f1f1;
     position: relative;
     visibility: hidden;
     font-size: 7em;

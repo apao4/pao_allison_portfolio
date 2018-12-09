@@ -1,0 +1,229 @@
+@media (max-width: 479px) {
+
+    #portIntro h3
+    {
+        font-size: 2em;
+        font-family: $header-font;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    #portIntro p
+    {
+        font-size: 0.9em;
+        font-style: oblique;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        color: $dark-grey;
+    
+    }
+    
+    .portfolioGall ul 
+    {
+        list-style: none;
+        margin: 0%;
+        display: inline-block;
+        padding-left: 0px;
+        padding-right: 0px; 
+    }
+    
+    .portfolioGall button
+    {
+        width: 45%;
+        margin: 0 auto;
+        background: none;
+        font-family: $header-font;
+        font-size: 0.5em;
+        border-style: none;
+        cursor: pointer;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        
+    }
+    
+    .portfolioGall button:hover
+    {
+        font-weight: bolder;
+    }
+    
+    
+    .portfolioGall 
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    
+    .portImg
+    {
+        filter: $dark-grey;
+        -webkit-filter: grayscale(1); 
+        // -webkit-transition: all .1s ease-in-out;  
+        width: 100%;
+        display: inline-block;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+
+    #portIntro h3
+    {
+        font-size: 2em;
+        font-family: $header-font;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto;
+        padding: 50px;
+    }
+    #portIntro p
+    {
+        font-size: 1em;
+        font-style: oblique;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        color: $dark-grey;
+    
+    }
+    
+    .portfolioGall ul 
+    {
+        list-style: none;
+        margin: 0;
+    }
+    
+    .portfolioGall button
+    {
+        width: 16%;
+        margin: 0 auto;
+        background: none;
+        font-family: $header-font;
+        font-size: 0.8em;
+        border-style: none;
+        cursor: grab;
+        text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    
+    .portfolioGall 
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .portfolioGall ul
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    
+    .portImg
+    {
+        filter: $dark-grey; 
+        -webkit-filter: grayscale(1); 
+        -webkit-transition: all .1s ease-in-out;  
+        width: 50%;
+        float: left;
+        padding: 0;
+        cursor: grab;
+    }
+            
+    .portImg:hover 
+    {
+        filter: none;
+        -webkit-filter: grayscale(0);
+        cursor: grab;
+    }
+    }
+
+@media screen and (min-width: 770px) {
+
+#portIntro h3
+{
+    font-size: 2em;
+    font-family: $header-font;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+#portIntro p
+{
+    font-size: 1.2em;
+    font-style: oblique;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    color: $dark-grey;
+
+}
+
+.portfolioGall ul 
+{
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.portfolioGall button
+{
+    width: 16%;
+    margin: 0 auto;
+    background: none;
+    font-family: $body-text;
+    font-size: 1em;
+    border-style: none;
+    cursor: pointer;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.portfolioGall button:hover
+{
+    font-weight: bolder;
+}
+
+.portfolioGall button:active
+{
+    text-shadow: 2px 2px $red;
+}
+
+.portfolioGall 
+{
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+}
+
+
+.portImg
+{
+    filter: $dark-grey;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .1s ease-in-out;  
+    width: 33%;
+    float: left;
+    padding: 0;
+}
+        
+.portImg:hover 
+{
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+}

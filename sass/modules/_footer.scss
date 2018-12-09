@@ -11,11 +11,11 @@ footer
 
  #backtoTopBtn
  {
-     font-family: 'Avenir', sans-serif;
+     font-family: $body-text;
      font-weight: bolder;
      font-size: 1em;
      background-color: #000;
-     color: #fff;
+     color: $off-white;
      border-style: none;
      cursor: pointer;
      text-transform: uppercase;
@@ -70,32 +70,32 @@ footer
 
     footer h3 
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-transform: uppercase;
         font-weight: lighter;
-        color: #fff;
+        color: $off-white;
         font-size: 0.8em;
     }
     footer h4 
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-transform: capitalize;
         font-weight: lighter;
-        color: #666;
+        color: $grey;
         font-size: 0.7em;
         line-height: 2em;
     }
 
     footer h5
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         padding-left: 5px;
         font-weight: lighter;
         text-transform: uppercase;
         clear: both;
         float: left;
         padding-top: 50px;
-        color: #666;
+        color: $grey;
     }
 
     footer a 
@@ -152,7 +152,7 @@ footer
 
     footer h3 
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-transform: uppercase;
         font-weight: lighter;
         color: #fff;
@@ -160,10 +160,10 @@ footer
     }
     footer h4 
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-transform: capitalize;
         font-weight: lighter;
-        color: #666;
+        color: $grey;
         font-size: 0.8em;
         line-height: 0.9em;
     }
@@ -178,7 +178,7 @@ footer
         clear: both;
         float: left;
         padding-top: 50px;
-        color: #666;
+        color: $grey;
     }
 
     footer a 
@@ -191,7 +191,7 @@ footer
     footer
     {
         height: 250px;
-        margin-top: 20%;
+        margin-top: 10%;
     }
 
     .footerIcons
@@ -236,7 +236,7 @@ footer
 
     footer h3 
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-transform: uppercase;
         font-weight: lighter;
         color: #fff;
@@ -244,17 +244,17 @@ footer
     }
     footer h4 
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-transform: capitalize;
         font-weight: lighter;
-        color: #666;
+        color: $grey;
         font-size: 0.8em;
         line-height: 0.9em;
     }
 
     footer h5
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         padding-left: 55px;
         font-weight: lighter;
         text-transform: uppercase;
@@ -262,7 +262,7 @@ footer
         clear: both;
         float: left;
         padding-top: 50px;
-        color: #666;
+        color: $grey;
     }
 
     footer a 

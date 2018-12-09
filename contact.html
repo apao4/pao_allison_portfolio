@@ -67,7 +67,7 @@
         <div id="contact">
             <h3>Say Hello</h3>
             <h6>Leave your message down below and I will get back to you as soon as possible.</h6>
-            <form action="scripts/sendEmail.php" method="POST" class="contactForm"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
+            <form action="/scripts/sendEmail.php" method="POST" class="contactForm"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
                 <label for="name"><h5 class="contactSub">Name</h5></label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
             
@@ -75,7 +75,7 @@
                 <input type="text" id="email" name="email" placeholder="Enter your email" required>
     
                 <label for="phone"><h5 class="contactSub">Phone Number</h5></label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="###-###-####">
 
                 <label for="subject"><h5 class="contactSub">Subject</h5></label>
                 <input type="text" id="subject" name="email" placeholder="Subject" required>
@@ -87,31 +87,34 @@
             </form>
         </div>
         <footer>
-    <div id="footerCol1">
-        <img id="footerLogo" src="images/logo-white.png">
-        <h5>&copy; 2018 Allison Pao.<br>All Rights Reserved.</h5>
-    </div>
-    <div id="footerCol2">
-        <h3>Allison Pao</h3>
-        <a href="about.html"><h4>About Me</h4></a>
-        <a href="resume.html"><h4>Resume</h4></a>
-    </div>
-    <div id="footerCol3">
-        <h3>Portfolio</h3>
-        <a href="#"><h4>Animation</h4></a>
-        <a href="#"><h4>Branding</h4></a>
-        <a href="#"><h4>Graphic Design</h4></a>
-        <a href="#"><h4>Videography</h4></a>
-        <a href="#"><h4>Web Design</h4></a>
-    </div>
-    <div id="footerCol4">
-        <h3>Connect</h3>
-        <a href="www.instagram.com/allipao"><i class="fa fa-instagram footerIcons" style="font-size:35px;color:#666;"></i></a>
-        <a href="www.linkedin.com/in/allison-pao-722551176/"><i class="fa fa-linkedin footerIcons" style="font-size:35px;color:#666;"></i></a>
-        <a href="www.github.com/apao4"><i class="fa fa-github footerIcons" style="font-size:35px;color:#666;"></i></a> 
-        <a href="mailto:alliisonpao@live.com"><i class="fa fa-envelope footerIcons" style="font-size:35px;color:#666;"></i></a> 
-        </div>
-</footer>
+            <div id="footerCol1">
+                <a href="index.html"><img id="footerLogo" src="images/logo-white.png"></a>
+                <h5>&copy; 2018 Allison Pao.<br>All Rights Reserved.</h5>
+            </div>
+            <div id="footerCol2">
+                <h3>Allison Pao</h3>
+                <a href="about.html"><h4>About Me</h4></a>
+                <a href="resume.html"><h4>Resume</h4></a>
+            </div>
+            <div id="footerCol3">
+                <h3>Portfolio</h3>
+                <a href="#"><h4>Animation</h4></a>
+                <a href="#"><h4>Branding</h4></a>
+                <a href="#"><h4>Graphic Design</h4></a>
+                <a href="#"><h4>Videography</h4></a>
+                <a href="#"><h4>Web Design</h4></a>
+            </div>
+            <div id="footerCol4">
+                <h3>Connect</h3>
+                <a href="www.instagram.com/allipao"><i class="fa fa-instagram footerIcons" style="font-size:35px;color:#666;"></i></a>
+                <a href="www.linkedin.com/in/allison-pao-722551176/"><i class="fa fa-linkedin footerIcons" style="font-size:35px;color:#666;"></i></a>
+                <a href="www.github.com/apao4"><i class="fa fa-github footerIcons" style="font-size:35px;color:#666;"></i></a> 
+                <a href="mailto:alliisonpao@live.com"><i class="fa fa-envelope footerIcons" style="font-size:35px;color:#666;"></i></a> 
+                <button onclick="topFunction()" id="backtoTopBtn" title="Go to top">Top ^</button>
+            </div>
+            
+            </footer>
+    <script src="js/main.js"></script>
     <script src="js/main.js"></script>
     </body>
     </html>

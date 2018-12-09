@@ -1,0 +1,156 @@
+@media (max-width: 479px) {
+.checkmark 
+{ 
+    width: 50%; 
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#lottieCheck 
+{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #000;
+    height: 800px;
+}
+
+#lottieCheck h4
+{
+    color: #fff;
+    font-family: $body-text;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#lottieCheck p
+{
+    color: #fff;
+    font-family: $body-text;
+    font-size: 0.9em;
+    font-weight: lighter;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+#lottieCheck a 
+{
+    padding-bottom: 100px;
+    text-decoration: none;
+    font-family: $body-text;
+    font-style: oblique;
+    text-transform: uppercase;
+    color: $grey;
+}
+
+#lottieCheck #another
+{
+    font-size: 0.7em;
+}
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    .checkmark 
+    { 
+        width: 30%; 
+        cursor: pointer;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    #lottieCheck 
+    {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        background-color: #000;
+        height: 800px;
+    }
+    
+    #lottieCheck h4
+    {
+        color: #fff;
+        font-family: $body-text;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+    }
+    
+    #lottieCheck p
+    {
+        color: #fff;
+        font-family: $body-text;
+        font-size: 1.2em;
+        width: 65%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    
+    #lottieCheck a 
+    {
+        padding-bottom: 100px;
+        text-decoration: none;
+        font-family: $body-text;
+        font-style: oblique;
+        text-transform: uppercase;
+        color: $grey;
+    }
+    
+    #lottieCheck #another
+    {
+        font-size: 0.5em;
+    }
+    }
+
+    @media screen and (min-width: 770px) {
+        .checkmark 
+        { 
+            width: 19%; 
+            cursor: pointer;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        #lottieCheck 
+        {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #000;
+            height: 800px;
+        }
+        
+        #lottieCheck h4
+        {
+            color: #fff;
+            font-family: $body-text;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+        }
+        
+        #lottieCheck p
+        {
+            color: #fff;
+            font-family: $body-text;
+            font-size: 1em;
+        }
+        
+        #lottieCheck a 
+        {
+            padding-bottom: 100px;
+            text-decoration: none;
+            font-family: $body-text;
+            font-style: oblique;
+            text-transform: uppercase;
+            color: $grey;
+        }
+        
+        #lottieCheck #another
+        {
+            font-size: 0.9em;
+        }
+        }

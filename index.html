@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 	<script src="js/noframework.waypoints.min.js"></script>
     <script src="js/mainwaypoint.js"></script>
 
@@ -36,7 +37,7 @@
                 <a href="about.html"><li>About Me</li></a>
                 <a href="resume.html"><li>Resume</li></a>
                 <a href="portfolio.html"><li>Portfolio</li></a>
-                <a href="contact.html"><li>Contact Me</li></a>
+                <a href="#indexContactForm"><li>Contact Me</li></a>
               </ul>
             </div>
             
@@ -45,7 +46,7 @@
                 <a href="about.html">About Me</a>
                 <a href="resume.html">Resume</a>
                 <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact Me</a>
+                <a href="#indexContactForm">Contact Me</a>
             </div>
           </nav>
             <div id="smallHeader" class="animated fadeOut">
@@ -80,7 +81,7 @@
             </p>
             <a class="linkMore" href="about.html">Read More ></a>
         </div>
-    <div id="reelPlayer">
+    <!-- <div id="reelPlayer">
          <video width="1000px" height="auto" id="animationReel" width="1000px">
             <source src="videos/casual2018.m4v" type="video/mp4">
          </video>
@@ -94,33 +95,31 @@
             <button id="mute" class="btn">MUTE</button>
             <input id="volume" type="range" min="0" max="100" value="100" step="1">
             <button id="fullscreenbtn" class="btn">[ &nbsp; ]</button>
-            <!-- <div id="volumeControl">
+             <div id="volumeControl">
 		<i class="fa fa-volume-down"></i>
 		<div id="volume"></div>
 		<i class="fa fa-volume-up"></i>
-    </div> -->
+    </div>-->
             
         </div>
-        </div>
-    </div>
-        
+ 
     
     <div id="indexServices">
         <div class="splitTextLight">
             <h1 data-word="Services">Services</h1>
         </div>
         <div id="serviceIcons">
-            <div class="glitchImg" id="1">
-                <i class="fa fa-laptop data-ref" data-offset="0" style="color:#646464;"></i>
+            <div class="glitchImg service" id="1">
+                <i class="fa fa-laptop data-ref animated fadeIn" data-offset="0" style="color:#646464;"></i>
             </div>
-            <div class="glitchImg" id="2">
-                <i class="fa fa-pencil data-ref" data-offset="1" style="color:#646464;"></i>
+            <div class="glitchImg service" id="2">
+                <i class="fa fa-pencil data-ref animated fadeIn" data-offset="1" style="color:#646464;"></i>
             </div>
-            <div class="glitchImg" id="3">
-                <i class="fa fa-camera data-ref" data-offset="3" style="color:#646464;"></i>
+            <div class="glitchImg service" id="3">
+                <i class="fa fa-camera data-ref animated fadeIn" data-offset="3" style="color:#646464;"></i>
             </div>
-            <div class="glitchImg" id="4">
-                <i class="fa fa-video-camera data-ref" data-offset="2" style="color:#646464;"></i>
+            <div class="glitchImg service" id="4">
+                <i class="fa fa-video-camera data-ref animated fadeIn" data-offset="2" style="color:#646464;"></i>
             </div>
             
         </div>
@@ -133,7 +132,7 @@
             </div>
         </div>
     </div>
-
+    
     <div id="indexRecent">
         <div class="splitTextDark">
             <h1 data-word="Recent">Recent</h1>
@@ -143,28 +142,70 @@
             <a href="portfolio-sites/ifrc.html"><img class="recentWorkExam glitchImg" src="images/portfolio/port-ifrc1.jpg"></a>
         </div>
     </div>
+    <div id="indexReel">
+            <div class="splitTextLight">
+                    <h1 data-word="Demo">Demo</h1>
+                </div>
+            <main id="app" class="portfolioGall">
+                    <!-- <h4 class="welcome-message"> {{ welcomemessage }}</h4> -->
+                    <ul>
+                        <!-- <button class="glitchImg" v-on:click="fetchReel"><h3>Reel</h3></button> -->
+                        <button class="glitchImg" id="playReel" v-on:click="fetchReel"><h3>Watch my reel</h3></button>
+                        
+                        
+                        <li v-for="item in videodata"> <!-- fetches the database stuff -->
+        
+                            <!--WORKING ON THIS ONE-->
+                            <a :href="'./images/portfolio/' + item.pro_path" v-on:load="loadReel">
+                                <video :src="'images/portfolio/'  + item.pro_path" autoplay controls></video>
+                            </a>
+                            
+                            
+                        </li>
+                    </ul>
+                    <!-- <div id="controls">
+                            <button id='playPauseBtn' class='play btn'
+                            onclick='togglePlayPause();'>PLAY</button>
+                            <button id='stopBtn' class='stop btn' onclick='stopPlayer();'>STOP</button>
+                            
+                            <input id="timeline" type="range" min="0" max="100" value="0" step="1">
+                            <span id="curTime">00:00</span><span id="slash"> / </span><span id="totalTime">00:00</span>
+                            <button id="mute" class="btn">MUTE</button>
+                            <input id="volume" type="range" min="0" max="100" value="100" step="1">
+                            <button id="fullscreenbtn" class="btn">[ &nbsp; ]</button>
+                            <div id="volumeControl">
+                        <i class="fa fa-volume-down"></i>
+                        <div id="volume"></div>
+                        <i class="fa fa-volume-up"></i>
+                    </div>
+                </div> -->
+                </main>
+            </div>
 
-     <div id="indexContactForm">
-            <div class="splitTextDark">
+
+    <div id="indexContactForm">
+            <div class="splitTextDark animated fadeIn">
                     <h1 data-word="Contact">Contact</h1>
                 </div>
-         <form action>
-            <!-- <h3>Contact Me</h3> -->
-            <label for="name"><h5 class="indexForm">Name</h5></label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <form action="/scripts/sendEmail.php" method="POST" class="contactForm"> <!--action attribute tells the doc where all the info should go to once submitted. created the sendEmail.php file here to connect them-->
+                <label for="name"><h5 class="indexForm">Name</h5></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
             
-            <label for="email"><h5 class="indexForm">Email</h5></label>
-            <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                <label for="email"><h5 class="indexForm">Email</h5></label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+    
+                <label for="phone"><h5 class="indexForm">Phone Number</h5></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="###-###-####">
 
-            <label for="subject"><h5 class="indexForm">Subject</h5></label>
-            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-    
-            <label for="message"><h5 class="indexForm">Message</h5></label><br>
-            <input type="message" name="message" placeholder="Message"></textarea>
-    
-            <button class="btn indexSubmit" type="submit">Send</button>
-         </form>
-     </div>
+                <label for="subject"><h5 class="indexForm">Subject</h5></label>
+                <input type="text" id="subject" name="email" placeholder="Subject" required>
+
+                <label for="message"><h5 class="indexForm">Message</h5></label><br>
+                <input type="message" name="message" placeholder="Message"></textarea>
+        
+                <button class="btn indexSubmit" type="submit">Send</button>
+            </form>
+        </div>
 
      <div class="contactPopup">
         
@@ -190,10 +231,12 @@
         </div>
 </div>
 
+
+
 </body>
 <footer>
     <div id="footerCol1">
-        <img id="footerLogo" src="images/logo-white.png">
+        <a href="index.html"><img id="footerLogo" src="images/logo-white.png"></a>
         <h5>&copy; 2018 Allison Pao.<br>All Rights Reserved.</h5>
     </div>
     <div id="footerCol2">
@@ -215,7 +258,7 @@
         <a href="www.linkedin.com/in/allison-pao-722551176/"><i class="fa fa-linkedin footerIcons" style="font-size:35px;color:#666;"></i></a>
         <a href="www.github.com/apao4"><i class="fa fa-github footerIcons" style="font-size:35px;color:#666;"></i></a> 
         <a href="mailto:alliisonpao@live.com"><i class="fa fa-envelope footerIcons" style="font-size:35px;color:#666;"></i></a> 
-        <button onclick="topFunction()" id="backtoTopBtn" title="Go to top">Top ^</button>
+        <button onclick='topFunction()' id="backtoTopBtn" title="Go to top">Top ^</button>
     </div>
     
     </footer>
@@ -223,9 +266,10 @@
 </div>
 
     <script src="js/database.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
     <script src="js/videoplayer.js"></script>
     <script src="js/indexLightbox.js"></script>
+    <script src="js/reel.js"></script>
 
 
 </html>

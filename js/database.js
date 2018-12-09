@@ -1,5 +1,5 @@
 (() => {
-        const info = document.querySelectorAll('.glitchImg');
+        const info = document.querySelectorAll('.service');
         
         function getData(){
                 console.log(this);

@@ -1,6 +1,6 @@
 .backBtn a
 {
-    font-family: 'Avenir', sans-serif;
+    font-family: $body-text;
     padding: 15px;
     text-decoration: none;
     text-transform: lowercase;
@@ -13,9 +13,61 @@
 }
 
 @media (max-width: 479px) {
-.proInfo h3
+    .portHeader h3
+    {
+        font-family: $header-font;
+        font-size: 4em;
+        font-weight: bolder;
+        text-transform: uppercase;
+        margin: 0;
+        color: #fff;
+        margin-left: 40px;
+    }
+    
+    .portHeader h5
+    {
+        font-family: $header-font;
+        font-size: 1.8em;
+        font-weight: lighter;
+        margin: 0;
+        color: #fff;
+        margin-left: 40px;
+        padding-top: 90px;
+        font-style: oblique;
+    }
+    
+    .portHeader img 
+    {
+        width: 45%;
+        float: right;
+        margin-top: 50px;
+    }
+
+    .portHeader h3
 {
-    font-family: 'Avenir', sans-serif;
+    font-family: $header-font;
+    font-size: 1.7em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.portHeader h5
+{
+    font-family: $header-font;
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 0;
+    color: #fff;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-style: oblique;
+}
+    .proInfo h3
+{
+    font-family: $header-font;
     font-size: 1.5em;
     font-weight: lighter;
     text-transform: uppercase;
@@ -24,7 +76,7 @@
 
 .proInfo h5
 {
-    font-family: 'Avenir', sans-serif;
+    font-family: $header-font;
     font-size: 1.1em;
     font-weight: lighter;
     padding: 0;
@@ -34,16 +86,16 @@
 
 .proInfo h6
 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 0.9em;
+    font-family: $header-font;
+    font-size: 1.3em;
     font-weight: lighter;
     margin: 0;
 }
 
 .proInfo h4
 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 1em;
+    font-family: $header-font;
+    font-size: 1.3em;
     text-transform: uppercase;
     font-weight: lighter;
     margin: 0;
@@ -51,11 +103,10 @@
 
 .proInfo p
 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 0.75em;
+    font-family: $header-font;
+    font-size: 0.9em;
     font-weight: lighter;
     padding: 0;
-    margin-left: 20px;
 }
 
 .proInfo
@@ -75,6 +126,111 @@
     float: right;
     clear: both;
 }
+
+.proCap
+{
+    font-family: $header-font;
+    font-size: 1.7em;
+    font-style: oblique;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.programIcons
+{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.programIcons img 
+{
+    width: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.morePics 
+{
+    width: 100%;
+    display: inline-block;
+    clear: both;
+}
+
+//INDIVIDUAL PORTFOLIO PIECE HEADERS
+#lsfcHeader
+{
+    background-color: #f4bf42;
+    width: 100%;
+    height: 200px;
+}
+
+#engageHeader
+{
+    background-color: #3f3f3f;
+    width: 100%;
+    height: 200px;
+}
+
+#melloHeader
+{
+    background-color: #cce4e8;
+    width: 100%;
+    height: 200px;
+}
+
+#audiHeader
+{
+    background-color: #000;
+    width: 100%;
+    height: 200px;
+}
+
+#casualHeader
+{
+    background-color: #2e6fcc;
+    width: 100%;
+    height: 200px;
+}
+
+#ifrcHeader
+{
+    background-color: #f8ceba;
+    width: 100%;
+    height: 200px;
+}
+
+#velveetaHeader
+{
+    background-color: #c9ced1;
+    width: 100%;
+    height: 200px;
+}
+
+#infoHeader
+{
+    background-color: #a6a9d4;
+    width: 100%;
+    height: 200px;
+}
+
+#photoHeader
+{
+    background-color: #b2b3ae;
+    width: 100%;
+    height: 300px;
+}
+
+#teamHeader
+{
+    background-color: #30004b;
+    width: 100%;
+    height: 200px;
+}
+
 
 #organVid
 {
@@ -163,15 +319,50 @@
 {
     display: none;
 }
-
-
 }
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
 
+    .proCap {
+        font-style: oblique;
+        width: 80%;
+        font-size: 1.4em;
+        text-align: center;
+        margin: 0 auto; 
+    }
+    
+    .portHeader h3 
+    {
+        font-family: $header-font;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        margin: 0;
+        padding-left: 40px;
+        color: #fff;
+    }
+
+    .portImgHead
+    {
+        width: 50%;
+        margin-top: 50px;
+    }
+    
+      .portHeader h5 
+    {
+        font-family: $header-font;
+        font-size: 1.5em;
+        font-weight: lighter;
+        text-transform: lowercase;
+        margin: 0;
+        color: $dark-grey;
+        padding-left: 40px;
+        font-style: oblique;
+        padding-top: 50px; 
+    }
+    
     .proInfo h3
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         font-size: 2em;
         font-weight: lighter;
         text-transform: uppercase;
@@ -180,7 +371,7 @@
     
     .proInfo h5
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         font-size: 1.1em;
         font-weight: lighter;
         padding: 0;
@@ -190,7 +381,7 @@
     
     .proInfo h6
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         font-size: 1.2em;
         font-weight: lighter;
         margin: 0;
@@ -198,7 +389,7 @@
     
     .proInfo h4
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         font-size: 1.2em;
         text-transform: uppercase;
         font-weight: lighter;
@@ -207,7 +398,7 @@
     
     .proInfo p
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         font-size: 0.9em;
         font-weight: lighter;
         padding: 0;
@@ -225,14 +416,137 @@
         margin: 0 auto;
     }
     
-    .portImg
+    .portImgHead
     {
         width: 40%;
         float: right;
         clear: both;
         padding-left: 20px;
     }
+
+    .proInfo p
+{
+    font-family: $body-text;
+    font-size: 1.1em;
+    font-weight: lighter;
+    padding: 0;
+}
+
+.proCap
+{
+    font-family: $body-text;
+    font-size: 1.2em;
+    font-style: oblique;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.proInfo
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.programIcons
+{
+    font-size: 55px;
+    text-align: center;
+}
+
+.programIcons img
+{
+    width: 55px;
+    text-align: center;
+}
     
+.morePics 
+{
+    width: 100%;
+    display: inline-block;
+    clear: both;
+}
+
+.morePics img
+{
+    width: 49%;
+    display: inline-block;
+    clear: both;
+}
+
+//INDIVIDUAL PORTFOLIO PIECE HEADERS
+#lsfcHeader
+{
+    background-color: #f4bf42;
+    width: 100%;
+    height: 300px;
+}
+
+#engageHeader
+{
+    background-color: #3f3f3f;
+    width: 100%;
+    height: 300px;
+}
+
+#melloHeader
+{
+    background-color: #cce4e8;
+    width: 100%;
+    height: 300px;
+}
+
+#audiHeader
+{
+    background-color: #000;
+    width: 100%;
+    height: 300px;
+}
+
+#casualHeader
+{
+    background-color: #2e6fcc;
+    width: 100%;
+    height: 300px;
+}
+
+#ifrcHeader
+{
+    background-color: #f8ceba;
+    width: 100%;
+    height: 300px;
+}
+
+#velveetaHeader
+{
+    background-color: #c9ced1;
+    width: 100%;
+    height: 300px;
+}
+
+#infoHeader
+{
+    background-color: #b2b3ae;
+    width: 100%;
+    height: 300px;
+}
+
+#photoHeader
+{
+    background-color: #b2b3ae;
+    width: 100%;
+    height: 300px;
+}
+
+#teamHeader
+{
+    background-color: #30004b;
+    width: 100%;
+    height: 300px;
+}
+
     #melloVidDes
     {
         width: 40%;
@@ -328,31 +642,43 @@
         width: 40%;
         padding-left: 40px;
     }
-    }
+}
 
 @media screen and (min-width: 770px) {
 
 .portHeader h3
 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 2.5em;
-    font-weight: lighter;
+    font-family: $header-font;
+    font-size: 4em;
+    font-weight: bolder;
     text-transform: uppercase;
     margin: 0;
+    color: #fff;
+    margin-left: 40px;
 }
 
 .portHeader h5
 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 2em;
+    font-family: $header-font;
+    font-size: 1.8em;
     font-weight: lighter;
-    text-transform: uppercase;
     margin: 0;
+    color: #fff;
+    margin-left: 40px;
+    padding-top: 90px;
+    font-style: oblique;
+}
+
+.portHeader img 
+{
+    width: 40%;
+    float: right;
+    margin-top: 50px;
 }
 
 .proInfo h5
 {
-    font-family: 'Avenir', sans-serif;
+    font-family: $header-font;
     font-size: 1.3em;
     font-weight: lighter;
     padding: 0;
@@ -362,15 +688,17 @@
 
 .proInfo h6
 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 1.2em;
-    font-weight: lighter;
+    font-family: $header-font;
+    font-size: 2em;
+    font-weight: bolder;
     margin: 0;
+    text-transform: uppercase;
+    font-style: oblique;
 }
 
 .proInfo h4
 {
-    font-family: 'Avenir', sans-serif;
+    font-family: $header-font;
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: lighter;
@@ -379,16 +707,41 @@
 
 .proInfo p
 {
-    font-family: 'Avenir', sans-serif;
-    font-size: 1em;
+    font-family: $header-font;
+    font-size: 1.3em;
     font-weight: lighter;
     padding: 0;
+}
+
+.proCap
+{
+    font-family: $header-font;
+    font-size: 1.7em;
+    font-style: oblique;
     margin-left: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .proInfo
 {
-    width: 50%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.programIcons
+{
+    font-size: 75px;
+    text-align: center;
+}
+
+.programIcons img
+{
+    width: 75px;
+    text-align: center;
 }
 
 .portfolio
@@ -397,12 +750,106 @@
     margin: 0 auto;
 }
 
-.portImg
+.portVideos
 {
-    width: 40%;
-    float: right;
+    width: 100%;
+}
+
+.morePics img
+{
+    width: 45%;
+
+}
+
+.morePics video 
+{
+    width: 50%;
+
+}
+
+.morePics 
+{
+    width: 100%;
+    display: inline-block;
     clear: both;
 }
+
+.velImg img
+{
+    width: 100%;
+}
+
+//INDIVIDUAL PORTFOLIO PIECE HEADERS
+#lsfcHeader
+{
+    background-color: #f4bf42;
+    width: 100%;
+    height: 500px;
+}
+
+#engageHeader
+{
+    background-color: #3f3f3f;
+    width: 100%;
+    height: 500px;
+}
+
+#melloHeader
+{
+    background-color: #cce4e8;
+    width: 100%;
+    height: 500px;
+}
+
+#audiHeader
+{
+    background-color: #000;
+    width: 100%;
+    height: 500px;
+}
+
+#casualHeader
+{
+    background-color: #2e6fcc;
+    width: 100%;
+    height: 500px;
+}
+
+#ifrcHeader
+{
+    background-color: #f8ceba;
+    width: 100%;
+    height: 500px;
+}
+
+#velveetaHeader
+{
+    background-color: #c9ced1;
+    width: 100%;
+    height: 500px;
+}
+
+#infoHeader
+{
+    background-color: #a6a9d4;
+    width: 100%;
+    height: 500px;
+}
+
+#photoHeader
+{
+    background-color: #b2b3ae;
+    width: 100%;
+    height: 500px;
+}
+
+#teamHeader
+{
+    background-color: #30004b;
+    width: 100%;
+    height: 500px;
+}
+
 
 #melloVidDes
 {
@@ -419,11 +866,8 @@
 
 #melloVidBottle
 {
-    float: right;
-    clear: both;
-    position: relative;
-    width: 500px;
-    height: auto;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .velveetaLabelsMob

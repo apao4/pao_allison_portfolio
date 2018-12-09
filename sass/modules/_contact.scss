@@ -6,7 +6,7 @@
     
     #contact h3
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.5em;
@@ -16,7 +16,7 @@
 
     #contact h6
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-align: center;
         font-size: 1em;
         font-style: oblique;
@@ -62,7 +62,7 @@
 
     .contactSub 
     {
-        font-family: "Avenir", sans-serif;
+        font-family: $body-text;
         text-transform: uppercase;
         letter-spacing: 0.2em;
         text-align: center;
@@ -71,7 +71,7 @@
 
     #contactSubmit
     {
-        background-color: #666;
+        background-color: $dark-grey;
         color: white;
         border: none;
         cursor: pointer;
@@ -84,7 +84,7 @@
 
     #contactSubmit:hover
     {
-        background-color: #993333;
+        background-color: $red;
         color: white;
         border: none;
         cursor: pointer;
@@ -113,7 +113,7 @@
 
     #contact h3
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.4em;
@@ -123,7 +123,7 @@
 
     #contact h6
     {
-        font-family: 'Avenir', sans-serif;
+        font-family: $header-font;
         text-align: center;
         font-size: 1em;
         font-style: oblique;
@@ -141,7 +141,7 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        background: #f1f1f1;
+        background: $off-white;
         margin-left: 100px;
     }
 
@@ -152,7 +152,7 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        background: #f1f1f1;
+        background: $off-white;
         margin-left: 100px;
     }
 
@@ -163,7 +163,7 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        background: #f1f1f1;
+        background: $off-white;
         margin-left: 100px;
     }
 
@@ -178,8 +178,8 @@
 
     #contactSubmit
     {
-        background-color: #666;
-        color: white;
+        background-color: $dark-grey;
+        color: $off-white;
         border: none;
         cursor: pointer;
         width: 60%;
@@ -190,8 +190,8 @@
 
     #contactSubmit:hover
     {
-        background-color: #993333;
-        color: white;
+        background-color: $red;
+        color: $off-white;
         border: none;
         cursor: pointer;
         width: 60%;
@@ -216,13 +216,13 @@
         float: left;
         width: 50%;
         height: 600px;
-        background-color: #630000;
+        background-color: $red;
     }
 
     #contactInfo h3
     {
         font-size: 3em;
-        color: #fff;
+        color: $off-white;
         font-family: 'Avenir', sans-serif;
         text-transform: uppercase;
         text-align: right;
@@ -232,7 +232,7 @@
     #contactInfo h5
     {
         font-size: 1em;
-        color: #fff;
+        color: $off-white;
         font-family: 'Avenir', sans-serif;
         letter-spacing: 0.1em;
         text-align: right;
@@ -247,6 +247,7 @@
         height: 600px;
         overflow: scroll;
     }
+
     #contact h3
     {
         font-family: 'Avenir', sans-serif;
@@ -277,7 +278,7 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        background: #f1f1f1;
+        background: $off-white;
         margin-left: 55px;
     }
 
@@ -288,7 +289,7 @@
         margin-bottom: 20px;
         margin: 0 auto;
         border: none;
-        background: #f1f1f1;
+        background: $off-white;
         margin-left: 55px;
     }
 
@@ -314,8 +315,8 @@
 
     #contactSubmit
     {
-        background-color: #666;
-        color: white;
+        background-color: $dark-grey;
+        color: $off-white;
         border: none;
         cursor: pointer;
         width: 60%;
@@ -326,8 +327,8 @@
 
     #contactSubmit:hover
     {
-        background-color: #993333;
-        color: white;
+        background-color: $red;
+        color:$off-white;
         border: none;
         cursor: pointer;
         width: 60%;

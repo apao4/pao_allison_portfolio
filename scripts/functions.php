@@ -26,6 +26,6 @@ include 'connect.php';
             $results[] = $row;
         }
 
-        return $results;
+                    return $results;
     }
 ?>
